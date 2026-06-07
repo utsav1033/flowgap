@@ -1,0 +1,56 @@
+{
+  "call_id": "BATCH_ID_200",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, my son is getting admitted tomorrow for a tonsillectomy. We have New India Assurance. I need to know what to expect at the TPA counter."
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! New India Assurance is accepted here. At the TPA counter, you'll need to present the original insurance card, your son's Aadhaar, and the ENT surgeon's consent form. We'll initiate the cashless pre-auth on your behalf."
+    },
+    {
+      "speaker": "caller",
+      "text": "Is New India's pre-auth process slow? I've heard horror stories."
+    },
+    {
+      "speaker": "agent",
+      "text": "For planned procedures like tonsillectomy, pre-auth usually takes 2 to 6 hours if all documents are in order. We recommend reaching by 7:30 AM so everything is processed before the scheduled surgery time."
+    },
+    {
+      "speaker": "caller",
+      "text": "And if they reject for some reason? What then?"
+    },
+    {
+      "speaker": "agent",
+      "text": "In that case, you'd pay out of pocket initially and we'll provide all the documents for reimbursement. Our TPA team also makes a follow-up call to the insurer if there's a delay. Rejection for a standard procedure like this is quite rare with New India."
+    },
+    {
+      "speaker": "caller",
+      "text": "Alright. Should I call to confirm his bed too?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, please do — you can call our admissions desk at extension 201 to confirm the pediatric bed booking. That's separate from the TPA process. Your son's name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Arjun Bhatt."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'll note that. Please call admissions to complete the bed reservation. Everything else will be handled at the counter tomorrow. Hope little Arjun's surgery goes smoothly!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you so much, very reassuring."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome. See you tomorrow!"
+    }
+  ]
+}

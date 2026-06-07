@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_008",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello? Yes, I want to make an appointment. For... uh, neurology. I've been getting headaches quite often."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm sorry to hear that. Yes, we can certainly schedule a neurology consultation for you. Could I take your name and number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Farhan Qureshi. And my number is... hold on... 9512348760."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you, Farhan. Dr. Leena Verma is our neurologist, and she has a slot available this Thursday at 4 PM or next Tuesday at 11 AM."
+    },
+    {
+      "speaker": "caller",
+      "text": "This Thursday is too soon, I think. Let's go with Tuesday."
+    },
+    {
+      "speaker": "agent",
+      "text": "Tuesday, 11 AM with Dr. Leena Verma — all set for Farhan Qureshi. You'll receive an SMS with the appointment details."
+    },
+    {
+      "speaker": "caller",
+      "text": "Lovely, thank you very much."
+    }
+  ]
+}

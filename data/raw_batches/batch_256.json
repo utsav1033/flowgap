@@ -1,0 +1,32 @@
+{
+  "call_id": "batch_256",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "My name is Nidhi Arora."
+    },
+    {
+      "speaker": "agent",
+      "text": "Welcome to Sunrise Multispeciality Clinic, Pune. How may I assist you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "I need help with book appointment."
+    },
+    {
+      "speaker": "agent",
+      "text": "Certainly. I've handled your book appointment request."
+    },
+    {
+      "speaker": "caller",
+      "text": "Great, thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome. Have a good day."
+    }
+  ]
+}

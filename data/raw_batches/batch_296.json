@@ -1,0 +1,32 @@
+{
+  "call_id": "batch_296",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan, mujhe thodi information chahiye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Could you tell me what you need help with?"
+    },
+    {
+      "speaker": "caller",
+      "text": "lab reports"
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm sorry, I can't help with that."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay."
+    },
+    {
+      "speaker": "agent",
+      "text": "I can't help with that, let me connect you to our staff."
+    }
+  ]
+}

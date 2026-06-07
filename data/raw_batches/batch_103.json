@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_103",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I think I was given the wrong package pricing. I was quoted 2,500 for a health check-up but my bill says 3,800."
+    },
+    {
+      "speaker": "agent",
+      "text": "I apologise for the confusion. Could I have your name and invoice number to look into this?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Urmila Bhave. Invoice SNC-2024-12001."
+    },
+    {
+      "speaker": "agent",
+      "text": "Checking... I can see the 3,800 includes a few additional tests that were added during your visit — an ECG and a blood sugar test — which were not in the basic package."
+    },
+    {
+      "speaker": "caller",
+      "text": "Oh. The doctor suggested those. I didn't realise they were extra."
+    },
+    {
+      "speaker": "agent",
+      "text": "Completely understandable. The additional tests were medically recommended during the visit, which is why they were charged separately. I can have our billing team send you a detailed itemised bill if that helps clarify?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please, that would help."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done — itemised bill sent to your registered email. Sorry for the confusion, Urmila ji."
+    }
+  ]
+}

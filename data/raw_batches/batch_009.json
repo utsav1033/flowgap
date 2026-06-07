@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_009",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, yeh Sunrise Clinic hai na? Main ek appointment book karna chahta hoon ophthalmology ke liye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan ji, yeh Sunrise Multispeciality Clinic hai. Aapka naam aur contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Suresh Bhosale. Number 9823567890 hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Theek hai Suresh ji. Dr. Manisha Rane eye specialist hain humare yahan. Is week koi bhi din chalega aapko?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Kal — matlab Budhwaar — agar ho toh."
+    },
+    {
+      "speaker": "agent",
+      "text": "Kal Budhwaar ko Dr. Rane 10 AM se 1 PM available hain. 11 AM ka slot khaali hai abhi."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect, 11 AM confirm kar do."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done! Suresh Bhosale, Budhwaar 11:00 AM, Dr. Manisha Rane. Aapko SMS aayega. Kuch aur?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahi yaar, bas. Thanks!"
+    }
+  ]
+}

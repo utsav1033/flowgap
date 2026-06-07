@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_013",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan, mujhe apna appointment cancel karna hai. Kal ka tha."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ji, zaroor. Aapka naam aur kaunse doctor ke saath appointment tha?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Rajesh Solanki. Dr. Kavitha Reddy ke saath. Kal 2 baje."
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, dekh raha hoon. Rajesh Solanki, kal 2 PM, Dr. Kavitha Reddy. Cancel karna chahte hain completely ya reschedule?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Sirf cancel. Abhi schedule nahi karunga."
+    },
+    {
+      "speaker": "agent",
+      "text": "Theek hai. Aapka appointment cancel ho gaya. Koi cancellation charge nahi hai kyunki aapne 24 ghante pehle inform kiya. Kuch aur madad chahiye?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahi, bas yahi chahiye tha. Dhanyawaad."
+    }
+  ]
+}

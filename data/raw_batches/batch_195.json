@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_195",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, I need to book a gynaecology appointment for a routine check-up. Nothing urgent, just a yearly thing."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course! For routine gynaecology, Dr. Vineeta Gokhale is excellent. She has openings next Tuesday at 10 AM and Thursday at 4 PM."
+    },
+    {
+      "speaker": "caller",
+      "text": "Thursday 4 PM is good. My name is Shruti Pawar."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ms. Pawar, your contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "9700234567."
+    },
+    {
+      "speaker": "agent",
+      "text": "Appointment confirmed — Thursday, 4 PM, Dr. Vineeta Gokhale. For a routine check-up, no special preparation is needed, though fasting for a few hours is required if you'd like blood work done during the same visit."
+    },
+    {
+      "speaker": "caller",
+      "text": "I might want to get the usual panel done. Should I fast?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we recommend fasting from midnight the night before if you'd like blood tests included. Just let the doctor know at the start of the consultation."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect, will do. Thanks!"
+    },
+    {
+      "speaker": "agent",
+      "text": "See you Thursday, Ms. Pawar. Have a great week!"
+    }
+  ]
+}

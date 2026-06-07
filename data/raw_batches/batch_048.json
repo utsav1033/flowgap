@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_048",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi there. I need to move my Saturday appointment to sometime next week. I have a family function."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course! Celebrations take priority. Name and appointment details please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Smita Parekh. Saturday 10 AM with Dr. Kavitha Reddy."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it. Dr. Reddy has openings next week on Tuesday at 11 AM and Thursday at 3 PM."
+    },
+    {
+      "speaker": "caller",
+      "text": "Tuesday 11 AM works perfectly."
+    },
+    {
+      "speaker": "agent",
+      "text": "Rescheduled! Smita Parekh, Tuesday at 11 AM with Dr. Kavitha Reddy. Enjoy your family function!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you so much, very sweet of you."
+    }
+  ]
+}

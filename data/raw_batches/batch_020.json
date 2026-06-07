@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_020",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I'm calling about Medicaid... no wait, I mean Mediassist TPA. Do you work with them?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we are listed under Medi Assist's network hospitals. You should be able to avail cashless services here."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's a relief. I've been trying to find a network hospital close to Kothrud and you guys came up."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we're conveniently located. For cashless admission, please ensure Medi Assist has issued a pre-auth approval before or at the time of admission. Our staff will coordinate directly with them."
+    },
+    {
+      "speaker": "caller",
+      "text": "What if it's an emergency? Do I still need pre-auth?"
+    },
+    {
+      "speaker": "agent",
+      "text": "For emergencies, you can be admitted without prior approval, but please ensure someone informs Medi Assist within 24 hours. Our insurance team will assist with that process."
+    },
+    {
+      "speaker": "caller",
+      "text": "Got it. Very helpful, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Happy to help! Wishing you good health."
+    }
+  ]
+}

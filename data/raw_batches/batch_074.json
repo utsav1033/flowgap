@@ -1,0 +1,32 @@
+{
+  "call_id": "BATCH_ID_074",
+  "intent": "doctor_availability_specific",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan, mujhe Dr. Suresh Nair ke baare mein puchna tha. Woh is hafte clinic mein hain?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Aap Dr. Suresh Nair ki specifically is week ki availability jaanna chahte hain?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan, mera unse appointment lena tha. Mujhe pata hai woh visiting consultant hain, toh unke specific days confirm karne the."
+    },
+    {
+      "speaker": "agent",
+      "text": "Samajh gaya. Yeh main confirm nahi kar sakta is helpline se — visiting consultants ka schedule bahut specific hota hai aur kabhi kabhi change bhi hota hai. Is ke liye hamare reception staff sabse sahi source hain."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai, unse baat karata hoon."
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan zaroor. Main aapko abhi connect karta hoon — let me connect you to our staff right away."
+    }
+  ]
+}

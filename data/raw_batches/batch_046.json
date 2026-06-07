@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_046",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I want to push my appointment. Got stuck with something at home, can't make it tomorrow."
+    },
+    {
+      "speaker": "agent",
+      "text": "No problem at all. Could I have your name and the appointment details?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Omkar Kulkarni. It was tomorrow at 11 AM with the GP."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, I see it — Omkar Kulkarni, 11 AM tomorrow with Dr. Ramesh Iyer. When would you like to reschedule?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Uh, can I do this Friday? Any time in the afternoon?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Friday afternoon has 2 PM and 4:30 PM available with Dr. Iyer. Which do you prefer?"
+    },
+    {
+      "speaker": "caller",
+      "text": "4:30 PM is better."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done! Rescheduled to Friday at 4:30 PM. You'll get an updated SMS. Anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nope, that's it. Cheers."
+    }
+  ]
+}

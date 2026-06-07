@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_062",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I wanted to know which specialities you have at your clinic. Like departments."
+    },
+    {
+      "speaker": "agent",
+      "text": "Sure! Sunrise Multispeciality Clinic has Cardiology, Orthopaedics, Neurology, Gynaecology, Paediatrics, Dermatology, ENT, Ophthalmology, Gastroenterology, Endocrinology, Psychiatry, Physiotherapy, and Radiology. We also have a full pathology lab."
+    },
+    {
+      "speaker": "caller",
+      "text": "Wow, that's quite comprehensive. Do you have a neonatal ICU?"
+    },
+    {
+      "speaker": "agent",
+      "text": "We have a NICU with 6 beds for newborn care. Our neonatologist is on call round the clock."
+    },
+    {
+      "speaker": "caller",
+      "text": "And do you handle high-risk pregnancies?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, our gynaecology team is experienced with high-risk pregnancies. Dr. Kavitha Reddy specialises in that area."
+    },
+    {
+      "speaker": "caller",
+      "text": "Very good. I'll be visiting soon. Thank you."
+    }
+  ]
+}

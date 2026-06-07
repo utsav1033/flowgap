@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_149",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, I'm trying to get an appointment for a general health checkup. Nothing specific, just an annual thing."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's a great practice! We offer comprehensive health checkup packages for adults. Dr. Mohan Gaikwad in general medicine handles these. He's available this Saturday morning."
+    },
+    {
+      "speaker": "caller",
+      "text": "Saturday works. What does the checkup include?"
+    },
+    {
+      "speaker": "agent",
+      "text": "The standard annual package includes CBC, lipid profile, blood sugar fasting, liver and kidney function tests, thyroid, ECG, chest X-ray, and a doctor consultation. It's priced at ₹2,800."
+    },
+    {
+      "speaker": "caller",
+      "text": "That sounds reasonable. Book me in. Name's Anita Narayanan, 9944556677."
+    },
+    {
+      "speaker": "agent",
+      "text": "Confirmed! Anita Narayanan, annual health checkup with Dr. Mohan Gaikwad, this Saturday. Please come fasting — no food or water for at least 8 hours before. SMS on the way."
+    },
+    {
+      "speaker": "caller",
+      "text": "Noted, thank you!"
+    }
+  ]
+}

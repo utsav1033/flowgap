@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_172",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan hello, main apni maa ke liye appointment lena chahta hoon. Unhe sugar ki problem hai — diabetes specialist chahiye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul. Aapki maa ka naam kya hai aur unki umar kitni hai?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Sunanda Kulkarni. 63 saal ki hain."
+    },
+    {
+      "speaker": "agent",
+      "text": "Theek hai. Hamare endocrinologist Dr. Priti Joshi available hain — kal dopahar 2 baje ka slot khali hai, ya phir shukravaar subah 10 baje. Kaunsa better rahega?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Kal ka, kal 2 baje."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. Unka registered number kya hai?"
+    },
+    {
+      "speaker": "caller",
+      "text": "9900112233."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done! Mrs. Sunanda Kulkarni ka appointment Dr. Priti Joshi ke saath kal 2 baje confirm ho gaya. Pichle reports aur medicines ki list saath leke aayein. SMS confirmation aayegi thodi der mein."
+    },
+    {
+      "speaker": "caller",
+      "text": "Bahut shukriya bhai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Koi baat nahin! Maa ji ka khayal rakhna."
+    }
+  ]
+}

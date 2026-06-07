@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_051",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I wanted to cancel my appointment with the physiotherapist. I've actually recovered and I don't think I need it anymore."
+    },
+    {
+      "speaker": "agent",
+      "text": "That's great to hear! Glad you're feeling better. Could I get your name to locate the appointment?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Pallavi Deshpande. It was for Thursday evening."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, Pallavi Deshpande, Thursday 6 PM with Mr. Ganesh Khot. Cancelling this?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please. And thank the team for me, they were really helpful last time."
+    },
+    {
+      "speaker": "agent",
+      "text": "Cancelled! I'll pass on your kind words. Take care and stay healthy, Pallavi!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thanks, bye."
+    }
+  ]
+}

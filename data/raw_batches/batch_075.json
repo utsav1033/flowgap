@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_075",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I need to see a gastroenterologist. I've been having acid reflux issues for months now."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm sorry to hear that. Let me help you book an appointment. Your name please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Abhijeet More. 9822334455."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you Abhijeet. Our gastroenterologist Dr. Nitin Kadam is available on Tuesday and Friday mornings. Any preference?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Friday would be better. What time?"
+    },
+    {
+      "speaker": "agent",
+      "text": "We have 9:30 AM and 11 AM on Friday."
+    },
+    {
+      "speaker": "caller",
+      "text": "9:30 AM please. Let's get it over with early."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done! Abhijeet More, Friday at 9:30 AM with Dr. Nitin Kadam. SMS on the way. See you Friday!"
+    }
+  ]
+}

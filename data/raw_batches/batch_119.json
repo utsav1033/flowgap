@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_119",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. I want to add my newborn to my health policy and also check if delivery charges at your clinic can be claimed."
+    },
+    {
+      "speaker": "agent",
+      "text": "Congratulations on your newborn! Adding a newborn to your policy is done through your insurer directly — most allow it within 90 days of birth. Please contact your insurance company for that process."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay. And the delivery charges? I delivered here last week."
+    },
+    {
+      "speaker": "agent",
+      "text": "For delivery charges, if your policy covers maternity, you'll need the original bills, discharge summary, and your health card to file a reimbursement claim. Our billing team can provide all necessary documents."
+    },
+    {
+      "speaker": "caller",
+      "text": "Can I pick up the documents today?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, please visit our billing counter with your patient ID. Documents like discharge summary and itemised bill can be provided on the same day."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect. Thank you and I'll come by today."
+    }
+  ]
+}

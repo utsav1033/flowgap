@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_112",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I want an appointment for a sports injury. I play cricket and I hurt my shoulder during practice last weekend."
+    },
+    {
+      "speaker": "agent",
+      "text": "Sorry to hear that! Our orthopaedic team handles sports injuries. May I have your name and number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Mayank Shukla. 9833445566."
+    },
+    {
+      "speaker": "agent",
+      "text": "Dr. Pramod Joshi specialises in sports-related orthopaedic injuries. He has a slot this Friday at 11 AM. Sound good?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Friday works. Should I get any scans done beforehand?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It's usually better to let Dr. Joshi examine you first and then order specific scans if needed. Bring any X-rays or reports you may have already done though."
+    },
+    {
+      "speaker": "caller",
+      "text": "I had an X-ray done locally. I'll bring it."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. Mayank Shukla, Friday 11 AM with Dr. Joshi. Get well soon and back on the pitch quickly!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haha, hope so! Thanks."
+    }
+  ]
+}

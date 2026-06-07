@@ -1,0 +1,32 @@
+{
+  "call_id": "batch_272",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan, My name is Rohit Sharma."
+    },
+    {
+      "speaker": "agent",
+      "text": "Welcome to Sunrise Multispeciality Clinic, Pune. How may I assist you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "I need help with reschedule cancel."
+    },
+    {
+      "speaker": "agent",
+      "text": "Certainly. I've handled your reschedule cancel request."
+    },
+    {
+      "speaker": "caller",
+      "text": "Great, thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome. Have a good day."
+    }
+  ]
+}

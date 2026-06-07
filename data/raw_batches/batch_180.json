@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_180",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, main appointment cancel karwana chahta hoon. I'm not feeling well enough to come today actually, ironic as that sounds."
+    },
+    {
+      "speaker": "agent",
+      "text": "Oh, please take care! Could you share your name and appointment details?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Rohit Chandra. I had a 3 PM slot with Dr. Anjali Verma today."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it. I see that appointment. I'll cancel it now. Once you're feeling better, would you like me to note a preferred time for rebooking?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Maybe next week sometime, in the morning. But I'll call back, I don't know my schedule yet."
+    },
+    {
+      "speaker": "agent",
+      "text": "Totally fine. The appointment is cancelled now. Please rest and do call us when you're ready to book again. Get well soon, Mr. Chandra!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you, take care."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_099",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. Actually I want to cancel my appointment for now and maybe book in about a month. My insurance approval is still pending."
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood, no problem at all. Name and appointment details?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Narayan Joshi. I had next Tuesday 10 AM with Dr. Vinay Kapoor."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it. Narayan Joshi, Tuesday 10 AM with Dr. Kapoor — cancelling this. Once your insurance approval comes through, just call us back and we'll rebook."
+    },
+    {
+      "speaker": "caller",
+      "text": "Will there be any priority given since I cancelled due to insurance?"
+    },
+    {
+      "speaker": "agent",
+      "text": "We'll note the reason for cancellation. While we can't guarantee priority, we'll try our best to accommodate your preferred slot when you call back."
+    },
+    {
+      "speaker": "caller",
+      "text": "Fair enough. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good luck with the insurance process. Hope it clears soon!"
+    }
+  ]
+}

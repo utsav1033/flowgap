@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_042",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Namaste. Mujhe orthopaedic doctor se milna hai. Mere kamar mein bahut dard hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Namaste ji. Zaroor help karenge. Aapka naam aur number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Savitabai Jadhav. 9823001122."
+    },
+    {
+      "speaker": "agent",
+      "text": "Shukriya Savitabai ji. Dr. Pramod Joshi orthopaedics mein hain. Kal subah 9 baje ka slot available hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Kal subah theek hai. Book kar dijiye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ho gaya. Savitabai Jadhav, kal 9:00 AM, Dr. Pramod Joshi. SMS milega confirm karne ke liye. Kuch aur?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahi, dhanyawaad."
+    }
+  ]
+}

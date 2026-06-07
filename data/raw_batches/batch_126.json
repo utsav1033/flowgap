@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_126",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, I just wanted to know what are your clinic's working hours? Like, do you work on Sundays?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Good morning! Sunrise Multispeciality Clinic is open Monday through Saturday from 8 AM to 8 PM. On Sundays we have limited hours — 9 AM to 1 PM for emergency and selected OPD services only."
+    },
+    {
+      "speaker": "caller",
+      "text": "And what about parking? Is there parking available there?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we have a dedicated parking area that can accommodate about 50 vehicles. Two-wheeler parking is free, and four-wheeler parking is charged at ₹20 per hour."
+    },
+    {
+      "speaker": "caller",
+      "text": "Alright. And where exactly are you located? I know it's in Pune but I'm not sure of the area."
+    },
+    {
+      "speaker": "agent",
+      "text": "We're located at Plot 14, Baner Road, near the Baner Gymkhana, Pune 411045. You can also find us on Google Maps by searching Sunrise Multispeciality Clinic Baner."
+    },
+    {
+      "speaker": "caller",
+      "text": "Got it, thanks a lot."
+    },
+    {
+      "speaker": "agent",
+      "text": "Anytime! Hope to see you soon."
+    }
+  ]
+}

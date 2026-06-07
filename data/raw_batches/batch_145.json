@@ -1,0 +1,32 @@
+{
+  "call_id": "BATCH_ID_145",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, umm, meri beti ka thyroid test tha yahan pe teen din pehle. Report aa gayi hai kya? Woh anxiously wait kar rahi hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Main samajh sakta hoon. Beti ka naam aur date of birth bata sakte hain?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Simran Ahuja. Date of birth 14th March 2001 hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Unfortunately I'm not able to look up or share lab report statuses or results from this line — that information is managed by our laboratory and must go through our medical staff to ensure accuracy and proper interpretation. Let me connect you to our team who can check immediately."
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan theek hai, please connect karo."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul, abhi transfer karta hoon. Please hold karein."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_138",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi there. My son needs to see a pediatrician, he's been running a fever for three days. Can I get an appointment today?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Oh, I hope he feels better soon! We have Dr. Deepa Thakur in pediatrics. She has a walk-in slot available today from 4 PM to 6 PM, or I can book a specific 4:30 PM slot for you."
+    },
+    {
+      "speaker": "caller",
+      "text": "4:30 would be great, let's do that."
+    },
+    {
+      "speaker": "agent",
+      "text": "May I get the child's name and your contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "The child is Arjun Kapoor, he's 6 years old. My number is 9712345678."
+    },
+    {
+      "speaker": "agent",
+      "text": "Booked! Arjun Kapoor with Dr. Deepa Thakur today at 4:30 PM. Please bring any previous prescriptions or vaccination records. See you soon, and I hope Arjun recovers quickly!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you, we'll be there."
+    }
+  ]
+}

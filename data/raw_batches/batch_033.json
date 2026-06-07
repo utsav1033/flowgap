@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_033",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I need a refill for my blood pressure medication. My previous prescription was from Dr. Iyer here."
+    },
+    {
+      "speaker": "agent",
+      "text": "I can help with that. May I have your name and patient ID or date of birth for verification?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Balakrishnan Nair. Date of birth 12 March 1962."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. I can see your records. Your last prescription for Amlodipine 5mg was dated about 8 weeks ago from Dr. Ramesh Iyer. Shall I send a refill request to Dr. Iyer for approval?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please. Can it be sent to the pharmacy directly?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Once Dr. Iyer approves, we can send an e-prescription to our in-house pharmacy or email it to you. Which do you prefer?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Email would be better. It's balaknair62@gmail.com."
+    },
+    {
+      "speaker": "agent",
+      "text": "Noted. The refill request will be submitted to Dr. Iyer. Once he approves, the e-prescription will be emailed to you within 24 hours. Is there anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "That's all. Thank you very much."
+    }
+  ]
+}

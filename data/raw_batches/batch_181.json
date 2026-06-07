@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_181",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Uh yeah hi. I need to see someone for — this is a bit embarrassing — I need to see a gastroenterologist. I've been having stomach issues for a month."
+    },
+    {
+      "speaker": "agent",
+      "text": "Please don't worry, these are very common concerns. Dr. Farhan Qureshi is our gastroenterologist and he's highly experienced. He's free this Thursday at 6 PM or Saturday at 11 AM."
+    },
+    {
+      "speaker": "caller",
+      "text": "Saturday works better for me."
+    },
+    {
+      "speaker": "agent",
+      "text": "Saturday at 11 AM it is. Your name and number please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Saurabh Bansal, 9123456780."
+    },
+    {
+      "speaker": "agent",
+      "text": "Confirmed! Mr. Bansal, your appointment is set for Saturday at 11 AM with Dr. Qureshi. If you have any prior reports or endoscopy results, please bring them along."
+    },
+    {
+      "speaker": "caller",
+      "text": "Sure, will do. Thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "See you Saturday. Take care!"
+    }
+  ]
+}

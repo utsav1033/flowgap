@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_111",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. I need to reschedule my DEXA scan. Got the date mixed up in my calendar."
+    },
+    {
+      "speaker": "agent",
+      "text": "No problem! Name and current appointment details?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Alka Maheshwari. It was this Monday at 8:30 AM — radiology department."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it. Next available DEXA slot is Wednesday at 9 AM or next Monday at 8:30 AM. Which suits you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Wednesday 9 AM please."
+    },
+    {
+      "speaker": "agent",
+      "text": "Rescheduled! Alka Maheshwari, Wednesday at 9:00 AM for DEXA scan. Updated confirmation will be sent. Anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "That's all. Sorry for the confusion."
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely no need to apologise! See you Wednesday."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_189",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, this is Meghna Thosar. My eye doctor referred me to an ophthalmologist for a possible retina issue. I'd like to get the earliest possible appointment."
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely, Ms. Thosar. Retinal issues are time-sensitive so we want to get you seen quickly. Dr. Vijay Parekh is our senior ophthalmologist specialising in retina. He has a cancellation slot tomorrow at 9 AM — would that work?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, absolutely! Tomorrow works perfectly."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful. Please bring your referral letter and any recent eye prescriptions or scans. Your number for confirmation?"
+    },
+    {
+      "speaker": "caller",
+      "text": "9654321087."
+    },
+    {
+      "speaker": "agent",
+      "text": "All set. Dr. Parekh at 9 AM tomorrow. You'll receive an SMS shortly. Please don't delay if you notice any sudden changes in vision before then — you can always walk in or call emergency."
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you for the quick response."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course. Take care, Ms. Thosar!"
+    }
+  ]
+}

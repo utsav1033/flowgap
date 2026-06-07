@@ -1,0 +1,42 @@
+{
+  "planted_gaps": [
+    "doctor_availability_specific",
+    "lab_reports",
+    "post_op_care"
+  ],
+  "cluster_breakdown": [
+    {
+      "cluster_id": 2,
+      "detected_label": "generation_error",
+      "size": 192,
+      "dominant_planted_intent": "insurance_tpa",
+      "dominant_fraction": 0.22,
+      "is_true_positive": false
+    },
+    {
+      "cluster_id": 3,
+      "detected_label": "generation_failure",
+      "size": 42,
+      "dominant_planted_intent": "insurance_tpa",
+      "dominant_fraction": 0.29,
+      "is_true_positive": false
+    },
+    {
+      "cluster_id": 1,
+      "detected_label": "generation_failure",
+      "size": 16,
+      "dominant_planted_intent": "billing_payment",
+      "dominant_fraction": 0.19,
+      "is_true_positive": false
+    }
+  ],
+  "matched_planted_gaps": [],
+  "true_positives": 0,
+  "false_positives": 3,
+  "false_negatives": 3,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0,
+  "planted_k": 3,
+  "detected_k": 3
+}

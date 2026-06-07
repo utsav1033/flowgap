@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_070",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Uh hello. Mera MRI ka report aana tha. Doctor ne bola tha 4-6 ghante mein milega, lekin ab 8 ghante ho gaye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Main samajhta hoon aap worried hain. Aapka naam aur MRI kab hua tha?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Dinesh Pawar. Aaj subah 10 baje hua tha."
+    },
+    {
+      "speaker": "agent",
+      "text": "Dhanyawaad Dinesh ji. Main aapko honest bolunga — MRI report ki status mujhe is system se check karna possible nahi hai. Report mein delay kisi technical ya clinical wajah se ho sakti hai, lekin yeh confirm karna radiology team ka kaam hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Toh kya main directly lab jaun?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Ya main aapko abhi hamare radiology staff se connect karta hoon — woh turant batayenge. Chalega?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan please."
+    },
+    {
+      "speaker": "agent",
+      "text": "Theek hai, please hold karein — let me connect you to our staff right away."
+    }
+  ]
+}

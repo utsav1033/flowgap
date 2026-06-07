@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_113",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. Meri anti-seizure medication ka refill chahiye. Mujhe epilepsy hai aur Doctor ne kaha tha regular lena zaroori hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul samajhta hoon — yeh medication kabhi bhi band nahi honi chahiye. Aapka naam aur doctor?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Ganesh Vaidya. Dr. Leena Verma mere neurologist hain."
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, record mein dekh raha hoon. Levetiracetam 500mg last prescribed 8 weeks ago. Main Dr. Verma ko urgent refill request bhejta hoon abhi. Anti-seizure medication mein hum delay nahi karte."
+    },
+    {
+      "speaker": "caller",
+      "text": "Dhanyawaad. Kitni jaldi milegi?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Dr. Verma zyaadatar aaj ya kal tak respond karti hain urgent cases mein. Hum aapko call karenge jaise hi approval aaye. Abhi kitne dino ki dawai bachi hai?"
+    },
+    {
+      "speaker": "caller",
+      "text": "4-5 din ki hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Theek hai, koi dikkat nahi. Request urgent mark ho gayi. Hum aaj shaam tak contact karenge aapko."
+    }
+  ]
+}

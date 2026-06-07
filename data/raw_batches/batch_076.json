@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_076",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan, mere liye rheumatology appointment chahiye. Joint pain hai mujhe kaafi time se."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ji zaroor. Aapka naam aur contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Padmavathi Rao. 9700112233."
+    },
+    {
+      "speaker": "agent",
+      "text": "Shukriya Padmavathi ji. Humare rheumatologist Dr. Sanjay Wadekar hain. Woh har Somvaar aur Guruwar ko clinic mein hote hain. Kab aana chahenge?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Guruwar theek hai. Dopahar ke baad koi slot hai?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Guruwar 3 PM aur 4:30 PM available hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "3 baje book kar dijiye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ho gaya! Padmavathi Rao, Guruwar 3:00 PM, Dr. Sanjay Wadekar. SMS confirm hoga. Theek ho jaiye jaldi!"
+    }
+  ]
+}

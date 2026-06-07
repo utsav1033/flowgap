@@ -1,0 +1,32 @@
+{
+  "call_id": "BATCH_ID_178",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, my name is Tanvi Agarwal. I had a thyroid test done on Friday and the doctor said results would come in 48 hours but it's been 5 days now."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm sorry for the delay, Ms. Agarwal. That must be frustrating especially when you're waiting for results."
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, very. I just want to know if they're ready."
+    },
+    {
+      "speaker": "agent",
+      "text": "Completely understandable. Unfortunately, I don't have direct access to the laboratory systems to check the status of individual reports from this line. I wouldn't want to give you a wrong update on something important. Let me transfer you to our lab team right away — they'll be able to tell you exactly where things stand."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay please, yes do that."
+    },
+    {
+      "speaker": "agent",
+      "text": "Connecting you to our laboratory staff now. Thank you for your patience, Ms. Agarwal."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+clinic:
+  name: "Sunrise Multispeciality Clinic"
+  city: "Pune"
+  languages: ["english", "hindi", "hinglish"]
+
+# Generation knobs — these create the diversity clustering needs to be meaningful
+generation:
+  total_calls: 400
+  code_switch_ratio: 0.35      # fraction of calls that mix Hindi-English
+  disfluency: true             # "umm", "haan", "actually", self-corrections
+  turns_per_call: [4, 12]      # min/max conversational turns
+  temperature: 0.9             # keep high so same intent is phrased many ways
+  paraphrase_intents: true     # force varied wording for the same need
+
+# 6 handled intents (~88%) + 3 planted gaps (~12%)
+intents:
+  - id: book_appointment
+    weight: 28
+    handled: true
+    resolves: true
+  - id: reschedule_cancel
+    weight: 14
+    handled: true
+    resolves: true
+  - id: insurance_tpa
+    weight: 14
+    handled: true
+    resolves: true
+  - id: billing_payment
+    weight: 12
+    handled: true
+    resolves: true
+  - id: clinic_info            # timings, address, directions
+    weight: 12
+    handled: true
+    resolves: true
+  - id: prescription_refill
+    weight: 8
+    handled: true
+    resolves: true
+
+  # --- PLANTED GAPS: no node exists, must end in transfer_to_human ---
+  - id: lab_reports            # "can I get my blood test report"
+    weight: 5
+    handled: false
+    ends_in_transfer: true
+  - id: post_op_care           # post-surgery care question (also brushes 'no medical advice')
+    weight: 4
+    handled: false
+    ends_in_transfer: true
+  - id: doctor_availability_specific  # "which days does Dr. Mehta come?"
+    weight: 3
+    handled: false
+    ends_in_transfer: true

@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_136",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Good evening. I need to see a neurologist. I've been having frequent headaches for the past month."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good evening! We have Dr. Kiran Bhosale in our neurology department. He has availability this week on Wednesday evening and next Monday morning. Any preference?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Monday morning would suit me better. What time?"
+    },
+    {
+      "speaker": "agent",
+      "text": "9:30 AM on Monday is open. Shall I book that for you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please. I'm Farhan Shaikh, my number is 9867001122."
+    },
+    {
+      "speaker": "agent",
+      "text": "Appointment confirmed for Mr. Farhan Shaikh with Dr. Kiran Bhosale, Monday at 9:30 AM. Please bring any previous reports or scans if you have them. Confirmation SMS will be sent shortly."
+    },
+    {
+      "speaker": "caller",
+      "text": "Sure, will do. Thanks a lot."
+    }
+  ]
+}

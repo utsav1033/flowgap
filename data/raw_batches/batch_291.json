@@ -1,0 +1,32 @@
+{
+  "call_id": "batch_291",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "My name is Vikas Nair."
+    },
+    {
+      "speaker": "agent",
+      "text": "Welcome to Sunrise Multispeciality Clinic, Pune. How may I assist you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "I need help with clinic info."
+    },
+    {
+      "speaker": "agent",
+      "text": "Certainly. I've handled your clinic info request."
+    },
+    {
+      "speaker": "caller",
+      "text": "Great, thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome. Have a good day."
+    }
+  ]
+}

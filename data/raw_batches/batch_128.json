@@ -1,0 +1,32 @@
+{
+  "call_id": "BATCH_ID_128",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, my mother had a knee replacement surgery at your clinic about ten days ago. She's having some swelling near the incision site and I'm a bit worried."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand your concern. Could you tell me your mother's name and her treating doctor?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Her name is Sarla Mehta. The surgery was done by Dr. Anand Joshi."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Post-operative concerns like swelling really need to be reviewed by our clinical team or the treating surgeon directly. I don't have the ability to advise on that from this line. Let me transfer you to our nursing staff who can assess this properly and get Dr. Joshi's team involved if needed."
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please, please transfer quickly, I'm very worried."
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely, please hold — I'm connecting you to our staff right now. They'll take care of you."
+    }
+  ]
+}

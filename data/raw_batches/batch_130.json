@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_130",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, umm, I have a mediclaim policy through my company — it's United India Insurance. Does your hospital accept it?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Good afternoon! Yes, Sunrise Multispeciality Clinic is empanelled with United India Insurance. We process both cashless and reimbursement claims for their corporate policies."
+    },
+    {
+      "speaker": "caller",
+      "text": "Oh good. My policy has a sub-limit on room rent. Will that be a problem?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It can affect your final settlement if the room you choose exceeds the sub-limit, as proportionate deductions may apply. I'd suggest confirming your exact room rent limit from your HR or the insurer before admission, so we can assign an appropriate room."
+    },
+    {
+      "speaker": "caller",
+      "text": "That makes sense. And who do I contact at the clinic for the pre-auth process?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Our TPA coordinator, Ms. Sunita, handles all pre-authorization. You can reach the TPA desk directly at extension 204, or just walk in to the ground floor billing area. They're available 9 AM to 6 PM on weekdays."
+    },
+    {
+      "speaker": "caller",
+      "text": "Wonderful, thank you very much."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course! Wishing you a smooth experience. Feel free to call anytime."
+    }
+  ]
+}

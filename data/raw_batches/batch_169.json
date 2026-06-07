@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_169",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, mujhe apni medicines ka refill chahiye tha. Main Dr. Sinha ka patient hoon."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ji zaroor. Aapka naam aur registered mobile number bata sakte hain?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan, Mahesh Tiwari. Number hai 9765432100."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you Mr. Tiwari. Main aapka record dekh raha hoon... Dr. Sinha ne last month Metformin aur Atorvastatin prescribe ki thi. Kya inhi ka refill chahiye?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan haan, yehi dono. Kab mil sakti hain?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Main Dr. Sinha ke paas refill request bhej deta hoon. Approval ke baad hum aapko call karenge — usually 24 ghante mein hota hai. Pharmacy se aap directly le sakte hain ya home delivery bhi available hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Achha theek hai. Home delivery prefer karunga."
+    },
+    {
+      "speaker": "agent",
+      "text": "Note kar liya. Confirmation SMS aayegi jab prescription ready hogi. Koi aur help chahiye?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahin, bas itna hi. Shukriya."
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapka swagat hai, Mr. Tiwari!"
+    }
+  ]
+}

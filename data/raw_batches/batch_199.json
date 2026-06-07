@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_199",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, umm, I'm a bit anxious about this but I think I need a mental health consultation. Do you have a psychiatrist?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we do, and please don't hesitate — reaching out is an important step. Dr. Radhika Menon is our psychiatrist and she's very compassionate. Her next available slot is Wednesday at 3 PM."
+    },
+    {
+      "speaker": "caller",
+      "text": "Wednesday at 3... yeah, okay. I can do that."
+    },
+    {
+      "speaker": "agent",
+      "text": "Your name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "I'd rather not say on the phone if that's okay. Is that possible?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course, absolutely. I'll book the slot and you can share your name at registration when you arrive. I'll just note a contact number for a reminder."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay. 9922334455."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done. Wednesday at 3 PM with Dr. Menon. All your information is kept strictly confidential. We'll send a reminder to this number. You're doing the right thing by calling."
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you. That means a lot."
+    },
+    {
+      "speaker": "agent",
+      "text": "We'll see you Wednesday. Please take care of yourself."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_089",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi there. I need to see a urologist. My husband has been having some trouble, uh, you know... kidney stone suspicion."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course, I understand. Let me help you book. What's your husband's name and a contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Vishal Phule. 9854321678."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Our urologist Dr. Kishore Jog is available Wednesday at 10 AM and Friday at 3 PM. Any preference?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Wednesday 10 AM. Let's go early."
+    },
+    {
+      "speaker": "agent",
+      "text": "Booked! Vishal Phule, Wednesday at 10:00 AM with Dr. Kishore Jog. If he has any recent ultrasound reports please bring those along."
+    },
+    {
+      "speaker": "caller",
+      "text": "He does have one. Will bring it. Thank you."
+    }
+  ]
+}

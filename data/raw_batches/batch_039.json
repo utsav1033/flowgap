@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_039",
+  "intent": "doctor_availability_specific",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I wanted to know specifically about Dr. Arvind Mehta. Is he available this week? He's a gastroenterologist I think."
+    },
+    {
+      "speaker": "agent",
+      "text": "I appreciate you reaching out. Could I confirm — you're looking for Dr. Arvind Mehta's schedule specifically?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, exactly. Not just any gastro doctor, I need to see him. I've seen him before."
+    },
+    {
+      "speaker": "agent",
+      "text": "I completely understand that you'd prefer Dr. Mehta specifically. However, I don't have visibility into individual doctors' detailed schedules — especially for queries about a specific named physician's availability and leave status. This needs to be confirmed by our front desk team."
+    },
+    {
+      "speaker": "caller",
+      "text": "Oh okay. Can they tell me?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely. They'll have full access to Dr. Mehta's current schedule. Let me connect you to our staff who can help you right away."
+    },
+    {
+      "speaker": "caller",
+      "text": "Sure, thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Please hold — connecting you to our staff now."
+    }
+  ]
+}

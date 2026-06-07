@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_143",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I want to meet a gastrologist, or, uh, gastroenterologist I think it's called. Having stomach issues for a while."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, gastroenterologist — and we have Dr. Leela Nambiar in that department. She's available on Tuesdays and Thursdays. Do you have a preference?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thursday is better. Any slot in the afternoon?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Thursday 2:30 PM is available. Shall I go ahead?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, please. My name is Santosh Biswas and my contact number is 9876543211."
+    },
+    {
+      "speaker": "agent",
+      "text": "Confirmed, Mr. Biswas! Your appointment with Dr. Leela Nambiar is this Thursday at 2:30 PM. Please avoid heavy meals before the consultation. Confirmation SMS on its way."
+    },
+    {
+      "speaker": "caller",
+      "text": "Noted. Thanks."
+    }
+  ]
+}

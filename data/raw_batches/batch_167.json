@@ -1,0 +1,32 @@
+{
+  "call_id": "BATCH_ID_167",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, my husband had an appendix operation at your clinic four days back and he's been having some swelling near the wound. I'm not sure if it's normal or not."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand that must be worrying. What's the patient's name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Deepak Joshi."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ms. Joshi, post-operative wound queries really need to be assessed by the treating surgeon or our nursing staff, as I wouldn't be in a position to advise medically on this. I don't want to give you incorrect information about something this sensitive. Let me transfer you to our post-operative care team right away — they'll be able to tell you if this requires attention."
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please, I've been worried since morning."
+    },
+    {
+      "speaker": "agent",
+      "text": "Completely understandable. Connecting you now to our ward staff. Please hold the line."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_109",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Good morning. I need to book two back to back appointments — one for me and one for my daughter. Same department, paediatrics and... uh, one for me in general medicine."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good morning! Of course. Let me start with yours. Your name and number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Meenakshi Iyer. 9700112345."
+    },
+    {
+      "speaker": "agent",
+      "text": "And your daughter's name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Kavya Iyer. She's 7."
+    },
+    {
+      "speaker": "agent",
+      "text": "For you with Dr. Ramesh Iyer in general medicine — 10 AM tomorrow. For Kavya with Dr. Anita Saraf paediatrics — 10:30 AM same day. That way you can finish both in one trip."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's so thoughtful! Yes, please book both."
+    },
+    {
+      "speaker": "agent",
+      "text": "Both confirmed — Meenakshi Iyer 10 AM and Kavya Iyer 10:30 AM tomorrow. Two SMS confirmations coming. Anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that's perfect. Thank you!"
+    }
+  ]
+}

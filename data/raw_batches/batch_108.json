@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_108",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I want to know — do you offer any senior citizen discounts on consultations?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes! We have a 15% concession on consultation fees for senior citizens above the age of 65."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's kind. And for diagnostics and lab tests?"
+    },
+    {
+      "speaker": "agent",
+      "text": "For lab tests there's a 10% senior citizen discount on our standard price list. Some packages already have discounted rates inclusive."
+    },
+    {
+      "speaker": "caller",
+      "text": "What ID proof is needed to avail this?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Any government-issued ID showing your date of birth — Aadhaar, PAN, voter ID, or senior citizen card — is acceptable at the billing counter."
+    },
+    {
+      "speaker": "caller",
+      "text": "Very considerate. Thank you."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_177",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, mera naam Vikram Shetty hai. Main puchna chahta hoon ki Medi Assist TPA mein mere appendix ke operation ka coverage milega?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan Mr. Shetty, Medi Assist hamare empanelled TPAs mein se ek hai. Appendectomy generally covered hoti hai surgical policies mein."
+    },
+    {
+      "speaker": "caller",
+      "text": "Achha. Cashless milega ya reimbursement?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hum cashless facility provide karte hain Medi Assist ke liye. Aapko bas admission se pehle pre-auth leni hogi. Iske liye surgeon ka estimate aur current reports chahiye honge."
+    },
+    {
+      "speaker": "caller",
+      "text": "Aur room rent ka kya — koi limit hai?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Room rent limits aapki specific policy par depend karti hain. Yeh detail aapke insurance card ya policy document mein hogi. Admission ke waqt humare TPA desk wale exact covered amount bata sakte hain."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai samajh gaya. Bahut helpful tha, thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bahut shukriya Mr. Shetty. Jaldi se theek ho jaayein!"
+    }
+  ]
+}

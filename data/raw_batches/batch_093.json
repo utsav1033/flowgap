@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_093",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. My company's accounts department needs a formal receipt with our company name and GST number on it. Can you issue that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we can issue a corporate GST invoice. Could I have the invoice number, your company name and GSTIN?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Invoice SNC-2024-11203. Company is Zenith Tech Solutions. GSTIN is 27AAACZ1234F1Z5."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got that. I'll pass this to our billing team. The revised invoice with your company name and GSTIN will be emailed within one business day. What email should we use?"
+    },
+    {
+      "speaker": "caller",
+      "text": "accounts@zenithtech.in please."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done. GST invoice will go to accounts@zenithtech.in by tomorrow. Anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "That's all. Thanks."
+    }
+  ]
+}

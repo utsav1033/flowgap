@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_049",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. My name is Prakash Datar. I had a scan appointment — uh, MRI — for this morning but I missed it. Can I reschedule?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello Prakash ji. No worries. Let me check... yes, I see the MRI slot from this morning. We can reschedule that. Are you available this week still?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Ideally Thursday or Friday. Mornings preferred."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thursday morning at 9:30 AM is open in the radiology department. Shall I book that?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please, Thursday 9:30 AM."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done. Prakash Datar, Thursday at 9:30 AM for the MRI. Please remember to follow any fasting or prep guidelines mentioned earlier. SMS on its way."
+    },
+    {
+      "speaker": "caller",
+      "text": "Noted. Thanks a lot."
+    }
+  ]
+}

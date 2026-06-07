@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_080",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, do you have an ICU at Sunrise? I'm asking because my father might need to be admitted soon."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we have a fully equipped ICU with 12 beds and round-the-clock intensivist coverage. We also have a Cardiac Care Unit adjacent to it."
+    },
+    {
+      "speaker": "caller",
+      "text": "Is the ICU private or general? Can family visit?"
+    },
+    {
+      "speaker": "agent",
+      "text": "We have both general and private ICU rooms. Family visits are allowed during designated hours — typically 12 PM to 1 PM and 5 PM to 6 PM — to maintain sterile conditions."
+    },
+    {
+      "speaker": "caller",
+      "text": "And what's the daily cost approximately?"
+    },
+    {
+      "speaker": "agent",
+      "text": "ICU charges vary based on the type of room and care required. General ICU starts at around 4,500 rupees per day and private ICU from 7,500 rupees. Our admissions team can give you a detailed estimate based on your father's specific condition."
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you. I'll be in touch soon."
+    }
+  ]
+}

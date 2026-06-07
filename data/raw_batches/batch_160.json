@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_160",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, umm, my mother needs a urology consultation. She's 68 and having some urinary issues. Can I book for her?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course, you can book on her behalf. We have Dr. Sanjay Pawar in urology. He's available Wednesday at 2 PM and Friday at 10 AM. Which works for your mother?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Wednesday is fine. She's slow to move so we'll need a bit of time."
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely understood. Wednesday 2 PM with Dr. Sanjay Pawar. I'll note that mobility assistance may be needed. Her name and your contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Her name is Sulochana Patil. My number is 9845678900."
+    },
+    {
+      "speaker": "agent",
+      "text": "Booked. Sulochana Patil with Dr. Sanjay Pawar, Wednesday at 2 PM. Wheelchair assistance will be arranged at the entrance — just let the reception know when you arrive. Confirmation SMS coming to your number."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's so thoughtful, thank you very much."
+    },
+    {
+      "speaker": "agent",
+      "text": "It's our pleasure. We'll take good care of her!"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_115",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I was given a cashback offer by your front desk last visit — something about a loyalty programme. I didn't get any cashback. Who do I contact?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm sorry for the confusion. Could I get your name and visit date?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Rohini Apte. Last visit was 3rd of this month."
+    },
+    {
+      "speaker": "agent",
+      "text": "Let me check the loyalty programme record... I can see your visit but the cashback credit hasn't been applied. I'll flag this to our billing and patient relations team today. They'll review and credit it within 3 working days."
+    },
+    {
+      "speaker": "caller",
+      "text": "How will I receive the credit?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It'll be credited to your loyalty wallet in our app, which you can use on your next visit. If you're not on the app, I can request they process it as a direct discount on your next bill."
+    },
+    {
+      "speaker": "caller",
+      "text": "I'm on the app. Wallet credit is fine."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. Escalated. You'll be notified when the credit is added. Sorry for the delay, Rohini ji!"
+    }
+  ]
+}

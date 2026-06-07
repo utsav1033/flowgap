@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_081",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I want to consult a pulmonologist. I've been coughing for weeks and two antibiotics courses haven't helped."
+    },
+    {
+      "speaker": "agent",
+      "text": "That sounds frustrating. Let's get you an appointment. Your name and number please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Dhruv Chitale. 9867123456."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you Dhruv. Dr. Amol Sawant is our pulmonologist. He's available this Thursday and next Monday."
+    },
+    {
+      "speaker": "caller",
+      "text": "Thursday please. Earliest slot?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Thursday 9 AM is the first slot. Confirmed for Dhruv Chitale with Dr. Amol Sawant. SMS coming your way. Hope you feel better soon!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thanks. Can I bring previous X-rays?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely, please bring any previous chest X-rays or CT scans and prescriptions. It'll help Dr. Sawant get a full picture."
+    },
+    {
+      "speaker": "caller",
+      "text": "Will do. Thank you."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_064",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Good morning. I just wanted to confirm — do you have a visiting consultant system or are all your doctors full time?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Good morning! We have a mix. Several specialists like our cardiologist, neurologist, and gynaecologist are visiting consultants with fixed clinic days. Our general physician and emergency team are full-time."
+    },
+    {
+      "speaker": "caller",
+      "text": "So how do I know when a specific doctor is available?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can call us and we'll check the schedule for any specific doctor. We'll let you know their available days and times before you book."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay. And do doctors run on time or is there usually a long wait?"
+    },
+    {
+      "speaker": "agent",
+      "text": "We do our best to keep appointments on time. Average wait is 10-15 minutes. For very popular specialists like cardiology, it can sometimes be 20-25 minutes, but our staff will keep you informed."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's acceptable. Good to know. Thank you."
+    }
+  ]
+}

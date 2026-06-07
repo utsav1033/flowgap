@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_186",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, my employer has Paramount Health TPA. Just wanted to confirm before I come in for a check-up — is it accepted?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Let me check... Yes, Paramount Health TPA is on our approved panel. You can use it for OPD as well as in-patient procedures."
+    },
+    {
+      "speaker": "caller",
+      "text": "Oh nice. For OPD do I need any pre-approval?"
+    },
+    {
+      "speaker": "agent",
+      "text": "For routine OPD consultations, most Paramount plans don't require pre-approval. Just show your TPA card and a valid photo ID at the front desk. The consultant charges will be billed directly."
+    },
+    {
+      "speaker": "caller",
+      "text": "What if I need a diagnostic test like a blood test or X-ray?"
+    },
+    {
+      "speaker": "agent",
+      "text": "For diagnostics ordered during your OPD visit, those are typically covered under the same cashless arrangement. Just make sure the doctor's prescription is stamped and the lab request goes through our in-house diagnostics wing."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect. I'll come by Thursday then."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful, we'll see you Thursday. Is there anything else I can help with?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, all good. Thanks so much."
+    },
+    {
+      "speaker": "agent",
+      "text": "Take care!"
+    }
+  ]
+}

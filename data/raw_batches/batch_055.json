@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_055",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, mere employer ne Religare Health — matlab Care Health ka naam tha pehle — policy di hai. Aapke yahan chalti hai?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan ji, Care Health Insurance — jo pehle Religare Health tha — humare empanelled insurers mein hai. Cashless available hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Main maternity ke liye aana chahti hoon. Yeh cover hoga?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Maternity cover Care Health ki kuch policies mein hota hai, lekin usually 2-4 saal ka waiting period hota hai. Aapki policy kitne saal purani hai?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Abhi 3 saal ho gaye hain."
+    },
+    {
+      "speaker": "agent",
+      "text": "Toh aap eligible ho sakti hain. Please apni policy document mein maternity clause check karein ya Care Health ke helpline pe confirm kar lein. Baaki process ke liye hamare insurance desk se mil sakti hain."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai, bahut acha. Shukriya."
+    }
+  ]
+}

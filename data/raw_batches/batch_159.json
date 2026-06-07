@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_159",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan, hello. Main appointment cancel karna chahta hoon. Actually main bahar hun out of town, wapas aa nahi sakta."
+    },
+    {
+      "speaker": "agent",
+      "text": "Koi baat nahi. Aapka naam aur registered number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Devendra Pawar. 9822334455."
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapki appointment Dr. Hemant Shirke ke saath, kal dono baje ki hai. Cancel karni hai ya shift karni hai?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Shift karo, uh, agli week Friday ko same time rakh sako toh."
+    },
+    {
+      "speaker": "agent",
+      "text": "Friday next week, 2 PM — Dr. Shirke available hain. Confirm karta hoon?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan, confirm karo."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ho gayi reschedule! Friday agle hafte, 2 PM, Dr. Hemant Shirke ke saath. SMS aa jayega. Aap jaldi wapas aana!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haha, shukriya."
+    }
+  ]
+}

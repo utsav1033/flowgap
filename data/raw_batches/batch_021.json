@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_021",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, I want to know if HDFC ERGO health insurance is accepted at your clinic."
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Yes, HDFC ERGO is one of the insurers we're tied up with. Both cashless and reimbursement claims are supported."
+    },
+    {
+      "speaker": "caller",
+      "text": "I want to go the cashless route. My procedure is a knee replacement. Is that covered usually?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Knee replacement is typically covered under most HDFC ERGO comprehensive plans, subject to your sum insured and waiting period clauses. I'd recommend checking your policy document or calling HDFC ERGO to confirm your specific coverage."
+    },
+    {
+      "speaker": "caller",
+      "text": "Right, right. And your insurance desk — when can I visit?"
+    },
+    {
+      "speaker": "agent",
+      "text": "The insurance desk is open Monday to Saturday, 9 AM to 5 PM. You can also call ahead and we'll have someone ready to assist you."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect. I'll come by this week. Thank you."
+    }
+  ]
+}

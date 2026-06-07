@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_100",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. Mujhe ek dietitian se milna hai. Apna weight manage karna chahta hoon properly."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bahut acha decision! Humare paas registered dietitian Ms. Pooja Tarte hain. Aapka naam aur number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Sameer Kadam. 9700998877."
+    },
+    {
+      "speaker": "agent",
+      "text": "Shukriya Sameer ji. Ms. Tarte Somvaar, Budhwaar aur Shanivar ko available hoti hain. Kab aana chahenge?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Shanivar subah agar ho toh."
+    },
+    {
+      "speaker": "agent",
+      "text": "Shanivar 10 AM ka slot hai. Book kar doon?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan, kar dijiye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done! Sameer Kadam, Shanivar 10 AM, Ms. Pooja Tarte. SMS confirmation aayega. Best of luck with your health journey!"
+    }
+  ]
+}

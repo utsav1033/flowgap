@@ -1,0 +1,56 @@
+{
+  "call_id": "BATCH_ID_001",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, uh, is this Sunrise Multispeciality Clinic?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, good morning! You've reached Sunrise Multispeciality Clinic, Pune. How may I assist you today?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan, so I need to book an appointment. For my mother actually. She's been having some knee pain for the past few weeks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course. I can help with that. Could I get your mother's name and her contact number please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Her name is Sunita Deshmukh. And the number is... umm, 9823041567. That's her mobile."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. For knee-related concerns we'd recommend our orthopaedics department. Dr. Pramod Joshi is available this Thursday and Friday. Do either of those work?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thursday would be better. What time slots are there?"
+    },
+    {
+      "speaker": "agent",
+      "text": "We have 10:30 AM and 3:00 PM available on Thursday."
+    },
+    {
+      "speaker": "caller",
+      "text": "3 PM is fine. Let's go with that."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. I've booked an appointment for Sunita Deshmukh with Dr. Pramod Joshi on Thursday at 3:00 PM. You'll receive a confirmation SMS shortly. Is there anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that's all. Thank you so much."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome. Have a good day!"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "call_id": "batch_232",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, uh, I need some help."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for calling Sunrise Multispeciality Clinic, Pune. How may I assist you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "I'm calling regarding clinic info."
+    },
+    {
+      "speaker": "agent",
+      "text": "Sure, I can help with that request."
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Your request has been completed successfully."
+    }
+  ]
+}

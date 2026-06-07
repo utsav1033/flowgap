@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_085",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. My mother had eye surgery — cataract — 5 days ago at your clinic. The eye patch was removed yesterday and her vision is very blurry. Is that normal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I can understand your worry. Could you give me her name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Kamala Nair."
+    },
+    {
+      "speaker": "agent",
+      "text": "Post-cataract blurry vision on day 5 can have various causes and really requires assessment by the ophthalmologist rather than a general helpline response from me. I'd be doing a disservice to guess."
+    },
+    {
+      "speaker": "caller",
+      "text": "Should we rush to emergency?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Please don't decide based on what I say — our ophthalmic team or nursing staff are far better placed to advise. Let me connect you to our staff right now so they can assess urgency."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, please do that now."
+    },
+    {
+      "speaker": "agent",
+      "text": "Connecting immediately — please hold for our staff."
+    }
+  ]
+}

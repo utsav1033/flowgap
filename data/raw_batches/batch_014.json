@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_014",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, I have an appointment this evening with your neurologist but I'm not going to be able to make it. Can we move it?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course, I understand. May I have your name and registered number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Siddharth Naik. 9867452301."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. I can see your 5 PM appointment with Dr. Leena Verma. When would you like to reschedule?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Umm, is next Saturday possible? Preferably morning."
+    },
+    {
+      "speaker": "agent",
+      "text": "Dr. Verma unfortunately doesn't hold clinic on Saturdays. The next available slots are next Monday at 9 AM or Thursday at 4 PM."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, Thursday 4 PM then."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. Rescheduled for Siddharth Naik, Thursday at 4 PM with Dr. Leena Verma. You'll receive an updated SMS. Is there anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that's fine. Thank you."
+    }
+  ]
+}

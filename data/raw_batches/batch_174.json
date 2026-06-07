@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_174",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, uh, I need to reschedule my appointment. I have one this Friday but I have a work conflict."
+    },
+    {
+      "speaker": "agent",
+      "text": "No problem at all. Can I get your name and which doctor the appointment is with?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Ananya Rao, and it's with Dr. Priti Joshi."
+    },
+    {
+      "speaker": "agent",
+      "text": "Found it — Friday 12 PM with Dr. Joshi. What dates or times would work better for you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Anytime next week, preferably morning. Monday or Tuesday maybe?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Dr. Joshi has a slot on Tuesday at 9:30 AM. Shall I move your appointment there?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, perfect!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Done! Your appointment has been rescheduled to Tuesday at 9:30 AM with Dr. Joshi. You'll get a confirmation SMS. Is there anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that's it. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome, Ms. Rao. See you Tuesday!"
+    }
+  ]
+}

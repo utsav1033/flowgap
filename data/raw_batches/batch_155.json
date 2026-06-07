@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_155",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan hello. Mujhe ek psychiatrist se milna hai. Pehle kabhi nahi gaya, so, uh, thoda nervous hoon."
+    },
+    {
+      "speaker": "agent",
+      "text": "Main samajhta hoon, aur yeh bahut brave step hai ki aap reach out kar rahe hain. Hamare paas Dr. Sangeeta Reddy hain, jo bahut compassionate aur experienced hain. Aapko comfortable feel karana unki priority hoti hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai. Kab available hain woh?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Dr. Reddy Thursday ko 3 PM se 6 PM aur Saturday ko 10 AM se 1 PM available hain. Aapke liye kaun sa din sahi rahega?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Saturday 10 AM rakh do. Naam hai mera Aryan Oberoi, number 9811234560."
+    },
+    {
+      "speaker": "agent",
+      "text": "Confirmed, Aryan. Dr. Sangeeta Reddy ke saath, Saturday 10 AM. Yaad rakhein — pehli meeting mein sirf conversation hoti hai, koi pressure nahi. SMS aayega aapke paas."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, thank you. That helps."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bahut acha kiya. Khyaal rakhein apna."
+    }
+  ]
+}

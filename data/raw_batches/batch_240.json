@@ -1,0 +1,32 @@
+{
+  "call_id": "batch_240",
+  "intent": "doctor_availability_specific",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, uh, I need some help."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for calling Sunrise Multispeciality Clinic, Pune. How may I assist you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "I'm calling regarding doctor availability specific."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm sorry, I can't access that information."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, can someone else help?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I can't help with that, let me connect you to our staff."
+    }
+  ]
+}

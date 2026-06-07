@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_173",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. Can I make a payment over the phone for my outstanding bill?"
+    },
+    {
+      "speaker": "agent",
+      "text": "We don't process card payments directly over the phone for security reasons, but there are a few easy options. May I know your name first?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yusuf Merchant."
+    },
+    {
+      "speaker": "agent",
+      "text": "Mr. Merchant, you can pay via UPI — just send the amount to our UPI ID sunriseclinic@axisbank — or through our patient portal where you log in with your registered mobile number. You can also pay in person at our billing counter."
+    },
+    {
+      "speaker": "caller",
+      "text": "The UPI option works. What's the amount due?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Let me check... Your outstanding balance is ₹4,250 for the OPD visit on the 8th. Once you make the payment, WhatsApp a screenshot to 9876543200 and we'll send a digital receipt."
+    },
+    {
+      "speaker": "caller",
+      "text": "Simple enough. I'll do it right now."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful. Do reach out if the payment doesn't reflect within 24 hours. Have a good day, Mr. Merchant!"
+    }
+  ]
+}

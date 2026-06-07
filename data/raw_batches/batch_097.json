@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_097",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan hello. Mujhe ek urgent appointment chahiye. Mera BP bahut high aa raha hai — 180/110. Kya aaj mil sakta hai?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Ji yeh serious hai. Aaj ke liye emergency slot available hai. Aapka naam aur number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Bharat Sawant. 9823456710."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bharat ji, please aaj dopahar 2 baje aa jaiye. Dr. Ramesh Iyer aapko dekh lenge. Agar BP aur badhe ya chest pain, numbness jaise symptoms aaye toh seedha emergency mein aana."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai, aata hoon. Koi medicines lena chahiye abhi?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Main medical advice nahi de sakta, lekin please apni purani BP medicines agar hain toh saath laayein. Doctor decide karenge. Jaldi aaiye."
+    },
+    {
+      "speaker": "caller",
+      "text": "Shukriya, aa raha hoon."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_148",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. Mujhe yeh confirm karna tha ki mera insurance se jo amount settle hua, usske baad balance kya bacha hai mujhe pay karna."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul. Aapka naam aur patient ID please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Arun Gokhale. Patient ID P-zero-zero-seven-eight-nine."
+    },
+    {
+      "speaker": "agent",
+      "text": "Mr. Gokhale, aapke records dekhta hoon. Total bill tha ₹38,500. HDFC Ergo ne ₹31,200 settle kar diya hai. Aapka outstanding balance ₹7,300 hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai. Main UPI se pay kar sakta hoon abhi?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan bilkul. Payment link bhej deta hoon aapke registered number pe. Complete karne ke baad receipt SMS pe aayega."
+    },
+    {
+      "speaker": "caller",
+      "text": "Done, paid. Message aa gaya."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bahut acha! Aapka account fully cleared ho gaya hai. Koi aur sawaal?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahi, shukriya."
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapka swagat hai, Mr. Gokhale!"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_022",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, mere paas New India Assurance ki policy hai. Kya aap cashless dete hain unke under?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, New India Assurance ke saath hum empanelled hain. Cashless facility available hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Mujhe CT scan karana hai. Yeh cover hoga?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Diagnostic scans jaise CT scan generally cover hote hain, lekin yeh depend karta hai aapki policy ke terms pe. Doctor ka prescription hona zaroori hai claim ke liye."
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan, mere paas hai prescription. Kab aa sakta hoon?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Aap weekdays mein anytime aa sakte hain. Scanning department subah 8 baje se shuru hoti hai. Pehle apna insurance card aur prescription lekar reception pe aaiye."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai. Kal aata hoon. Shukriya."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul, kal milte hain!"
+    }
+  ]
+}

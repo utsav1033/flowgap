@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_188",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, main receipt maangna chahta hoon apne treatment ki. Mujhe income tax ke liye chahiye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul, main help kar sakta hoon. Aapka naam aur registered mobile number bataiye."
+    },
+    {
+      "speaker": "caller",
+      "text": "Main Nandkumar Joshi. Number 9876001122."
+    },
+    {
+      "speaker": "agent",
+      "text": "Mr. Joshi, main aapka record dekh raha hoon. Aapne is financial year mein total ₹31,400 ki services li hain. Consolidated receipt chahiye ya itemized?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Itemized better hogi, income tax ke liye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Theek hai. Main aapki registered email par itemized receipt bhej deta hoon — aath se dus minute mein aa jaayegi. Kya email sahi hai jo record mein hai?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan wahi theek hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done. Agar receipt 15 minute mein na aaye toh dobara call karein. Koi aur help?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahin, bas itna hi. Shukriya."
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapka swagat hai, Mr. Joshi!"
+    }
+  ]
+}

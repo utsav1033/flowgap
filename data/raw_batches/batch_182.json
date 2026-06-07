@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_182",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Good morning. I want to know if you have an MRI machine on site or if patients are sent somewhere else."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good morning! We have a fully functional 1.5 Tesla MRI machine in our radiology department. Scans can typically be scheduled within 1 to 2 days."
+    },
+    {
+      "speaker": "caller",
+      "text": "Great. Is there a specific preparation required before an MRI?"
+    },
+    {
+      "speaker": "agent",
+      "text": "It depends on the body part being scanned. For abdominal MRIs, we usually ask patients to fast for 4 hours. Brain or joint scans don't generally require fasting. The technician will give you specific instructions when you book."
+    },
+    {
+      "speaker": "caller",
+      "text": "And what's the rough cost for a knee MRI?"
+    },
+    {
+      "speaker": "agent",
+      "text": "The standard rate for a knee MRI is ₹6,500. If you're using insurance, we can do a direct claim depending on your policy. Do you have insurance?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, I have Apollo Munich. Let me check if it's covered."
+    },
+    {
+      "speaker": "agent",
+      "text": "Apollo Munich is accepted here. When you come in, just carry your policy card and we'll help you with the claim paperwork. Anything else I can help with?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that's plenty. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome! Have a nice day."
+    }
+  ]
+}

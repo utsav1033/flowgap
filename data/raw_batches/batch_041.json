@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_041",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, I'd like to schedule an appointment with a dermatologist. I have some skin rashes that won't go away."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course, I can help with that. May I have your name and contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Kartik Desai. 9876123450."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you Kartik. Dr. Sneha Kulkarni is our dermatologist. She has slots available this week on Wednesday and Friday."
+    },
+    {
+      "speaker": "caller",
+      "text": "Wednesday would work. What times are available?"
+    },
+    {
+      "speaker": "agent",
+      "text": "We have 10 AM, 12 PM, and 3 PM on Wednesday."
+    },
+    {
+      "speaker": "caller",
+      "text": "12 PM please."
+    },
+    {
+      "speaker": "agent",
+      "text": "Booked! Kartik Desai, Wednesday at 12:00 PM with Dr. Sneha Kulkarni. Confirmation SMS will follow."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect, thank you."
+    }
+  ]
+}

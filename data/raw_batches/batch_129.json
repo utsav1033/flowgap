@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_129",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I need a refill for my blood pressure medication. Dr. Ghosh had prescribed it about two months ago."
+    },
+    {
+      "speaker": "agent",
+      "text": "Sure! Could you share your name, registered number, and the name of the medication if you remember it?"
+    },
+    {
+      "speaker": "caller",
+      "text": "I'm Asha Fernandes, number is 9900112233. The medicine is Amlodipine 5mg, I think."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you, Ms. Fernandes. I can see your prescription history. Dr. Ghosh's last prescription for Amlodipine 5mg is on file. I'll send a refill request to the doctor for approval. Typically it's confirmed within 24 hours and you can collect from our pharmacy counter."
+    },
+    {
+      "speaker": "caller",
+      "text": "Can they courier it? I live a bit far."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we do offer home delivery through our pharmacy partner for a nominal charge. I'll add that note to the request. You'll get a call to confirm the address and delivery slot once the doctor approves."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's so convenient, thank you!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Happy to help, Ms. Fernandes. Take care and stay healthy!"
+    }
+  ]
+}

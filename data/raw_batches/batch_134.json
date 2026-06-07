@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_134",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Uh, hello. I have an appointment day after tomorrow but I need to shift it to next week. Something came up at work."
+    },
+    {
+      "speaker": "agent",
+      "text": "No problem at all! Let me find your booking. May I have your name and contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nalini Krishnan. 9944332211."
+    },
+    {
+      "speaker": "agent",
+      "text": "Found it — you have an appointment with Dr. Sunita Rao in the ophthalmology department this Thursday at noon. What dates work for you next week?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Umm, Monday or Tuesday, either is fine. Same time if possible."
+    },
+    {
+      "speaker": "agent",
+      "text": "Monday noon with Dr. Sunita Rao is available. Shall I confirm that?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, please go ahead."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done! Your appointment has been rescheduled to Monday next week at 12 PM with Dr. Sunita Rao. You'll get an updated confirmation SMS. Is there anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that's perfect. Thank you!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Take care, Ms. Krishnan. See you Monday!"
+    }
+  ]
+}

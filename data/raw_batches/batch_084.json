@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_084",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Good afternoon. I'm calling about my biopsy report. It was supposed to be ready today."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good afternoon. I understand this must be an anxious wait. Your name please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Santosh Kulkarni."
+    },
+    {
+      "speaker": "agent",
+      "text": "Santosh ji, biopsy reports are handled directly by our pathology and histopathology teams. I don't have access to report status from here, and I wouldn't want to speculate on something as sensitive as a biopsy."
+    },
+    {
+      "speaker": "caller",
+      "text": "Can you at least find out if it's ready?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand — this is important. The right people to confirm this are our pathology staff. Let me connect you to them immediately so they can give you an accurate update."
+    },
+    {
+      "speaker": "caller",
+      "text": "Please, yes."
+    },
+    {
+      "speaker": "agent",
+      "text": "Connecting you now — please hold for our staff."
+    }
+  ]
+}

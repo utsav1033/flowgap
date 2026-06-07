@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_066",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I need my asthma inhaler prescription renewed. I'm running low and my last prescription was from your clinic."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course. Could I have your name and the doctor who prescribed it?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Arvind Kulkarni. It was from Dr. Ramesh Iyer. Maybe 10 weeks ago?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I see your record, Arvind. Your last prescription was for Budecort 200 inhaler. Since it's been 10 weeks, I'll put in a refill request to Dr. Iyer. He'll review and approve typically within 24 hours."
+    },
+    {
+      "speaker": "caller",
+      "text": "Can I collect it from the pharmacy directly?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Once approved, the e-prescription will be sent to our in-house pharmacy. You can collect it during pharmacy hours — 8 AM to 9 PM. We'll SMS you when it's ready."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's great. Thank you."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_176",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, this is Kabir Mehta calling. I'd like to see an ENT specialist. I've had a blocked ear for about a week now and it's getting worse."
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello Mr. Mehta! Dr. Sanjay Deshpande is our ENT specialist. He's available tomorrow at 5 PM or the day after at 10 AM. Which suits you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Tomorrow 5 PM."
+    },
+    {
+      "speaker": "agent",
+      "text": "Noted. Can I confirm your mobile number for our records?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Sure, 8800990011."
+    },
+    {
+      "speaker": "agent",
+      "text": "Your appointment is confirmed for tomorrow at 5 PM with Dr. Deshpande. Please avoid putting anything in your ear until the consultation. See you then!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Will do, thanks."
+    }
+  ]
+}

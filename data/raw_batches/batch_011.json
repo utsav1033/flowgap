@@ -1,0 +1,52 @@
+{
+  "call_id": "BATCH_ID_011",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, uh, I want to schedule a diabetes check-up. My sugar levels have been off lately."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. We have an endocrinology and diabetology department. May I have your name please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Krishnamurti Rao. People usually call me Krish."
+    },
+    {
+      "speaker": "agent",
+      "text": "Sure, Krish! And your phone number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "9123456780."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. Dr. Pallavi Nambiar specialises in diabetology. She's available this Friday at 10 AM or next Monday at 2 PM."
+    },
+    {
+      "speaker": "caller",
+      "text": "Hmm, Friday... actually, can I come Monday? 2 PM is better for me work-wise."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course. Monday at 2 PM with Dr. Pallavi Nambiar — all booked for you. Anything else you need?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Do I need to fast before the appointment?"
+    },
+    {
+      "speaker": "agent",
+      "text": "For a general diabetology consultation you don't necessarily need to fast, but it's a good idea to have a light meal and avoid sweets beforehand. The doctor will advise further during the visit."
+    },
+    {
+      "speaker": "caller",
+      "text": "That helps, thank you."
+    }
+  ]
+}

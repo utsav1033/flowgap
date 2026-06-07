@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_044",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, mujhe psychiatrist se milna hai. Kya aapke yahan psychiatry department hai?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan ji, humare yahan mental wellness aur psychiatry OPD hai. Aapka naam?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Uh... Riya Sharma. Please confidential rakhiyega."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul, Riya ji. Aapki privacy humare liye bahut important hai. Sab kuch confidential hai. Aapka contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "9911223344."
+    },
+    {
+      "speaker": "agent",
+      "text": "Shukriya. Dr. Meera Goswami psychiatrist hain. Next week Monday ya Tuesday available hain. Kab aana chahogi?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Monday theek hai. Evening ho sakti hai?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, Monday 5 PM ka slot hai. Book kar doon?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan please."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done Riya ji. Monday 5 PM, Dr. Meera Goswami. Aap bilkul comfortable feel karein — aap sahi kadam utha rahi hain."
+    }
+  ]
+}

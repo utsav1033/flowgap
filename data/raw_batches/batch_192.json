@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_192",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. I'd like to cancel my appointment and I'm wondering if there's a cancellation charge."
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! There's no cancellation charge as long as you notify us at least 4 hours before your appointment time. May I know your name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Jasmine D'Souza."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ms. D'Souza, I see your appointment with Dr. Harshad Mhatre this Friday at 2 PM. Are you cancelling this?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done. Appointment cancelled with no charge. Whenever you'd like to rebook, we're here."
+    },
+    {
+      "speaker": "caller",
+      "text": "Can I also know how long the usual wait time is at the clinic when you walk in?"
+    },
+    {
+      "speaker": "agent",
+      "text": "For OPD with an appointment, wait time is usually 10 to 20 minutes. Without an appointment it can go up to 45 minutes depending on the crowd, particularly on Monday mornings."
+    },
+    {
+      "speaker": "caller",
+      "text": "Good to know. Thank you!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Anytime, Ms. D'Souza. Have a lovely day!"
+    }
+  ]
+}

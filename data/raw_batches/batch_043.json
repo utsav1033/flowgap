@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_043",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, I need an urgent appointment. My father is having chest discomfort since morning."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand the urgency. For chest discomfort we strongly recommend coming in as soon as possible. Is he able to travel?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, yes he can. We can come right now actually."
+    },
+    {
+      "speaker": "agent",
+      "text": "Please come directly to the emergency department. Dr. Suresh Nair, our cardiologist, is in today and can see him. May I have your name for the records?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Vivek Joshi. My father's name is Dattatray Joshi."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you Vivek. Please bring any previous medical records or prescriptions. We'll have the team ready. Come straight to emergency reception."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, we're on our way. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Please hurry. We'll be expecting you. Take care."
+    }
+  ]
+}

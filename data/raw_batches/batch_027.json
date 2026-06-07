@@ -1,0 +1,56 @@
+{
+  "call_id": "BATCH_ID_027",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I want to know the consultation fee before I book an appointment. Doesn't make sense to book and then find out it's too expensive."
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely fair. Which department are you looking at?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Neurology. Dr. Leena Verma specifically."
+    },
+    {
+      "speaker": "agent",
+      "text": "Dr. Verma's consultation fee is 800 rupees for a first visit and 600 rupees for follow-ups."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, that's reasonable. Is that inclusive of the prescription and tests or extra?"
+    },
+    {
+      "speaker": "agent",
+      "text": "The consultation fee is just for the doctor's visit. Any tests or investigations ordered will be charged separately based on what's prescribed."
+    },
+    {
+      "speaker": "caller",
+      "text": "Alright. Good to know. I'll go ahead and book then."
+    },
+    {
+      "speaker": "agent",
+      "text": "Would you like me to book the appointment right now?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, let's do it. Tomorrow if possible, any time after 11."
+    },
+    {
+      "speaker": "agent",
+      "text": "I have 11:30 AM with Dr. Verma tomorrow. Shall I confirm that for you? What's your name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Sangeeta Iyer. And my number is 9871234056."
+    },
+    {
+      "speaker": "agent",
+      "text": "Booked! Sangeeta Iyer, tomorrow 11:30 AM with Dr. Leena Verma. You're all set."
+    }
+  ]
+}

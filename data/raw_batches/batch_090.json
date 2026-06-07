@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_090",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I have ESI — Employee State Insurance. Kya aapka clinic ESI empanelled hai?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan ji, Sunrise Multispeciality Clinic ESIC empanelled hospital hai. ESI cardholders treatment le sakte hain yahan."
+    },
+    {
+      "speaker": "caller",
+      "text": "Aur family members — wife aur bacche — bhi cover honge?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, ESIC mein employee ke dependents — spouse aur children — bhi covered hote hain. ESIC card aur dependent registration proof laana hoga."
+    },
+    {
+      "speaker": "caller",
+      "text": "IPD ke liye bhi chalega? Matlab admit karne ke liye?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, IPD bhi covered hai ESIC ke through for empanelled conditions. Please ESIC dispensary se referral letter leke aaye admission ke liye."
+    },
+    {
+      "speaker": "caller",
+      "text": "Bahut achha. Shukriya aapka."
+    }
+  ]
+}

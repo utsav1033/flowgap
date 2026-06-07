@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_095",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I'm looking to get a second opinion on my MRI report. A doctor at another hospital suggested surgery for my spine. I want another view."
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely, second opinions are very important. Our orthopaedic surgeon Dr. Pramod Joshi or our neurosurgeon can review spinal MRIs. Which would you prefer?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Neurosurgeon might be more relevant. My name is Harsha Rao, 9811234560."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you Harsha. Dr. Vinay Kapoor is our neurosurgeon. He holds clinic on Tuesdays and Thursdays. Earliest is this Thursday at 11:30 AM."
+    },
+    {
+      "speaker": "caller",
+      "text": "Thursday 11:30 is fine. Should I bring the original MRI CD?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, please bring the MRI CD or prints and any reports from the other hospital. The more Dr. Kapoor has to review the better."
+    },
+    {
+      "speaker": "caller",
+      "text": "Will do. Thanks."
+    }
+  ]
+}

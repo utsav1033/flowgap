@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_107",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Uh hello. Main ek new patient hoon. Kisi doctor se refer kiya gaya hoon yahan — Dr. Jog ke paas, urology ke liye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapka swagat hai! New patient registration simple hai. Aapka naam aur contact number please."
+    },
+    {
+      "speaker": "caller",
+      "text": "Kashinath Rao. 9800234561."
+    },
+    {
+      "speaker": "agent",
+      "text": "Shukriya Kashinath ji. Dr. Kishore Jog urology mein hain. Unka next slot hai Budhwaar 11 AM. Chalega?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan, Budhwaar 11 theek hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Book ho gaya. New patient hone ke naate please 15 minute pehle aana — registration complete karni hogi. Referral letter bhi saath laana. SMS aayega. Kuch aur?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahi, sab samajh gaya. Shukriya."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_031",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi there. Do you have an MRI facility in-house or do patients need to go elsewhere?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Great question. Yes, we have a fully equipped radiology department in-house, including an MRI machine, CT scanner, and digital X-ray. All imaging is done on site."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's convenient. And how long does it usually take to get results?"
+    },
+    {
+      "speaker": "agent",
+      "text": "For most routine scans, the radiologist's report is ready within 4 to 6 hours. Urgent cases are prioritised and can be done in 1 to 2 hours."
+    },
+    {
+      "speaker": "caller",
+      "text": "Can I book a scan without a doctor's referral?"
+    },
+    {
+      "speaker": "agent",
+      "text": "A doctor's prescription is required for MRI and CT scans. For X-rays, in some cases we can proceed at the radiologist's discretion. Our staff at the radiology desk can advise you when you arrive."
+    },
+    {
+      "speaker": "caller",
+      "text": "Understood. Thank you for the info."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_135",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, do you have an ICU facility at your clinic? My father might need admission."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, Sunrise Multispeciality Clinic has a fully equipped 10-bed ICU with 24/7 intensivist coverage. We also have a step-down HDU for patients who are stable but still require monitoring."
+    },
+    {
+      "speaker": "caller",
+      "text": "And is there a separate ward for cardiac patients?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we have a dedicated Cardiac Care Unit on the second floor. It's managed by our cardiology team round the clock."
+    },
+    {
+      "speaker": "caller",
+      "text": "What about visiting hours for admitted patients?"
+    },
+    {
+      "speaker": "agent",
+      "text": "General ward visiting hours are 8 to 10 AM and 5 to 7 PM. ICU visits are restricted to 15 minutes twice a day — 11 AM and 5 PM — to ensure patient rest and recovery. One attendant per patient is allowed to stay overnight in the general ward."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, that's helpful. Thank you very much."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wishing your father a speedy recovery. Don't hesitate to call if you need anything more."
+    }
+  ]
+}

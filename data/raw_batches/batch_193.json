@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_193",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Good evening. My name is Lalita Rao and I need a refill of my blood pressure medication. It's been prescribed by Dr. Anjali Verma here."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good evening, Ms. Rao. Let me look up your file. Could you confirm your date of birth?"
+    },
+    {
+      "speaker": "caller",
+      "text": "7th September 1958."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it. I see Dr. Verma prescribed Amlodipine 5mg and Telmisartan 40mg. Is that correct?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, both of those. I'm almost out and my next appointment isn't for another 3 weeks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Understood. I'll send a refill request to Dr. Verma's desk right now with a note about your timeline. She typically approves these within a business day. Would you like to collect from our pharmacy or shall we arrange delivery?"
+    },
+    {
+      "speaker": "caller",
+      "text": "I'll collect it myself, I live nearby."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. You'll receive an SMS once Dr. Verma approves — usually by tomorrow afternoon. Is there anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that's fine. Thank you dear."
+    },
+    {
+      "speaker": "agent",
+      "text": "Take care and stay healthy, Ms. Rao!"
+    }
+  ]
+}

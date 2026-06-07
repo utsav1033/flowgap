@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_058",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan, mujhe puchhna tha ki aapke yahan GST lagta hai consultations pe?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Ji, medical consultations pe generally GST applicable nahi hota hai. Lekin kuch diagnostic tests aur non-medical services pe GST lag sakta hai. Aapke specific case ke baare mein billing counter pe confirm kar sakte hain."
+    },
+    {
+      "speaker": "caller",
+      "text": "Matlab doctor ki fees pe nahi lagega?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul sahi. Doctor consultation fees GST-exempt hoti hain India mein healthcare regulations ke anusaar."
+    },
+    {
+      "speaker": "caller",
+      "text": "Aur agar mujhe GST invoice chahiye kisi aur cheez ke liye?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, humara billing department GST-compliant invoices deta hai jahan applicable ho. Bas billing counter pe request karna hoga visit ke time."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect. Shukriya."
+    }
+  ]
+}

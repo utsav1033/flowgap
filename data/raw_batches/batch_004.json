@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_004",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, Sunrise Clinic? Mera beta hai, uske liye pediatrician appointment book karni hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan ji, zaroor. Bachche ka naam aur umar bata sakte hain aap?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Arjun Mehta. Abhi 4 saal ka hai. Usse fever aa raha hai last 2 days se."
+    },
+    {
+      "speaker": "agent",
+      "text": "Samajh gaya. Aapka contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "9890123456."
+    },
+    {
+      "speaker": "agent",
+      "text": "Dhanyawaad. Dr. Anita Saraf humari pediatrician hain. Aaj evening 5:30 PM ka slot available hai. Chalega?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan haan, aaj hi theek hai. Confirm kar dijiye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul. Arjun Mehta ke liye aaj 5:30 PM Dr. Anita Saraf ke saath book ho gaya. SMS aayega. Baaki kuch?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahi, shukriya."
+    }
+  ]
+}

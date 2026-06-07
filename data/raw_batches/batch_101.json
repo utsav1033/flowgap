@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_101",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi! I want to book a vaccination slot — for meningitis. I'm going abroad for studies soon."
+    },
+    {
+      "speaker": "agent",
+      "text": "Congratulations on going abroad! Yes, we do administer travel vaccines including meningitis. Your name and travel date?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nishant Goswami. I leave in 6 weeks. 9765001234."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good timing — 6 weeks is fine for this vaccine. We have a travel vaccination slot this Friday morning at 10 AM. Shall I book it?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please! Do I need to bring anything?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Just your passport copy and your university acceptance letter if available. Booked for Nishant Goswami, Friday 10 AM. Have a great time abroad!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you so much!"
+    }
+  ]
+}

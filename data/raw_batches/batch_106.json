@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_106",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. Do you have a pharmacy inside the clinic? I don't want to go running around after consultation."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we have an in-house pharmacy on the ground floor. It stocks most commonly prescribed medications and is open from 8 AM to 9 PM all days including Sundays."
+    },
+    {
+      "speaker": "caller",
+      "text": "And if a medicine is not available?"
+    },
+    {
+      "speaker": "agent",
+      "text": "If a specific medicine is not stocked, our pharmacist can either order it for same-day or next-day delivery, or suggest an equivalent available alternative — always in consultation with your doctor's prescription."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's very convenient. What about storing temperature-sensitive medicines like insulin?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we have cold chain storage for insulin and other temperature-sensitive medications. You can pick these up directly from our pharmacy."
+    },
+    {
+      "speaker": "caller",
+      "text": "Great, that answers everything. Thank you."
+    }
+  ]
+}

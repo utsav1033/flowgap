@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_082",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, meri beti ko allergy test karwana hai. Kisi allergist se milna tha."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ji zaroor. Beti ka naam aur umar?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Tanisha Verma. 9 saal ki hai. Mera number hai 9712345670."
+    },
+    {
+      "speaker": "agent",
+      "text": "Shukriya. Dr. Anita Saraf paediatrics mein allergies bhi dekhti hain. Woh is week Saturday ko available hain — subah 10 baje ka slot hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Saturday 10 baje theek hai. Book kar dijiye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ho gaya! Tanisha Verma, Saturday 10 AM, Dr. Anita Saraf. SMS aayega. Kuch aur help chahiye?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahi, bohot shukriya."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_158",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I'm a new patient. Never visited your clinic before. I want to consult about some chest pain I've been having on and off."
+    },
+    {
+      "speaker": "agent",
+      "text": "Welcome to Sunrise Multispeciality Clinic! Chest pain is definitely something we'd want a cardiologist to evaluate. Dr. Rajeev Bhatt is our cardiologist and has an opening tomorrow at 10 AM or Friday at 4 PM."
+    },
+    {
+      "speaker": "caller",
+      "text": "Tomorrow is better, let's do that. My name is Imran Syed and my number is 9777654321."
+    },
+    {
+      "speaker": "agent",
+      "text": "Confirmed, Mr. Syed! Appointment with Dr. Rajeev Bhatt tomorrow at 10 AM. Please note down any pattern you've noticed — when the pain occurs, how long it lasts, any triggers. That'll really help the consultation. Confirmation SMS coming your way."
+    },
+    {
+      "speaker": "caller",
+      "text": "Will do. And where do I register when I arrive?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Please head to the new patient registration desk on the ground floor — it's right next to the main entrance. Arrive 10 to 15 minutes early to complete your paperwork."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect. Thanks."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_152",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, can you help me schedule something with a physiotherapist? My lower back is giving me a lot of trouble, like for the past two weeks."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course! We have Mr. Rajan Naik as our senior physiotherapist. He has slots this week on Tuesday and Thursday evenings around 5 PM."
+    },
+    {
+      "speaker": "caller",
+      "text": "Let's go with Tuesday. I'm Madhav Tambe, number is 9890123456."
+    },
+    {
+      "speaker": "agent",
+      "text": "Booked! Madhav Tambe with Mr. Rajan Naik, this Tuesday at 5 PM. Please wear comfortable, loose clothing. Is there anything specific I should note about your condition?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Just that it's lower back, and I sit at a desk all day. That's probably the cause."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'll add that note. See you Tuesday, Mr. Tambe. Hope you get some relief soon!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you so much."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_071",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, I had my tonsil removal surgery here last week. My throat is still hurting a lot. Is this expected?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I can hear you're uncomfortable and I'm sorry you're going through that. Could I have your name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Akash Mishra."
+    },
+    {
+      "speaker": "agent",
+      "text": "Akash, post-tonsillectomy pain is common, but the severity and duration really need to be assessed by a medical professional. I'm not able to advise on whether your level of pain is expected or concerning — I don't want to guess on something this important."
+    },
+    {
+      "speaker": "caller",
+      "text": "Should I come in?"
+    },
+    {
+      "speaker": "agent",
+      "text": "That's exactly the kind of question our ENT team or nursing staff can answer properly. Let me connect you to them right now so they can advise you appropriately."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, please connect me."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course. Please hold — let me connect you to our staff immediately."
+    }
+  ]
+}

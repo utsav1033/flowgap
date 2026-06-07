@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_164",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Yes hello, I'm calling about a bill I received. I think there's an error in the amount."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'd be happy to look into that. Could you share your name and the patient ID or invoice number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "My name is Fatima Sheikh. Invoice number is, uh, let me find it... INV-20240891."
+    },
+    {
+      "speaker": "agent",
+      "text": "One moment please... I have your invoice here, Ms. Sheikh. The total is ₹18,500. Which line item seems incorrect to you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "There's a charge for a consultation on the 3rd but I only visited on the 5th. The 3rd consultation was not mine, I think."
+    },
+    {
+      "speaker": "agent",
+      "text": "I see what you mean. There does appear to be a duplicate entry. I'm removing the ₹600 consultation charge from the 3rd. Your revised total comes to ₹17,900."
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes that makes sense. Can I pay this on the portal?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely. You can pay via our patient portal at sunriseclinicpune.com or we accept UPI, net banking, and cards at the billing counter. A revised invoice will be sent to your registered email."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect, thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you, Ms. Sheikh. Have a great day!"
+    }
+  ]
+}

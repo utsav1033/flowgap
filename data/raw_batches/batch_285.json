@@ -1,0 +1,32 @@
+{
+  "call_id": "batch_285",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "My name is Meera Patel."
+    },
+    {
+      "speaker": "agent",
+      "text": "Welcome to Sunrise Multispeciality Clinic, Pune. How may I assist you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "I need help with billing payment."
+    },
+    {
+      "speaker": "agent",
+      "text": "Certainly. I've handled your billing payment request."
+    },
+    {
+      "speaker": "caller",
+      "text": "Great, thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "You're welcome. Have a good day."
+    }
+  ]
+}

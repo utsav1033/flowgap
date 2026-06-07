@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_010",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Good morning. I need to fix a physiotherapy session. My doctor referred me after a shoulder injury."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good morning! Of course, we can set that up. What's your name and contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Meera Pillai. 9900876543."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you, Meera. Do you have the referring doctor's name, just for our records?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, it was Dr. Sharma from Apollo. Orthopaedics."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. Our physiotherapist Mr. Ganesh Khot is available Monday through Saturday, mornings and evenings. Any preference?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Tomorrow evening would be ideal. Around 6?"
+    },
+    {
+      "speaker": "agent",
+      "text": "6 PM tomorrow is available. Booked for Meera Pillai with Mr. Ganesh Khot. You'll get a confirmation message. Anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that's all. Thank you!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Take care and have a speedy recovery!"
+    }
+  ]
+}

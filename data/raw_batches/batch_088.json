@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_088",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. Do you have an online appointment booking system? Or is it only by calling?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Great question! Yes, we have both options. You can book online via our website at sunriseclinic.in or through our mobile app. Calling is also always available."
+    },
+    {
+      "speaker": "caller",
+      "text": "And can I choose my specific doctor online too?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, the online system lets you filter by department and select a specific doctor, then view their available slots in real time."
+    },
+    {
+      "speaker": "caller",
+      "text": "What about cancellations online?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You can cancel or reschedule through the app or website up to 2 hours before the appointment without any charges. For same-day cancellations within 2 hours, please call us."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect, very convenient. I'll use the app. Thanks."
+    }
+  ]
+}

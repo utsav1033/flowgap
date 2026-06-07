@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_131",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello? Uh, mujhe ek dermatologist se appointment chahiye. Skin allergy ka issue hai mujhe."
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan zaroor. Hamare paas Dr. Sneha Marathe hain dermatology department mein. Aapko kab convenient rahega?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Agle hafte? Tuesday ya Wednesday?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Tuesday ko 4 PM aur Wednesday ko 11 AM available hai Dr. Marathe ke saath. Kaun sa prefer karenge?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Tuesday 4 PM. Naam hai mera Pranav Deshpande, number 9823456789."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done! Appointment confirmed — Pranav Deshpande, Dr. Sneha Marathe, next Tuesday 4 PM. SMS confirmation aayega."
+    },
+    {
+      "speaker": "caller",
+      "text": "Great, thank you!"
+    }
+  ]
+}

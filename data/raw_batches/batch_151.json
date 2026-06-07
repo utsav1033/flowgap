@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_151",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, uh, I have an Arogya Sanjeevani policy. I'm not sure if you'll know it, it's a government standard health insurance."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we're familiar with the Arogya Sanjeevani policy. Sunrise Multispeciality Clinic accepts it for both OPD and IPD services. It covers up to ₹5 lakh per family on a floater basis."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, and can I use it for a planned cataract surgery?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Cataract surgery is covered under Arogya Sanjeevani. The policy has a sub-limit for cataract — up to ₹40,000 per eye per year. You'll need a pre-authorization from the insurer before the procedure."
+    },
+    {
+      "speaker": "caller",
+      "text": "Who initiates the pre-auth? Me or the hospital?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Typically the hospital initiates it on your behalf once your admission date is set. Our TPA team will handle the paperwork — you just need to provide your policy number and insurer's details when you register."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's a big relief. Thank you for explaining clearly."
+    },
+    {
+      "speaker": "agent",
+      "text": "Happy to help! Looking forward to seeing you at Sunrise."
+    }
+  ]
+}

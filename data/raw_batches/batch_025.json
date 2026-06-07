@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_025",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan hello. Mujhe pata karna tha ki aap online payment accept karte hain ya nahi."
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan ji, hum UPI, net banking aur debit/credit card sab accept karte hain — online aur clinic mein dono jagah."
+    },
+    {
+      "speaker": "caller",
+      "text": "Aur koi payment link bhej sakte hain mujhe? Bill abhi settle karna hai but main aa nahi sakta personally."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul. Aapka patient ID ya invoice number batayein."
+    },
+    {
+      "speaker": "caller",
+      "text": "Patient ID SNC-P-77432 hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Theek hai. Aapke registered number pe payment link bhej deta hoon. 5 minute mein aa jaana chahiye. Amount hai 2,800 rupaye."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect, link aa gaya toh kar dunga. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapka swagat hai. Koi dikkat ho toh call kar lena."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_196",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Uh, hi. I have an appointment at 9 AM day after tomorrow and I was wondering if I can push it by an hour or so. 9 is just too early for me."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course! Let me check. Your name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Akash Tendulkar."
+    },
+    {
+      "speaker": "agent",
+      "text": "Mr. Tendulkar, I see your appointment with Dr. Sanjay Deshpande. He has 10 AM and 11 AM available that same day. Which would you prefer?"
+    },
+    {
+      "speaker": "caller",
+      "text": "10:30 is ideal but... I'll take 11, that's fine."
+    },
+    {
+      "speaker": "agent",
+      "text": "Moved to 11 AM. You'll get an SMS with the updated time. Anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nope, all good. Thanks."
+    },
+    {
+      "speaker": "agent",
+      "text": "See you then, Mr. Tendulkar!"
+    }
+  ]
+}

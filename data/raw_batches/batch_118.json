@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_118",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I need to cancel my appointment. I'm going to go abroad for a month and I won't be here."
+    },
+    {
+      "speaker": "agent",
+      "text": "No problem at all. Safe travels! Your name and appointment details?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Ankita Phadke. I had a follow-up with Dr. Sneha Kulkarni, dermatology, next Thursday."
+    },
+    {
+      "speaker": "agent",
+      "text": "Found it. Cancelling Ankita Phadke, Thursday follow-up with Dr. Kulkarni. Done! When you're back, just call us to rebook."
+    },
+    {
+      "speaker": "caller",
+      "text": "Will do. Will I need to explain the gap in treatment to the doctor?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Just mention it to Dr. Kulkarni when you're back. A brief update on your skin condition during the time away will help her continue the treatment plan appropriately."
+    },
+    {
+      "speaker": "caller",
+      "text": "Good advice. Thanks and bye!"
+    },
+    {
+      "speaker": "agent",
+      "text": "Enjoy your trip! See you when you're back."
+    }
+  ]
+}

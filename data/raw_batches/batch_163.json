@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_163",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, mujhe jaanna tha ki aap Star Health ka insurance accept karte ho?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, bilkul. Sunrise Multispeciality Clinic Star Health Insurance ke saath empanelled hai. Aap cashless facility ka bhi use kar sakte hain."
+    },
+    {
+      "speaker": "caller",
+      "text": "Oh achha. Toh main kal admit hone wala hoon, umm, knee replacement ke liye. Kya documents laane padenge?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapko original insurance card, photo ID, aur doctor ka referral letter laana hoga. Admission ke waqt humara TPA desk pre-authorization form fill karne mein help karega."
+    },
+    {
+      "speaker": "caller",
+      "text": "Pre-authorization kitne time mein hoti hai usually?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Zyaadatar cases mein 2 se 4 ghante lagte hain. Agar aap subah 8 baje tak aa jaate hain toh din mein hi approve ho jaata hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai, mera naam Suresh Nair hai by the way."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you Mr. Nair. Koi aur sawaal ho toh zaroor poochiye. Kal aane par humara insurance desk ground floor par milega, right side mein."
+    },
+    {
+      "speaker": "caller",
+      "text": "Bahut shukriya, bahut helpful tha."
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapka swagat hai. Apna khayal rakhiye!"
+    }
+  ]
+}

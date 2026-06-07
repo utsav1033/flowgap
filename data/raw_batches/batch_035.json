@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_035",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, I came for a blood test two days ago. Uh, I still haven't received my reports. Can you tell me the status?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand the concern. Could I have your name and the date the test was done?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nandini Sawant. Test was done on... Monday I think. CBC and thyroid panel."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you, Nandini. I'm sorry, but I'm not able to access lab report status or pull up test results from here. This requires someone from our laboratory department to help you directly."
+    },
+    {
+      "speaker": "caller",
+      "text": "Oh. Can you at least tell me if the reports are ready?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I completely understand the urgency, but I don't have visibility into the lab system from this line. I wouldn't want to give you incorrect information. Let me connect you to our staff who can check this for you right away."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, please do that."
+    },
+    {
+      "speaker": "agent",
+      "text": "Of course. Please hold for a moment — let me connect you to our staff now."
+    }
+  ]
+}

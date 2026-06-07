@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_063",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. Mujhe yeh jaanna tha ki aapka clinic Pune mein kaun si bus routes se accessible hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ji zaroor. Humara clinic Baner Road pe hai. PMPML ki route number 155 aur 199 yahan se guzarti hain. Nearest bus stop Balewadi Phata hai, wahan se 5 minute ki walk hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Auto ya rickshaw milti hai wahan se?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, Balewadi Phata pe autorickshaw easily milti hai. Cab service bhi aati hai directly clinic tak. Hum Google Maps pe bhi listed hain — Sunrise Multispeciality Clinic search karein."
+    },
+    {
+      "speaker": "caller",
+      "text": "Achha, ek aur cheez — lift hai andar ya sirf stairs?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hamare paas elevator hai. Differently-abled patients ke liye ramp bhi available hai ground floor pe."
+    },
+    {
+      "speaker": "caller",
+      "text": "Bahut acha. Dhanyawaad."
+    }
+  ]
+}

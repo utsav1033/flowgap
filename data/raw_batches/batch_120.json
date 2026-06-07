@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_120",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan, main ek oncologist se milna chahta hoon. Mere uncle ko cancer hai — early stage, detect hua hai recently."
+    },
+    {
+      "speaker": "agent",
+      "text": "Main samajhta hoon yeh bahut difficult waqt hai. Hum aapki poori madad karenge. Aapka naam aur uncle ka naam?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Main Kiran Patil hoon. Uncle ka naam Ramesh Patil hai. Mera number 9823001199 hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Shukriya Kiran ji. Dr. Jayashree Nair humare oncology consultant hain. Urgent case ke liye kal subah 10 AM slot available hai. Karoon book?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan please, kal hi theek hai. Pehli stage hai toh jaldi shuru karna chahte hain."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul sahi soch rahe hain. Ramesh Patil, kal 10 AM, Dr. Jayashree Nair. Biopsy report aur jo bhi reports hain saath laana. SMS aayega. Himmat rakhein — sahi jagah aaye hain."
+    },
+    {
+      "speaker": "caller",
+      "text": "Bahut shukriya. Aapne dhaaras diya."
+    }
+  ]
+}

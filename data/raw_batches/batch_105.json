@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_105",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I need to shift my father's physiotherapy session. He has some pain and the physio himself suggested resting for a few days."
+    },
+    {
+      "speaker": "agent",
+      "text": "Oh understood, rest is important. Your father's name and current appointment?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Chandrakant Divekar. He has tomorrow at 10 AM with Mr. Ganesh Khot."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it. Shall I reschedule to next week? Mr. Khot has Monday and Wednesday mornings open."
+    },
+    {
+      "speaker": "caller",
+      "text": "Wednesday, next week please. Same 10 AM if possible."
+    },
+    {
+      "speaker": "agent",
+      "text": "10 AM Wednesday next week — confirmed for Chandrakant Divekar. Hope he recovers well. SMS will be sent."
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you for understanding."
+    }
+  ]
+}

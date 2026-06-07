@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_017",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I need to reschedule. My child's sick so I can't come today."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm sorry to hear that. Hope your child gets better soon. Can I have your name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Tanya Bapat. My appointment was at 12:30 today with the physiotherapist."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, 12:30 PM with Mr. Ganesh Khot. Would you like to move it to tomorrow or later this week?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Uh, maybe day after? Same time if possible."
+    },
+    {
+      "speaker": "agent",
+      "text": "12:30 PM the day after tomorrow is open. Done — rescheduled for Tanya Bapat. You'll get a message. Take care!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you, appreciate it."
+    }
+  ]
+}

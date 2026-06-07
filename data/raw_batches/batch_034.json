@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_034",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, mere thyroid ki dawai khatam hone wali hai. Kya bina appointment ke refill ho sakta hai?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapka naam aur doctor ka naam bata sakte hain please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Pooja Wankhede. Doctor thi Dr. Pallavi Nambiar. Last visit koi 6-7 weeks pehle tha."
+    },
+    {
+      "speaker": "agent",
+      "text": "Dekh raha hoon... haan, aapka record hai. Eltroxin 50mcg likha tha. Abhi refill ke liye Dr. Nambiar ko request bhejta hoon. Unka approval zyada tar 24 ghante mein aata hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Aur agar 3 mahine se zyada ho gaye toh?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Toh ek short follow-up consultation zyada safer hogi, kyunki dosage change ho sakti hai. Lekin abhi 6-7 weeks mein koi problem nahi honi chahiye. Main request bhej deta hoon."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai. Shukriya."
+    },
+    {
+      "speaker": "agent",
+      "text": "Request submit ho gayi. Kal tak SMS ya call milega aapko."
+    }
+  ]
+}

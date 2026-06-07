@@ -1,0 +1,1 @@
+read BUILD.md first; build phase by phase; don't skip the eval.

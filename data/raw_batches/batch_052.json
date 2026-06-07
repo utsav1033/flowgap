@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_052",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I have a Max Bupa policy — uh, I think they rebranded it to Niva Bupa now. Do you accept that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, Niva Bupa — formerly Max Bupa — is part of our network. Cashless facility is available for most of their plans."
+    },
+    {
+      "speaker": "caller",
+      "text": "Great. I'm planning a cataract surgery. Will that be covered?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Cataract surgery is generally covered under Niva Bupa's inpatient plans. However, some policies have waiting periods for pre-existing conditions. Please check your policy document or call Niva Bupa to confirm your specific eligibility."
+    },
+    {
+      "speaker": "caller",
+      "text": "Makes sense. And how do I initiate the cashless process?"
+    },
+    {
+      "speaker": "agent",
+      "text": "You'll need a pre-authorisation from Niva Bupa before the procedure. Our insurance desk will coordinate that for you. Please visit us a day or two before the scheduled surgery with your health card and doctor's admission advice."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect. I'll do that. Thank you."
+    }
+  ]
+}

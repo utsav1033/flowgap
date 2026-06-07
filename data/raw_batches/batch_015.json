@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_015",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, yeh Sunrise Clinic? I want to cancel two appointments actually. Both mine and my wife's."
+    },
+    {
+      "speaker": "agent",
+      "text": "Sure, I can help with both. Let me take the details one at a time. Your name first?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Mohit Tiwari. And my wife's name is Geeta Tiwari."
+    },
+    {
+      "speaker": "agent",
+      "text": "And the appointment dates for each?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Mine was this Friday 3 PM with the GP. Geeta's was Saturday morning 10 AM, I think with Dr. Kulkarni."
+    },
+    {
+      "speaker": "agent",
+      "text": "Let me check... yes, found both. Mohit Tiwari, Friday 3 PM with Dr. Ramesh Iyer, and Geeta Tiwari, Saturday 10 AM with Dr. Sneha Kulkarni. Cancelling both?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done. Both appointments have been cancelled. You'll get confirmation messages on your registered numbers. Anything else?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that's sorted. Thanks."
+    }
+  ]
+}

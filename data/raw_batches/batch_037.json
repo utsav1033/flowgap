@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_037",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I had surgery here last week — appendix removal. I wanted to ask about the wound dressing. It looks a little different today."
+    },
+    {
+      "speaker": "agent",
+      "text": "I hope you're recovering well. Can you tell me your name and procedure date?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Manoj Thakur. Surgery was on the 17th."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you, Manoj. I'm sorry to hear you're concerned about the wound site. I have to be honest — post-operative care guidance and wound assessment is something I really shouldn't advise on from this line, as it requires a clinical eye."
+    },
+    {
+      "speaker": "caller",
+      "text": "Is it serious? Should I be worried?"
+    },
+    {
+      "speaker": "agent",
+      "text": "I truly can't say — I wouldn't want to either alarm you or dismiss something important. This is exactly why I want to get you to the right person. Our nursing or surgical team can assess your situation properly. Let me connect you to our staff right now."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay, please hurry."
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely. Holding the line — let me connect you to our staff immediately."
+    }
+  ]
+}

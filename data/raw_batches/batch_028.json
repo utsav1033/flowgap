@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_028",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, main apna outstanding balance check karna chahta hoon. Maine jo surgery ki last month, uska poora bill clear nahi hua tha."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ji zaroor. Aapka naam aur patient ID bata sakte hain?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Umesh Pawar. ID hai... SNC-P-88210."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ek second... haan, dekha. Umesh Pawar ji, aapka outstanding balance hai 12,400 rupaye. Yeh laparoscopic procedure ke baad ka balance hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan, wahi. Toh kya main installment mein de sakta hoon?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hum iske liye billing department se baat kar sakte hain. Usually 2-3 installments allow hoti hain approval ke baad. Main aapka request note kar leta hoon aur billing team aapse kal tak contact karegi."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai. Mera number update hai na files mein?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, 9822345601 registered hai. Kal call aayegi. Koi aur kaam?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahi, shukriya."
+    }
+  ]
+}

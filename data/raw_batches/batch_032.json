@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_032",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Uh hello. I was just wondering, do you have a blood bank or do you only do routine tests?"
+    },
+    {
+      "speaker": "agent",
+      "text": "We have a NABL-accredited pathology lab that handles all routine and many specialised blood tests. However, we do not have a blood bank in-house. For blood transfusion requirements, we coordinate with authorised blood banks in the city."
+    },
+    {
+      "speaker": "caller",
+      "text": "Okay. What about 24-hour lab services?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Our main lab runs from 7 AM to 9 PM on weekdays. For emergency labs after hours, we have a reduced panel of critical tests available through our emergency department."
+    },
+    {
+      "speaker": "caller",
+      "text": "That makes sense. And sample collection at home — do you offer that?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes! We have a home sample collection service available within a 10-kilometre radius. You can book it on our app or by calling this number."
+    },
+    {
+      "speaker": "caller",
+      "text": "Wonderful. That's all I needed to know."
+    },
+    {
+      "speaker": "agent",
+      "text": "Glad I could help! Have a good day."
+    }
+  ]
+}

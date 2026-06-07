@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_198",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I'm calling on behalf of my grandmother. She's 80 and needs a general physician. She hasn't been eating well lately and feels very weak."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you for looking out for her. Dr. Sheela Nair is our senior general physician who's wonderful with elderly patients. She's available today at 4 PM — would that work?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Today itself? That's actually great. Yes please."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful. What's your grandmother's name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Kamakshi Subramanian."
+    },
+    {
+      "speaker": "agent",
+      "text": "And your contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "My number is 8561234790."
+    },
+    {
+      "speaker": "agent",
+      "text": "Confirmed! Mrs. Kamakshi Subramanian with Dr. Sheela Nair today at 4 PM. Please bring a list of any medications she's currently on, even OTC ones. This helps a lot."
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, I'll bring all of them. Thank you so much."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wishing your grandmother a quick improvement. See you this afternoon!"
+    }
+  ]
+}

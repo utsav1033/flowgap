@@ -1,0 +1,32 @@
+{
+  "call_id": "BATCH_ID_183",
+  "intent": "doctor_availability_specific",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, mujhe specifically Dr. Vineeta Gokhale se milna hai. Wo gynaecologist hain. Kya unka kal ka schedule pata kar sakte ho?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Main samajhti hoon aapki zaroorat. Lekin Dr. Gokhale ki specific daily schedule mere paas is system mein accessible nahin hai — main aapko galat timing batane ki galti nahin karna chahti."
+    },
+    {
+      "speaker": "caller",
+      "text": "Toh phir?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Main aapko apni scheduling team se connect karti hoon — unke paas real-time calendar access hai aur woh seedha bata sakenge ki Dr. Gokhale kal available hain ya nahin, aur kab. Ek minute please."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapko scheduling desk se connect kar rahi hoon abhi. Shukriya aapke patience ka."
+    }
+  ]
+}

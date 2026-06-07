@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_024",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, I received a bill from your clinic but I think there's a mistake in it. One of the items doesn't match what I was told."
+    },
+    {
+      "speaker": "agent",
+      "text": "I'm sorry for the inconvenience. Could you share your name and the invoice or patient ID number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Neha Gokhale. Invoice number... uh, it's SNC-2024-08821."
+    },
+    {
+      "speaker": "agent",
+      "text": "Let me pull that up. Yes, I can see the invoice for Neha Gokhale. Which item did you feel was incorrect?"
+    },
+    {
+      "speaker": "caller",
+      "text": "There's a charge for a procedure I didn't get. Something called 'nebulisation'. I only came for a consultation."
+    },
+    {
+      "speaker": "agent",
+      "text": "I understand. I can see that item in the bill. It may have been added in error. I'll flag this for our billing team to review and issue a corrected invoice within one business day. Is the registered number the best way to reach you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes, please. 9867001234."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it. I've raised the dispute. You'll hear back from us by tomorrow. Apologies for the confusion, Neha."
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you, I hope it gets sorted."
+    }
+  ]
+}

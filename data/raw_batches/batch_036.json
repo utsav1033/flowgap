@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_036",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan, mujhe mere reports chahiye. Lipid profile test kiya tha last Friday."
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapka naam aur patient ID please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Aarav Shah. Patient ID... SNC-P-65490."
+    },
+    {
+      "speaker": "agent",
+      "text": "Shukriya Aarav ji. Main samajhta hoon aap report ke liye wait kar rahe hain, lekin mujhe afsos hai — lab report status check karna mere system mein possible nahi hai is line se."
+    },
+    {
+      "speaker": "caller",
+      "text": "Toh kaise pata chalega? Online portal hai koi?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Portal ke baare mein main confirm nahi kar sakta abhi. Yeh jaankari aur report dono ke liye humara lab department directly help kar sakta hai. Main aapko abhi unse connect karta hoon."
+    },
+    {
+      "speaker": "caller",
+      "text": "Theek hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Please hold karo — let me connect you to our staff who can assist with this."
+    }
+  ]
+}

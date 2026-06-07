@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_092",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. I need to reschedule my sleep study. I had it booked for Saturday but I forgot I have an office event that weekend."
+    },
+    {
+      "speaker": "agent",
+      "text": "No worries. Could I have your name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Rajendra Bhatt."
+    },
+    {
+      "speaker": "agent",
+      "text": "Found it. Sleep study this Saturday night. Next available Saturday after that would be in two weeks. Would that work?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Two weeks should be fine."
+    },
+    {
+      "speaker": "agent",
+      "text": "Rescheduled to two weeks from this Saturday. Same time, 9 PM arrival. SMS with updated date coming shortly."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect. Thank you for accommodating."
+    }
+  ]
+}

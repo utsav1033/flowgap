@@ -1,0 +1,52 @@
+{
+  "call_id": "BATCH_ID_003",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Yeah hi, I was hoping to schedule a consultation. For myself. Uh, general physician kind of thing."
+    },
+    {
+      "speaker": "agent",
+      "text": "Hello! Sure, I can help you book a GP consultation. May I have your name please?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Aditi Wagh. W-A-G-H."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it, Aditi. And your phone number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "It's 8800912345."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Our general physician Dr. Ramesh Iyer has slots tomorrow morning — 9 AM, 10 AM, and 11:30 AM. Any preference?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Umm, can I do 10 AM? Is that still available?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, 10 AM is available. Should I go ahead and book it?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Yes please."
+    },
+    {
+      "speaker": "agent",
+      "text": "Done! Aditi Wagh, tomorrow at 10:00 AM with Dr. Ramesh Iyer. You'll get an SMS with the details. Anything else I can help with?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that's great. Thanks a lot."
+    }
+  ]
+}

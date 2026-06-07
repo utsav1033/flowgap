@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_006",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi uh, I'm calling to fix an appointment. Gynaecology, if you have that."
+    },
+    {
+      "speaker": "agent",
+      "text": "Yes, we do have a gynaecology department. May I know your name?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Priya Jain."
+    },
+    {
+      "speaker": "agent",
+      "text": "And your contact number, Priya?"
+    },
+    {
+      "speaker": "caller",
+      "text": "9654321789."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you. Dr. Kavitha Reddy handles gynaecology here. She has openings on Friday afternoon — 2 PM, 3:30 PM, or 4:30 PM."
+    },
+    {
+      "speaker": "caller",
+      "text": "Umm, let me think... 3:30 PM, that should be fine."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great. Booked for Priya Jain, Friday at 3:30 PM with Dr. Kavitha Reddy. Confirmation will be sent to your number."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect, thanks."
+    }
+  ]
+}

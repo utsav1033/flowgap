@@ -1,0 +1,36 @@
+{
+  "call_id": "BATCH_ID_047",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, mujhe apni appointment cancel karni hai. Meri tabiyat theek nahi hai aur main aa nahi sakta."
+    },
+    {
+      "speaker": "agent",
+      "text": "Koi baat nahi. Pehle aap theek ho jaiye. Aapka naam aur appointment details?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Rajan Nair. Aaj shaam ko 6 baje tha. Dr. Arun Mahajan ke saath."
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan dekha. Rajan Nair, aaj 6 PM, Dr. Mahajan. Cancel kar doon completely?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan, aur jab main theek ho jaaunga toh nayi date le loonga."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul. Cancel ho gaya. Jab chahein call kar ke nayi appointment le lena. Jaldi sehat theek ho aapki."
+    },
+    {
+      "speaker": "caller",
+      "text": "Shukriya. Bahut acha service hai aapka."
+    }
+  ]
+}

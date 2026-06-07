@@ -1,0 +1,32 @@
+{
+  "call_id": "BATCH_ID_094",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello. I was just wondering, kya aapke yahan interpreter available hai? Meri naani ko Marathi mein samjhana padta hai doctors ko."
+    },
+    {
+      "speaker": "agent",
+      "text": "Ji zaroor. Humare zyaadatar doctors aur nursing staff Marathi mein baat kar sakte hain. Aap appointment ke time mention kar dena, hum ensure karenge ki Marathi-speaking staff ho naani ji ke saath."
+    },
+    {
+      "speaker": "caller",
+      "text": "Bahut acha. Aur agar koi Hindi bolne wala chahiye toh?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Hindi bhi koi problem nahi. Hum Marathi, Hindi aur English mein comfortable hain. Patients ki comfort hamare liye priority hai."
+    },
+    {
+      "speaker": "caller",
+      "text": "Bahut acha clinic lagta hai aapka. Shukriya."
+    },
+    {
+      "speaker": "agent",
+      "text": "Aapka swagat hai. Kab bhi zaroorat ho, humse milne aana!"
+    }
+  ]
+}

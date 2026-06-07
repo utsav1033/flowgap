@@ -1,0 +1,34 @@
+# What the designer actually built. Reality minus this = gaps.
+global:
+  objective: "Front desk agent for Sunrise Multispeciality Clinic"
+  personality: ["warm", "patient", "respectful"]
+  guardrails: ["no medical advice", "data privacy", "answer from knowledge base only"]
+  universal_tools: ["end_call", "transfer_to_human", "send_voicemail"]
+
+nodes:
+  - id: greeting
+  - id: intent_classification
+  - id: book_appointment
+    tools: ["check_doctor_availability", "book_appointment"]
+  - id: reschedule_cancel
+    tools: ["find_appointment", "modify_appointment"]
+  - id: insurance_tpa
+    tools: ["verify_tpa", "lookup_policy"]
+  - id: billing_payment
+    tools: ["fetch_invoice", "send_payment_link"]
+  - id: clinic_info
+    tools: ["get_clinic_info"]
+  - id: prescription_refill
+    tools: ["lookup_prescription", "raise_refill_request"]
+  - id: anything_else
+  - id: transfer_to_human       # fallback — where unhandled intents die
+
+edges:
+  - {from: greeting, to: intent_classification}
+  - {from: intent_classification, to: book_appointment,    condition: "intent == book_appointment"}
+  - {from: intent_classification, to: reschedule_cancel,   condition: "intent == reschedule_cancel"}
+  - {from: intent_classification, to: insurance_tpa,       condition: "intent == insurance_tpa"}
+  - {from: intent_classification, to: billing_payment,     condition: "intent == billing_payment"}
+  - {from: intent_classification, to: clinic_info,         condition: "intent == clinic_info"}
+  - {from: intent_classification, to: prescription_refill, condition: "intent == prescription_refill"}
+  - {from: intent_classification, to: transfer_to_human,   condition: "intent == unknown"}   # the leak

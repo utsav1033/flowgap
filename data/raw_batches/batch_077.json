@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_077",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Good morning. I'd like to reschedule. I booked a neurology appointment for next Monday but I have an exam that day now."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good morning! No problem. Name and registered number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Shruti Kulkarni. 9823112244."
+    },
+    {
+      "speaker": "agent",
+      "text": "Found it — Shruti Kulkarni, Monday 11 AM with Dr. Leena Verma. Best of luck with your exam! When would you like to reschedule?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Maybe the following week? Wednesday or Thursday?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Dr. Verma has Wednesday at 2 PM and Thursday at 4 PM available the following week."
+    },
+    {
+      "speaker": "caller",
+      "text": "Wednesday 2 PM please."
+    },
+    {
+      "speaker": "agent",
+      "text": "All set! Rescheduled to the following Wednesday at 2 PM. SMS coming your way. Good luck again!"
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you so much!"
+    }
+  ]
+}

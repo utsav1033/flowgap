@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_153",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi. Umm, I need my diabetes medicines refilled. I've been getting them from your clinic for like six months now."
+    },
+    {
+      "speaker": "agent",
+      "text": "Sure! May I have your name and registered number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Sudarshan Rao. Number is 9701234567. I take Metformin 500mg and Glimepiride 1mg."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you, Mr. Rao. I can see your prescription history. Your last prescription from Dr. Arun Srinivas is on record. I'll flag a refill request — he usually approves within a day. Do you want home delivery or will you pick up?"
+    },
+    {
+      "speaker": "caller",
+      "text": "I'll pick up. My office is near your clinic anyway."
+    },
+    {
+      "speaker": "agent",
+      "text": "Perfect. Once approved, the medicines will be kept ready at our pharmacy counter in your name. We'll send you an SMS confirmation when it's ready for pickup."
+    },
+    {
+      "speaker": "caller",
+      "text": "Great, thank you for making this easy."
+    },
+    {
+      "speaker": "agent",
+      "text": "Anytime, Mr. Rao. Stay well!"
+    }
+  ]
+}

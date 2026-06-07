@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_005",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Good afternoon. I'd like to book a cardiac consultation if possible."
+    },
+    {
+      "speaker": "agent",
+      "text": "Good afternoon! Absolutely. May I have your full name and a contact number?"
+    },
+    {
+      "speaker": "caller",
+      "text": "My name is Vinod Chandrasekaran. Phone number is 9711234560."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you Mr. Chandrasekaran. Our cardiologist Dr. Suresh Nair is available next Monday and Wednesday. Which would suit you?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Wednesday works. What's the earliest slot?"
+    },
+    {
+      "speaker": "agent",
+      "text": "The earliest on Wednesday is 9:00 AM."
+    },
+    {
+      "speaker": "caller",
+      "text": "That's actually perfect. Let's do 9 AM."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful. Appointment booked for Vinod Chandrasekaran, Wednesday at 9:00 AM with Dr. Suresh Nair. Is there anything else you need?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No, that covers it. Thank you."
+    },
+    {
+      "speaker": "agent",
+      "text": "Have a great day, Mr. Chandrasekaran!"
+    }
+  ]
+}

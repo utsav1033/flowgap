@@ -1,0 +1,48 @@
+{
+  "call_id": "BATCH_ID_140",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hello, this is Geeta Sawant. I want to reschedule my appointment. I booked it for this Saturday but I have a function at home."
+    },
+    {
+      "speaker": "agent",
+      "text": "No worries, Ms. Sawant! Could you confirm the phone number on your booking?"
+    },
+    {
+      "speaker": "caller",
+      "text": "9823776655."
+    },
+    {
+      "speaker": "agent",
+      "text": "Got it. You have an appointment with Dr. Mohan Gaikwad in general medicine this Saturday at 10 AM. When would you like to move it to?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Can we do the following Monday? Or even Tuesday?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Monday at 10:30 AM is available with Dr. Gaikwad. Would that work?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Haan, that's perfect actually."
+    },
+    {
+      "speaker": "agent",
+      "text": "Great, your appointment has been moved to Monday at 10:30 AM with Dr. Mohan Gaikwad. An updated confirmation will reach you on your registered number."
+    },
+    {
+      "speaker": "caller",
+      "text": "Thank you so much."
+    },
+    {
+      "speaker": "agent",
+      "text": "Anytime! Enjoy your function."
+    }
+  ]
+}

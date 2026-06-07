@@ -1,0 +1,44 @@
+{
+  "call_id": "BATCH_ID_002",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Hi, mujhe ek appointment chahiye. Dermatology ke liye."
+    },
+    {
+      "speaker": "agent",
+      "text": "Bilkul, aap sahi jagah call kiye hain. Aapka naam aur contact number bata sakte hain?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Rahul Patankar. Number hai 9765432100."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you Rahul ji. Dermatology mein Dr. Sneha Kulkarni available hain. Aapko kab convenient hai — weekday ya weekend?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Weekday theek hai, actually Saturday bhi chalega agar ho toh."
+    },
+    {
+      "speaker": "agent",
+      "text": "Saturday ko Dr. Kulkarni 11 AM se 1 PM tak available hain. Koi specific time preferred hai?"
+    },
+    {
+      "speaker": "caller",
+      "text": "11:30 ho sakta hai?"
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan, 11:30 AM Saturday ko book kar diya Rahul ji. SMS confirmation aayega aapke number pe. Kuch aur help chahiye?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Nahi, bas itna hi. Thank you!"
+    }
+  ]
+}

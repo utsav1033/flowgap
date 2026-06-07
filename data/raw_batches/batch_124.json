@@ -1,0 +1,40 @@
+{
+  "call_id": "BATCH_ID_124",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "turns": [
+    {
+      "speaker": "caller",
+      "text": "Haan, hello. Mujhe, uh, apna bill clear karna tha. Last month mera operation hua tha aur abhi bhi outstanding hai kuch."
+    },
+    {
+      "speaker": "agent",
+      "text": "Haan bilkul, main aapki madad karunga. Aapka naam aur patient ID bata sakte hain?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Meera Joshi. Patient ID shayad... P-zero-zero-four-five-six hai."
+    },
+    {
+      "speaker": "agent",
+      "text": "Thank you, Ms. Joshi. I can see an outstanding balance of ₹12,400 against your procedure on the 14th of last month. Would you like to pay this now over the phone or prefer to visit the billing desk?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Can I pay by UPI? I have GPay."
+    },
+    {
+      "speaker": "agent",
+      "text": "Absolutely. I'll send a payment link to your registered mobile number ending in 67. Once you complete the payment, you'll receive a receipt via SMS and email."
+    },
+    {
+      "speaker": "caller",
+      "text": "Done, I got the link. Paying now... okay it went through."
+    },
+    {
+      "speaker": "agent",
+      "text": "Wonderful! Your payment of ₹12,400 has been received. Your account is now fully cleared. Thank you, Ms. Joshi!"
+    }
+  ]
+}
