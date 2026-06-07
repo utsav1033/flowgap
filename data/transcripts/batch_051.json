@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_051",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I wanted to cancel my appointment with the physiotherapist. I've actually recovered and I don't think I need it anymore.\nAGENT: That's great to hear! Glad you're feeling better. Could I get your name to locate the appointment?\nCALLER: Pallavi Deshpande. It was for Thursday evening.\nAGENT: Yes, Pallavi Deshpande, Thursday 6 PM with Mr. Ganesh Khot. Cancelling this?\nCALLER: Yes please. And thank the team for me, they were really helpful last time.\nAGENT: Cancelled! I'll pass on your kind words. Take care and stay healthy, Pallavi!\nCALLER: Thanks, bye."
+}

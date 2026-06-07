@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_185",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I want to shift my appointment from morning to evening if possible. I have a 10 AM slot but I just got a meeting scheduled.\nAGENT: Sure thing! May I know your name and which doctor you're scheduled with?\nCALLER: Pooja Nambiar. Uh, Dr. Ramesh Kulkarni, the cardiologist.\nAGENT: Ms. Nambiar, I can see your appointment. Dr. Kulkarni has an evening slot at 6 PM on the same day. Would that work?\nCALLER: 6 PM is perfect actually, yes.\nAGENT: Done! Your appointment is rescheduled from 10 AM to 6 PM with Dr. Kulkarni. You'll get an updated SMS. Anything else?\nCALLER: No, that's all. You were very quick, thank you!\nAGENT: Happy to help! See you in the evening, Ms. Nambiar."
+}

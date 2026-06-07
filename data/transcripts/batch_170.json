@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_170",
+  "intent": "doctor_availability_specific",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi there. I specifically want to know if Dr. Anand Bhosale is available this weekend. He's an orthopaedic surgeon and I need to consult him urgently.\nAGENT: I understand, and I want to help. Unfortunately, I don't have access to individual doctor schedules or their leave calendars, so I can't confirm Dr. Bhosale's specific availability without risking giving you wrong information.\nCALLER: Oh. Can you find out somehow?\nAGENT: Absolutely — let me connect you to our scheduling desk directly. They have live access to all doctor calendars and can confirm Dr. Bhosale's weekend slots immediately. One moment please.\nCALLER: Alright.\nAGENT: Transferring you now to our scheduling team. They'll get you sorted right away."
+}

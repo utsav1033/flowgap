@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_095",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I'm looking to get a second opinion on my MRI report. A doctor at another hospital suggested surgery for my spine. I want another view.\nAGENT: Absolutely, second opinions are very important. Our orthopaedic surgeon Dr. Pramod Joshi or our neurosurgeon can review spinal MRIs. Which would you prefer?\nCALLER: Neurosurgeon might be more relevant. My name is Harsha Rao, 9811234560.\nAGENT: Thank you Harsha. Dr. Vinay Kapoor is our neurosurgeon. He holds clinic on Tuesdays and Thursdays. Earliest is this Thursday at 11:30 AM.\nCALLER: Thursday 11:30 is fine. Should I bring the original MRI CD?\nAGENT: Yes, please bring the MRI CD or prints and any reports from the other hospital. The more Dr. Kapoor has to review the better.\nCALLER: Will do. Thanks."
+}

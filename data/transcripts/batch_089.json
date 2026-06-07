@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_089",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi there. I need to see a urologist. My husband has been having some trouble, uh, you know... kidney stone suspicion.\nAGENT: Of course, I understand. Let me help you book. What's your husband's name and a contact number?\nCALLER: Vishal Phule. 9854321678.\nAGENT: Thank you. Our urologist Dr. Kishore Jog is available Wednesday at 10 AM and Friday at 3 PM. Any preference?\nCALLER: Wednesday 10 AM. Let's go early.\nAGENT: Booked! Vishal Phule, Wednesday at 10:00 AM with Dr. Kishore Jog. If he has any recent ultrasound reports please bring those along.\nCALLER: He does have one. Will bring it. Thank you."
+}

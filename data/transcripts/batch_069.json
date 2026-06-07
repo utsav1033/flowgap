@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_069",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi. I did a urine culture test here 3 days ago. The results haven't come. Can you check?\nAGENT: Hello! I understand you're waiting for your urine culture report. May I have your name?\nCALLER: Seema Bhatt. I came last... Tuesday I think.\nAGENT: Thank you Seema ji. I want to help, but unfortunately the lab report status and turnaround times are not something I can access from this helpline. I wouldn't want to give you wrong information.\nCALLER: Okay but it's been 3 days. Is that normal for this test?\nAGENT: Urine cultures do typically take 48-72 hours, so it's possible it's ready or nearly ready. But for the exact status, our lab team is the right contact. I'll connect you to our staff immediately who can check this for you.\nCALLER: Yes please, I really need to know.\nAGENT: Absolutely. Please hold — let me connect you to our staff right now."
+}

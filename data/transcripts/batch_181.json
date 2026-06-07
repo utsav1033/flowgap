@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_181",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Uh yeah hi. I need to see someone for — this is a bit embarrassing — I need to see a gastroenterologist. I've been having stomach issues for a month.\nAGENT: Please don't worry, these are very common concerns. Dr. Farhan Qureshi is our gastroenterologist and he's highly experienced. He's free this Thursday at 6 PM or Saturday at 11 AM.\nCALLER: Saturday works better for me.\nAGENT: Saturday at 11 AM it is. Your name and number please?\nCALLER: Saurabh Bansal, 9123456780.\nAGENT: Confirmed! Mr. Bansal, your appointment is set for Saturday at 11 AM with Dr. Qureshi. If you have any prior reports or endoscopy results, please bring them along.\nCALLER: Sure, will do. Thanks.\nAGENT: See you Saturday. Take care!"
+}

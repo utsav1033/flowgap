@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_084",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Good afternoon. I'm calling about my biopsy report. It was supposed to be ready today.\nAGENT: Good afternoon. I understand this must be an anxious wait. Your name please?\nCALLER: Santosh Kulkarni.\nAGENT: Santosh ji, biopsy reports are handled directly by our pathology and histopathology teams. I don't have access to report status from here, and I wouldn't want to speculate on something as sensitive as a biopsy.\nCALLER: Can you at least find out if it's ready?\nAGENT: I understand — this is important. The right people to confirm this are our pathology staff. Let me connect you to them immediately so they can give you an accurate update.\nCALLER: Please, yes.\nAGENT: Connecting you now — please hold for our staff."
+}

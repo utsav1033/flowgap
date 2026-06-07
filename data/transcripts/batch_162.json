@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_162",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, umm, I had an appointment tomorrow morning and I need to cancel it. Something came up.\nAGENT: I'm sorry to hear that. Could you please share your name and the appointment details?\nCALLER: My name is Arvind Patil. The appointment was with Dr. Meena Shah, I think at 10 AM tomorrow.\nAGENT: Let me pull that up... Yes, I can see the appointment for Mr. Arvind Patil with Dr. Meena Shah on Wednesday at 10 AM. Would you like to cancel it entirely or would you prefer to reschedule?\nCALLER: Uh, cancel for now. I'll call back when I'm free.\nAGENT: Understood. Your appointment has been cancelled. No cancellation fee applies since you're notifying us more than 12 hours in advance. Whenever you're ready to rebook, feel free to call us.\nCALLER: Okay, thanks.\nAGENT: You're welcome, Mr. Patil. Have a good day!"
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_037",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi, I had surgery here last week — appendix removal. I wanted to ask about the wound dressing. It looks a little different today.\nAGENT: I hope you're recovering well. Can you tell me your name and procedure date?\nCALLER: Manoj Thakur. Surgery was on the 17th.\nAGENT: Thank you, Manoj. I'm sorry to hear you're concerned about the wound site. I have to be honest — post-operative care guidance and wound assessment is something I really shouldn't advise on from this line, as it requires a clinical eye.\nCALLER: Is it serious? Should I be worried?\nAGENT: I truly can't say — I wouldn't want to either alarm you or dismiss something important. This is exactly why I want to get you to the right person. Our nursing or surgical team can assess your situation properly. Let me connect you to our staff right now.\nCALLER: Okay, please hurry.\nAGENT: Absolutely. Holding the line — let me connect you to our staff immediately."
+}

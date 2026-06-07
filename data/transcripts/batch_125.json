@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_125",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi, I did some blood tests at your clinic last Friday. Uh, I haven't received the reports yet. Can you check what's happening?\nAGENT: I'm sorry to hear that. Could I get your name and the date the samples were collected?\nCALLER: Suresh Iyer. It was last Friday, the 30th. I did a full CBC and lipid profile.\nAGENT: Thank you, Mr. Iyer. I want to help, but unfortunately I'm not able to access or track lab report statuses through this line — that requires our laboratory team directly. Let me connect you to our staff who can pull this up for you right away.\nCALLER: Oh okay, please do that.\nAGENT: Of course, please hold while I transfer your call. Thank you for your patience."
+}

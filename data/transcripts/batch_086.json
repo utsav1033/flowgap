@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_086",
+  "intent": "doctor_availability_specific",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi. I've been seeing Dr. Amol Sawant for my lungs. Is he available next week? I want to make sure before I travel from Nashik.\nAGENT: Hello! I appreciate you calling ahead — coming from Nashik makes planning important. You're asking about Dr. Amol Sawant specifically next week?\nCALLER: Yes. I don't want to travel and then find out he's on leave.\nAGENT: Completely understandable. But I have to be upfront — I can't confirm a specific doctor's leave status or exact schedule from this line. Visiting consultant schedules can change and I'd hate for you to travel based on wrong information from me.\nCALLER: Then who can confirm this?\nAGENT: Our reception staff have real-time access to all doctor schedules. Let me connect you to them right now — they'll confirm Dr. Sawant's availability for next week accurately.\nCALLER: Yes please, connect me.\nAGENT: Of course — let me connect you to our staff now. Please hold."
+}

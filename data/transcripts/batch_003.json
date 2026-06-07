@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_003",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Yeah hi, I was hoping to schedule a consultation. For myself. Uh, general physician kind of thing.\nAGENT: Hello! Sure, I can help you book a GP consultation. May I have your name please?\nCALLER: Aditi Wagh. W-A-G-H.\nAGENT: Got it, Aditi. And your phone number?\nCALLER: It's 8800912345.\nAGENT: Thank you. Our general physician Dr. Ramesh Iyer has slots tomorrow morning — 9 AM, 10 AM, and 11:30 AM. Any preference?\nCALLER: Umm, can I do 10 AM? Is that still available?\nAGENT: Yes, 10 AM is available. Should I go ahead and book it?\nCALLER: Yes please.\nAGENT: Done! Aditi Wagh, tomorrow at 10:00 AM with Dr. Ramesh Iyer. You'll get an SMS with the details. Anything else I can help with?\nCALLER: No, that's great. Thanks a lot."
+}

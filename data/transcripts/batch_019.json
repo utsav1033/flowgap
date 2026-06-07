@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_019",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Haan, yeh TPA ka matter hai. Meri company ka group mediclaim hai — United India Insurance. Aapke yahan cover hota hai?\nAGENT: Ji haan, United India Insurance ke saath humara empanelment hai. Group mediclaim bhi acceptable hai generally. Aapki policy number hai kya?\nCALLER: Haan, ek second... 0505012345678. Yeh hai.\nAGENT: Theek hai. Aap kaunsa treatment ya department ke liye aa rahe hain?\nCALLER: Surgery plan hai. Gallbladder ki. Doctor ne bola hai laparoscopic karna padega.\nAGENT: Samajh gaya. Iske liye aapko pre-authorisation letter lena hoga apni insurance company se ya TPA se. Aap woh letter lekar aayein, hum apni end se process shuru kar denge. Insurance desk subah 9 baje se sham 5 baje tak hai.\nCALLER: Okay. Aur koi documents aur chahiye?\nAGENT: Haan — ID proof, original policy document, aur doctor ki prescription ya referral. Yeh sab lekar aaiye, aur koi problem nahi hogi.\nCALLER: Bahut acha, shukriya."
+}

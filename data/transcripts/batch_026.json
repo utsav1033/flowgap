@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_026",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: I'm calling about a payment receipt. I paid last week but haven't received any receipt. Is this normal?\nAGENT: Apologies for that. Could I get your name and the approximate date of payment?\nCALLER: Harish Menon. I paid on... I think it was the 14th. It was for a cardiology OPD visit.\nAGENT: Let me check that. Yes, I can see a payment record for Harish Menon on the 14th for the cardiology OPD — amount 1,500 rupees. Shall I send the receipt to your email or SMS?\nCALLER: Email please. It's hmenon77@gmail.com.\nAGENT: Receipt sent to hmenon77@gmail.com. You should receive it within a few minutes. Anything else?\nCALLER: That's all, thanks a bunch."
+}

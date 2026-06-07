@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_179",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I wanted to ask about an EMI option for a big bill. We had a surgery last week and the amount is quite high.\nAGENT: I understand, and we do offer EMI options for bills above ₹10,000. May I ask for the patient name and bill amount?\nCALLER: Patient is my wife, Rekha Pillai. And the bill is around ₹78,000.\nAGENT: Yes, that's definitely eligible for our EMI scheme. We have tie-ups with Bajaj Finserv and HDFC Bank for no-cost EMI up to 6 months. Your wife would need to be present with her Aadhaar and PAN card to apply.\nCALLER: Can we do this at the billing counter tomorrow?\nAGENT: Absolutely, the billing counter handles EMI applications between 9 AM and 6 PM on weekdays. Just ask for the finance desk when you arrive.\nCALLER: Perfect. And the amount due — is part of it already covered by insurance?\nAGENT: I can see the insurance has settled ₹52,000 already. The outstanding balance to be paid or EMI'd is ₹26,000.\nCALLER: That's manageable. Thank you so much.\nAGENT: Of course, Mr. Pillai. Wishing Mrs. Pillai a speedy recovery!"
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_174",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, uh, I need to reschedule my appointment. I have one this Friday but I have a work conflict.\nAGENT: No problem at all. Can I get your name and which doctor the appointment is with?\nCALLER: Ananya Rao, and it's with Dr. Priti Joshi.\nAGENT: Found it — Friday 12 PM with Dr. Joshi. What dates or times would work better for you?\nCALLER: Anytime next week, preferably morning. Monday or Tuesday maybe?\nAGENT: Dr. Joshi has a slot on Tuesday at 9:30 AM. Shall I move your appointment there?\nCALLER: Yes, perfect!\nAGENT: Done! Your appointment has been rescheduled to Tuesday at 9:30 AM with Dr. Joshi. You'll get a confirmation SMS. Is there anything else?\nCALLER: No, that's it. Thank you.\nAGENT: You're welcome, Ms. Rao. See you Tuesday!"
+}

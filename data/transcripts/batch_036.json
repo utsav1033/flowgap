@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_036",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Haan, mujhe mere reports chahiye. Lipid profile test kiya tha last Friday.\nAGENT: Aapka naam aur patient ID please?\nCALLER: Aarav Shah. Patient ID... SNC-P-65490.\nAGENT: Shukriya Aarav ji. Main samajhta hoon aap report ke liye wait kar rahe hain, lekin mujhe afsos hai — lab report status check karna mere system mein possible nahi hai is line se.\nCALLER: Toh kaise pata chalega? Online portal hai koi?\nAGENT: Portal ke baare mein main confirm nahi kar sakta abhi. Yeh jaankari aur report dono ke liye humara lab department directly help kar sakta hai. Main aapko abhi unse connect karta hoon.\nCALLER: Theek hai.\nAGENT: Please hold karo — let me connect you to our staff who can assist with this."
+}

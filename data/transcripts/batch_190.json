@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_190",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, uh, do you have ambulance services or any emergency line?\nAGENT: Yes, we do. Our 24-hour emergency helpline is 020-66001200. We also have two ambulances on standby for patient transport within Pune city. For immediate life-threatening emergencies, always call 108 first.\nCALLER: Okay, and is your emergency department open at night?\nAGENT: Yes, our emergency and casualty department is open 24 hours, 7 days a week. We have a resident doctor on call at all times through the night.\nCALLER: Good to know. And just out of curiosity — do you have a blood bank too?\nAGENT: We have a licensed blood bank with O, A, B, and AB groups in both positive and negative. For rare groups, we coordinate with partner hospitals. The blood bank is also operational round the clock.\nCALLER: Excellent. I'm noting this down for my family. Very reassuring to know.\nAGENT: We're here whenever you need us. Stay safe!"
+}

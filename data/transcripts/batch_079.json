@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_079",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I just want to confirm — if I pay online, is the payment secure? I'm a bit old-fashioned and worried about these things.\nAGENT: That's a very fair concern. Our online payment portal uses bank-level SSL encryption and we do not store any card or UPI details. All transactions go through RBI-regulated payment gateways.\nCALLER: And if something goes wrong with the transaction?\nAGENT: If a payment fails or is deducted but not confirmed, please note the transaction ID and call us. We'll verify and ensure your record is updated or the amount is refunded within 5-7 working days.\nCALLER: Okay, I feel better about it now. Thank you for explaining.\nAGENT: Always happy to help. Please feel free to call anytime!"
+}

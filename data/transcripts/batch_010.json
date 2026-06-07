@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_010",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Good morning. I need to fix a physiotherapy session. My doctor referred me after a shoulder injury.\nAGENT: Good morning! Of course, we can set that up. What's your name and contact number?\nCALLER: Meera Pillai. 9900876543.\nAGENT: Thank you, Meera. Do you have the referring doctor's name, just for our records?\nCALLER: Yes, it was Dr. Sharma from Apollo. Orthopaedics.\nAGENT: Perfect. Our physiotherapist Mr. Ganesh Khot is available Monday through Saturday, mornings and evenings. Any preference?\nCALLER: Tomorrow evening would be ideal. Around 6?\nAGENT: 6 PM tomorrow is available. Booked for Meera Pillai with Mr. Ganesh Khot. You'll get a confirmation message. Anything else?\nCALLER: No, that's all. Thank you!\nAGENT: Take care and have a speedy recovery!"
+}

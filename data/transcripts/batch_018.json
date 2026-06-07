@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_018",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I wanted to check if you accept Star Health insurance. I have a cashless card.\nAGENT: Hello! Yes, Sunrise Multispeciality Clinic is empanelled with Star Health Insurance. We do accept cashless claims under most of their plans.\nCALLER: Oh great. And what's the process? Do I need to bring any documents?\nAGENT: For a cashless OPD visit, you'll need your Star Health e-card or physical card and a valid photo ID. For IPD admissions, please also carry a referral letter if applicable. Our insurance desk will verify the pre-authorisation directly with Star Health.\nCALLER: Okay. And if my plan doesn't cover everything, what happens?\nAGENT: In that case, you'd pay the balance amount that's not covered by your policy. Our billing team will give you a clear breakup before you proceed.\nCALLER: That sounds fair. Thank you for the info.\nAGENT: You're welcome! Feel free to call again if you have more questions."
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_157",
+  "intent": "doctor_availability_specific",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hello, uh, I wanted to check if Dr. Nandini Kulkarni is working this week. She's in gynaecology I believe.\nAGENT: Let me see what I can do. Could you tell me if this is for a new appointment or something else?\nCALLER: It's a sensitive follow-up. She asked me to come back in six weeks and I want to make sure she specifically is available, not a replacement.\nAGENT: I completely understand — you want to see Dr. Nandini Kulkarni specifically. I don't have access to real-time specialist schedules or exceptions in their availability here. Giving you incorrect information about her specific schedule could cause a wasted trip. The right thing is to connect you to our staff who can confirm directly. Please hold while I transfer you.\nCALLER: Yes, okay. Please transfer.\nAGENT: Transferring you now. Our team will confirm Dr. Kulkarni's schedule for you. Thank you for your patience."
+}

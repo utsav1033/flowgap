@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_115",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I was given a cashback offer by your front desk last visit — something about a loyalty programme. I didn't get any cashback. Who do I contact?\nAGENT: I'm sorry for the confusion. Could I get your name and visit date?\nCALLER: Rohini Apte. Last visit was 3rd of this month.\nAGENT: Let me check the loyalty programme record... I can see your visit but the cashback credit hasn't been applied. I'll flag this to our billing and patient relations team today. They'll review and credit it within 3 working days.\nCALLER: How will I receive the credit?\nAGENT: It'll be credited to your loyalty wallet in our app, which you can use on your next visit. If you're not on the app, I can request they process it as a direct discount on your next bill.\nCALLER: I'm on the app. Wallet credit is fine.\nAGENT: Perfect. Escalated. You'll be notified when the credit is added. Sorry for the delay, Rohini ji!"
+}

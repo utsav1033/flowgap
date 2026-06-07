@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_141",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Uh, hello. I had an appendectomy at your clinic last week. I'm calling because the pain has come back and there's some discharge from the wound. Should I be worried?\nAGENT: I'm sorry you're experiencing that. That does sound like something that needs prompt attention. Could you tell me your name and your surgeon's name?\nCALLER: My name is Deepak Jadhav. The surgery was done by Dr. Hemant Shirke.\nAGENT: Mr. Jadhav, wound discharge after surgery is something that genuinely needs to be assessed by our clinical or surgical nursing team — I'm not equipped to advise on post-operative complications from this line. I'm going to connect you to our staff immediately so they can loop in Dr. Shirke's team. Please hold.\nCALLER: Okay, please hurry, I'm quite uncomfortable.\nAGENT: Absolutely, transferring you right now. Please hold on."
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_029",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, can you tell me what are the OPD timings at your clinic?\nAGENT: Sure! Our OPD is open Monday to Saturday, 8:30 AM to 8:00 PM. On Sundays we operate from 9:00 AM to 1:00 PM for limited specialities.\nCALLER: Oh, you're open on Sundays too. That's convenient. And what about the emergency department?\nAGENT: Our emergency department is open 24 hours, 7 days a week.\nCALLER: Great. One more thing — where exactly are you located? I've seen different addresses online.\nAGENT: Our official address is Sunrise Multispeciality Clinic, Plot 14, Baner Road, near Balewadi Phata, Pune 411045.\nCALLER: Perfect, that's what I needed. Thanks."
+}

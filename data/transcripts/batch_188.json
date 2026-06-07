@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_188",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, main receipt maangna chahta hoon apne treatment ki. Mujhe income tax ke liye chahiye.\nAGENT: Bilkul, main help kar sakta hoon. Aapka naam aur registered mobile number bataiye.\nCALLER: Main Nandkumar Joshi. Number 9876001122.\nAGENT: Mr. Joshi, main aapka record dekh raha hoon. Aapne is financial year mein total ₹31,400 ki services li hain. Consolidated receipt chahiye ya itemized?\nCALLER: Itemized better hogi, income tax ke liye.\nAGENT: Theek hai. Main aapki registered email par itemized receipt bhej deta hoon — aath se dus minute mein aa jaayegi. Kya email sahi hai jo record mein hai?\nCALLER: Haan wahi theek hai.\nAGENT: Done. Agar receipt 15 minute mein na aaye toh dobara call karein. Koi aur help?\nCALLER: Nahin, bas itna hi. Shukriya.\nAGENT: Aapka swagat hai, Mr. Joshi!"
+}

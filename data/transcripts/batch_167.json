@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_167",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi, my husband had an appendix operation at your clinic four days back and he's been having some swelling near the wound. I'm not sure if it's normal or not.\nAGENT: I understand that must be worrying. What's the patient's name?\nCALLER: Deepak Joshi.\nAGENT: Ms. Joshi, post-operative wound queries really need to be assessed by the treating surgeon or our nursing staff, as I wouldn't be in a position to advise medically on this. I don't want to give you incorrect information about something this sensitive. Let me transfer you to our post-operative care team right away — they'll be able to tell you if this requires attention.\nCALLER: Yes please, I've been worried since morning.\nAGENT: Completely understandable. Connecting you now to our ward staff. Please hold the line."
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_005",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Good afternoon. I'd like to book a cardiac consultation if possible.\nAGENT: Good afternoon! Absolutely. May I have your full name and a contact number?\nCALLER: My name is Vinod Chandrasekaran. Phone number is 9711234560.\nAGENT: Thank you Mr. Chandrasekaran. Our cardiologist Dr. Suresh Nair is available next Monday and Wednesday. Which would suit you?\nCALLER: Wednesday works. What's the earliest slot?\nAGENT: The earliest on Wednesday is 9:00 AM.\nCALLER: That's actually perfect. Let's do 9 AM.\nAGENT: Wonderful. Appointment booked for Vinod Chandrasekaran, Wednesday at 9:00 AM with Dr. Suresh Nair. Is there anything else you need?\nCALLER: No, that covers it. Thank you.\nAGENT: Have a great day, Mr. Chandrasekaran!"
+}

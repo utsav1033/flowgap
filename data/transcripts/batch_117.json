@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_117",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, do you have a dedicated women's health or well-woman clinic?\nAGENT: Yes! We have a Women's Wellness Centre at Sunrise that offers gynaecology consultations, breast and cervical cancer screening, bone density scans, and counselling services — all under one roof.\nCALLER: Is there a specific day for the well-woman clinic?\nAGENT: The Women's Wellness Centre runs Tuesday and Saturday mornings from 9 AM to 1 PM. Appointments are recommended, though walk-ins are accommodated when slots are available.\nCALLER: Can I bring my teenage daughter for screening too?\nAGENT: Absolutely. We have a separate adolescent health consultation under the same centre. Please let us know when booking so we can assign the appropriate specialist.\nCALLER: Very comprehensive. Thank you so much."
+}

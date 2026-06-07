@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_011",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, uh, I want to schedule a diabetes check-up. My sugar levels have been off lately.\nAGENT: I understand. We have an endocrinology and diabetology department. May I have your name please?\nCALLER: Krishnamurti Rao. People usually call me Krish.\nAGENT: Sure, Krish! And your phone number?\nCALLER: 9123456780.\nAGENT: Great. Dr. Pallavi Nambiar specialises in diabetology. She's available this Friday at 10 AM or next Monday at 2 PM.\nCALLER: Hmm, Friday... actually, can I come Monday? 2 PM is better for me work-wise.\nAGENT: Of course. Monday at 2 PM with Dr. Pallavi Nambiar — all booked for you. Anything else you need?\nCALLER: Do I need to fast before the appointment?\nAGENT: For a general diabetology consultation you don't necessarily need to fast, but it's a good idea to have a light meal and avoid sweets beforehand. The doctor will advise further during the visit.\nCALLER: That helps, thank you."
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_017",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I need to reschedule. My child's sick so I can't come today.\nAGENT: I'm sorry to hear that. Hope your child gets better soon. Can I have your name?\nCALLER: Tanya Bapat. My appointment was at 12:30 today with the physiotherapist.\nAGENT: Yes, 12:30 PM with Mr. Ganesh Khot. Would you like to move it to tomorrow or later this week?\nCALLER: Uh, maybe day after? Same time if possible.\nAGENT: 12:30 PM the day after tomorrow is open. Done — rescheduled for Tanya Bapat. You'll get a message. Take care!\nCALLER: Thank you, appreciate it."
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_299",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Haan, mujhe thodi information chahiye.\nAGENT: Could you tell me what you need help with?\nCALLER: post op care\nAGENT: I'm sorry, I can't help with that.\nCALLER: Okay.\nAGENT: I can't help with that, let me connect you to our staff."
+}

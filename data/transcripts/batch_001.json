@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_001",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, uh, is this Sunrise Multispeciality Clinic?\nAGENT: Yes, good morning! You've reached Sunrise Multispeciality Clinic, Pune. How may I assist you today?\nCALLER: Haan, so I need to book an appointment. For my mother actually. She's been having some knee pain for the past few weeks.\nAGENT: Of course. I can help with that. Could I get your mother's name and her contact number please?\nCALLER: Her name is Sunita Deshmukh. And the number is... umm, 9823041567. That's her mobile.\nAGENT: Thank you. For knee-related concerns we'd recommend our orthopaedics department. Dr. Pramod Joshi is available this Thursday and Friday. Do either of those work?\nCALLER: Thursday would be better. What time slots are there?\nAGENT: We have 10:30 AM and 3:00 PM available on Thursday.\nCALLER: 3 PM is fine. Let's go with that.\nAGENT: Perfect. I've booked an appointment for Sunita Deshmukh with Dr. Pramod Joshi on Thursday at 3:00 PM. You'll receive a confirmation SMS shortly. Is there anything else?\nCALLER: No, that's all. Thank you so much.\nAGENT: You're welcome. Have a good day!"
+}

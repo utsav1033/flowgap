@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_053",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Uh hello. Aapka clinic government employees ke liye CGHS empanelled hai kya?\nAGENT: Haan ji, hum CGHS empanelled hain. Central government employees aur unke dependents cashless services le sakte hain.\nCALLER: Aur CGHS card se OPD bhi cover hoga ya sirf IPD?\nAGENT: CGHS ke through OPD consultations bhi cover hote hain empanelled hospitals mein. Aapko apna CGHS card aur beneficiary ID card laana hoga.\nCALLER: Specialist ke liye referral chahiye kya?\nAGENT: CGHS ke norms ke anusaar, specialist ke liye CGHS dispensary se referral recommended hai. Please apne dispensary se confirm kar lein pehle — har case alag ho sakta hai.\nCALLER: Theek hai, shukriya aapka.\nAGENT: Koi bhi aur sawaal ho toh call karein. Aapka swagat hai."
+}

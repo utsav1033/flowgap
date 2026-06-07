@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_142",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I wanted to ask — do you have an in-house pharmacy? Or do I need to go somewhere else for medicines?\nAGENT: Yes, we have a fully stocked pharmacy right inside the clinic on the ground floor, next to the main reception. It operates from 8 AM to 9 PM daily, including Sundays.\nCALLER: Do you also stock generic medicines? I'm on a tight budget.\nAGENT: Absolutely, we stock both branded and generic equivalents for most common medications. Your doctor can also write generics on the prescription if you request it.\nCALLER: That's great to know. One more thing — do you have a diabetes clinic or special OPD for diabetic patients?\nAGENT: Yes! We run a dedicated Diabetes Management OPD every Tuesday and Friday from 10 AM to 1 PM, led by Dr. Arun Srinivas, our endocrinologist. It includes consultations, dietary counselling, and HbA1c monitoring.\nCALLER: Oh that's very useful. Thank you.\nAGENT: My pleasure! Let us know if there's anything else."
+}

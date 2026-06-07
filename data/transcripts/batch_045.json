@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_045",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Good evening. I want to book a follow-up with Dr. Pallavi Nambiar. I was her patient last month.\nAGENT: Good evening! Of course. May I have your name and registered number?\nCALLER: Shanta Raman. Number is 9800765432.\nAGENT: Found your record, Shanta ji. Dr. Nambiar's next available follow-up slot is this Thursday at 2 PM or Saturday at 10 AM.\nCALLER: Thursday 2 PM is fine.\nAGENT: Confirmed. Shanta Raman, Thursday at 2:00 PM with Dr. Pallavi Nambiar. Anything else?\nCALLER: Should I bring my previous reports?\nAGENT: Yes, please bring any test reports and prescriptions from your last visit. It'll help Dr. Nambiar review your progress.\nCALLER: Will do. Thank you."
+}

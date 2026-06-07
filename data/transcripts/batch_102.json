@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_102",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. I'm a senior citizen and I have PM-JAY — Ayushman Bharat. Kya yeh chalega aapke yahan?\nAGENT: Haan ji! Hum Ayushman Bharat PM-JAY empanelled hain. Eligible treatments ke liye aap cashless facility le sakte hain.\nCALLER: Kaunse treatments cover hote hain iske under?\nAGENT: PM-JAY mein 1,500 se zyaada treatments covered hain — surgeries, hospitalisation, cancer care, kidney treatment aur bahut kuch. OPD generally cover nahi hoti lekin IPD hoti hai.\nCALLER: Mujhe cataract surgery karwani hai. Yeh cover hogi?\nAGENT: Ji haan, cataract surgery PM-JAY package mein covered hai. Apna Ayushman card aur Aadhaar lekar aiye, hum verification karenge aur cashless process start karenge.\nCALLER: Bahut dhanyawaad beta. Bahut helpful ho aap."
+}

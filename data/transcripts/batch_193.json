@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_193",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Good evening. My name is Lalita Rao and I need a refill of my blood pressure medication. It's been prescribed by Dr. Anjali Verma here.\nAGENT: Good evening, Ms. Rao. Let me look up your file. Could you confirm your date of birth?\nCALLER: 7th September 1958.\nAGENT: Got it. I see Dr. Verma prescribed Amlodipine 5mg and Telmisartan 40mg. Is that correct?\nCALLER: Yes, both of those. I'm almost out and my next appointment isn't for another 3 weeks.\nAGENT: Understood. I'll send a refill request to Dr. Verma's desk right now with a note about your timeline. She typically approves these within a business day. Would you like to collect from our pharmacy or shall we arrange delivery?\nCALLER: I'll collect it myself, I live nearby.\nAGENT: Perfect. You'll receive an SMS once Dr. Verma approves — usually by tomorrow afternoon. Is there anything else?\nCALLER: No, that's fine. Thank you dear.\nAGENT: Take care and stay healthy, Ms. Rao!"
+}

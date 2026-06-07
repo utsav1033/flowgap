@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_154",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I'm calling about Bajaj Allianz insurance. My father is getting admitted tomorrow for a hernia surgery and I want to confirm the cashless process.\nAGENT: Yes, we work with Bajaj Allianz. For tomorrow's admission, please ensure you have your father's Bajaj Allianz health card, a valid ID proof, and the doctor's admission advice letter.\nCALLER: We have all of that. When should we arrive?\nAGENT: Please come at least an hour before the scheduled surgery time to complete the TPA registration and pre-authorization formalities. Our TPA desk opens at 8 AM.\nCALLER: And how long does the pre-auth take?\nAGENT: Bajaj Allianz usually responds within 2 to 4 hours for planned procedures. Our team follows up actively so there are no delays on the day of surgery.\nCALLER: That's reassuring. We'll be there by 8 then.\nAGENT: We'll be ready for you. Best wishes for your father's procedure!"
+}

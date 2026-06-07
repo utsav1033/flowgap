@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_144",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, actually I wanted to understand the reimbursement process for New India Assurance. I paid out of pocket at your clinic last month and now I want to claim it back.\nAGENT: Sure, I can walk you through that. For New India Assurance reimbursement claims, you'll need to submit the original bills and receipts, the discharge summary or OPD prescription, lab reports if any, and a duly filled claim form from New India.\nCALLER: Does the clinic give me the discharge summary? I lost mine.\nAGENT: Yes, we can issue a duplicate discharge summary. You'll need to submit a written request at our records desk, and it takes about 2 to 3 working days. There's a nominal charge of ₹200 for duplicates.\nCALLER: Okay. And does your billing desk stamp and sign the bills for the insurer?\nAGENT: Yes, our billing department provides certified copies with stamp and signature. Just bring the original bills along for verification when you come to collect the summary.\nCALLER: Perfect. I'll come this week then.\nAGENT: We'll be ready for you. Have a good day!"
+}

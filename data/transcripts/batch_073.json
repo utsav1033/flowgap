@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_073",
+  "intent": "doctor_availability_specific",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi. I want to know when Dr. Rekha Patel is available. She's a gynaecologist I believe.\nAGENT: Hello! Could I confirm — you're asking specifically about Dr. Rekha Patel's availability and schedule?\nCALLER: Yes. I've consulted her before and I'd prefer to continue with the same doctor.\nAGENT: I completely understand that preference. However, specific named doctors' schedules — including days off, leaves, and clinic timings — aren't accessible to me from this line. This information needs to come from our front desk directly.\nCALLER: Is she even available at this clinic currently?\nAGENT: I genuinely don't want to confirm or deny without accurate information — her consulting schedule may have changed. Our reception staff will have the latest confirmed schedule. Let me connect you to them right now.\nCALLER: Please do.\nAGENT: Absolutely — let me connect you to our staff now. Please hold."
+}

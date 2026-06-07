@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_134",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Uh, hello. I have an appointment day after tomorrow but I need to shift it to next week. Something came up at work.\nAGENT: No problem at all! Let me find your booking. May I have your name and contact number?\nCALLER: Nalini Krishnan. 9944332211.\nAGENT: Found it — you have an appointment with Dr. Sunita Rao in the ophthalmology department this Thursday at noon. What dates work for you next week?\nCALLER: Umm, Monday or Tuesday, either is fine. Same time if possible.\nAGENT: Monday noon with Dr. Sunita Rao is available. Shall I confirm that?\nCALLER: Yes, please go ahead.\nAGENT: Done! Your appointment has been rescheduled to Monday next week at 12 PM with Dr. Sunita Rao. You'll get an updated confirmation SMS. Is there anything else?\nCALLER: No, that's perfect. Thank you!\nAGENT: Take care, Ms. Krishnan. See you Monday!"
+}

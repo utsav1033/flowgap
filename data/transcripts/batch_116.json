@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_116",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. Mujhe ek haematologist se milna hai. Mere blood reports mein kuch abnormal aaya hai — platelet count related.\nAGENT: Zaroor, yeh important hai. Aapka naam aur number?\nCALLER: Swapnil Ghate. 9765234890.\nAGENT: Shukriya Swapnil ji. Humare haematologist Dr. Arun Pendse hain. Unka clinic schedule Mangalvaar aur Shukravaar hai. Kaunsa din theek hai?\nCALLER: Shukravaar — kal — agar slot ho toh urgent basis pe.\nAGENT: Kal Shukravaar 11 AM ka slot hai. Aur abnormal reports ke case mein hum ise priority mein mark kar lete hain. Aap apni reports saath laana zaroor.\nCALLER: Haan, sab reports hain mere paas. Book kar dijiye please.\nAGENT: Done! Swapnil Ghate, kal Shukravaar 11 AM, Dr. Arun Pendse. Jaldi se report milegi aapko."
+}

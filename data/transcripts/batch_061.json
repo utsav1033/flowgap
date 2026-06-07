@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_061",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. Mujhe ek cheque se payment karni thi. Kya aap cheque accept karte hain?\nAGENT: Ji, hum cheque accept karte hain. Aapka naam aur invoice number?\nCALLER: Vasant Phadke. Invoice SNC-2024-09341 hai.\nAGENT: Haan dekha. Amount hai 8,750 rupaye. Cheque Sunrise Multispeciality Clinic Pune ke naam se banana hoga. Aap personally aa ke billing counter pe de sakte hain ya courier bhi kar sakte hain.\nCALLER: Main khud aakar dunga. Kal chal sakta hai?\nAGENT: Bilkul, kal billing counter subah 9 baje se 6 baje tak khula hai. Aapka swagat hai.\nCALLER: Theek hai. Shukriya."
+}

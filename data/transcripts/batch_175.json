@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_175",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I wanted to ask, umm, do you guys have a pediatrics department? My son is 4 years old.\nAGENT: Yes, absolutely! We have a full pediatric OPD at Sunrise Clinic. Dr. Harshad Mhatre is our senior pediatrician with over 15 years of experience. He sees patients Monday, Wednesday, and Friday.\nCALLER: Oh that's great. Is there a separate waiting area for kids? Because the last clinic we went to was so crowded.\nAGENT: Yes, we have a dedicated children's waiting lounge on the second floor with activity corners to keep little ones comfortable. It's kept separate from the adult OPD area.\nCALLER: That's such a relief. What about vaccinations — do you handle those too?\nAGENT: We do offer routine childhood immunizations as per the national schedule. For specific vaccines or combination shots, it's best to confirm availability when you call to book.\nCALLER: Wonderful, thank you so much.\nAGENT: Happy to help. Do call back when you'd like to book an appointment for your son!"
+}

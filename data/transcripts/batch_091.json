@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_091",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I want to book a sleep study. I snore heavily and my wife says I stop breathing sometimes at night.\nAGENT: That sounds like it could be sleep apnoea, and it's important to get it checked. We do have a sleep lab. Your name and number?\nCALLER: Rajendra Bhatt. 9876543219.\nAGENT: Thank you Rajendra ji. The sleep study is an overnight procedure — you'd come in the evening and leave by morning. Next available date is next Saturday. Convenient?\nCALLER: Saturday works perfectly. What time do I come?\nAGENT: Please arrive at 9 PM. The study runs through the night and you'll be done by 6 AM. Booked for Rajendra Bhatt next Saturday. SMS confirmation follows.\nCALLER: Great. Should I bring anything?\nAGENT: Just comfortable sleeping clothes and your regular medications if any. Avoid caffeine the day of the study.\nCALLER: Noted. Thank you."
+}

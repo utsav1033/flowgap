@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_065",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, yeh child vaccination bhi karte hain kya aap log?\nAGENT: Haan ji, humare paediatrics department mein vaccination services available hain. IAP recommended schedule ke anusaar vaccines diye jaate hain.\nCALLER: Covid vaccine bhi milti hai?\nAGENT: Ji, COVID-19 booster doses available hain eligible age groups ke liye. Please call karke current availability confirm kar lein.\nCALLER: Aur flu shot — influenza vaccine — milta hai yahan?\nAGENT: Haan, influenza vaccine bhi available hai. Aap walk-in bhi aa sakte hain vaccine ke liye, appointment mandatory nahi hai. Subah 9 se dopahar 1 baje ke beech aayein.\nCALLER: Perfect. Kal aa jaate hain hum. Shukriya."
+}

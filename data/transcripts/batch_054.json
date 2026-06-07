@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_054",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I want to know if you have a dedicated TPA helpdesk at the clinic.\nAGENT: Yes, we do have a dedicated insurance and TPA helpdesk at Sunrise Multispeciality Clinic.\nCALLER: And what are their working hours?\nAGENT: The insurance desk is operational Monday to Saturday from 9 AM to 5 PM. For emergencies after hours, the admissions team can assist with basic insurance coordination.\nCALLER: Can they help with pre-authorisation for a planned surgery?\nAGENT: Absolutely. Our TPA team handles all pre-authorisation requests, including gathering documents, submitting them to your insurer, and following up. It's advisable to come in 2-3 days before your procedure.\nCALLER: Very helpful. I'll come by Monday.\nAGENT: We'll be happy to assist. See you Monday!"
+}

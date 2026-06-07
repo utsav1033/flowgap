@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_194",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I had surgery here two months ago and submitted a reimbursement claim to my insurer. They're asking for a certificate from the hospital. Can you help?\nAGENT: Of course! We do issue discharge summaries, treatment certificates, and other documents needed for reimbursement. Your name please?\nCALLER: Amitabh Sharma.\nAGENT: Mr. Sharma, which specific certificate is the insurer asking for?\nCALLER: They want a final discharge summary with the ICD code and treating doctor's signature.\nAGENT: That's standard. Please submit a written request at our medical records counter — they're open 9 AM to 5 PM Monday to Friday. The document is typically ready in 3 working days and costs ₹200 as a processing fee.\nCALLER: Can I request it by email instead of coming in?\nAGENT: Yes, you can email the request to records@sunriseclinicpune.com with your patient ID and phone number. Attach a scan or photo of your ID for verification. They'll reply with the timeline.\nCALLER: That's much easier. Thank you.\nAGENT: Happy to help, Mr. Sharma. Hope your claim goes through smoothly!"
+}

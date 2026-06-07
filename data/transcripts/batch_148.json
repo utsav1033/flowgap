@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_148",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. Mujhe yeh confirm karna tha ki mera insurance se jo amount settle hua, usske baad balance kya bacha hai mujhe pay karna.\nAGENT: Bilkul. Aapka naam aur patient ID please?\nCALLER: Arun Gokhale. Patient ID P-zero-zero-seven-eight-nine.\nAGENT: Mr. Gokhale, aapke records dekhta hoon. Total bill tha ₹38,500. HDFC Ergo ne ₹31,200 settle kar diya hai. Aapka outstanding balance ₹7,300 hai.\nCALLER: Theek hai. Main UPI se pay kar sakta hoon abhi?\nAGENT: Haan bilkul. Payment link bhej deta hoon aapke registered number pe. Complete karne ke baad receipt SMS pe aayega.\nCALLER: Done, paid. Message aa gaya.\nAGENT: Bahut acha! Aapka account fully cleared ho gaya hai. Koi aur sawaal?\nCALLER: Nahi, shukriya.\nAGENT: Aapka swagat hai, Mr. Gokhale!"
+}

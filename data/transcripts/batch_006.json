@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_006",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi uh, I'm calling to fix an appointment. Gynaecology, if you have that.\nAGENT: Yes, we do have a gynaecology department. May I know your name?\nCALLER: Priya Jain.\nAGENT: And your contact number, Priya?\nCALLER: 9654321789.\nAGENT: Thank you. Dr. Kavitha Reddy handles gynaecology here. She has openings on Friday afternoon — 2 PM, 3:30 PM, or 4:30 PM.\nCALLER: Umm, let me think... 3:30 PM, that should be fine.\nAGENT: Great. Booked for Priya Jain, Friday at 3:30 PM with Dr. Kavitha Reddy. Confirmation will be sent to your number.\nCALLER: Perfect, thanks."
+}

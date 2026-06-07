@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_072",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi, I'm calling about my husband. He had bypass surgery two weeks ago at your facility. He has a mild fever since yesterday. Should we be concerned?\nAGENT: I completely understand your concern. This is not something I should weigh in on from here — fever after cardiac surgery is something that needs immediate medical assessment.\nCALLER: Yes we know it's serious. We just wanted to know if we should rush to emergency or wait.\nAGENT: Please don't wait on my guidance — this needs a clinical decision. I'm going to connect you to our nursing or cardiology team right now. They're the right people to advise on whether to come in or call for emergency help.\nCALLER: Yes please, quickly.\nAGENT: Connecting you right now — please hold for our staff."
+}

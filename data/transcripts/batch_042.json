@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_042",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Namaste. Mujhe orthopaedic doctor se milna hai. Mere kamar mein bahut dard hai.\nAGENT: Namaste ji. Zaroor help karenge. Aapka naam aur number?\nCALLER: Savitabai Jadhav. 9823001122.\nAGENT: Shukriya Savitabai ji. Dr. Pramod Joshi orthopaedics mein hain. Kal subah 9 baje ka slot available hai.\nCALLER: Kal subah theek hai. Book kar dijiye.\nAGENT: Ho gaya. Savitabai Jadhav, kal 9:00 AM, Dr. Pramod Joshi. SMS milega confirm karne ke liye. Kuch aur?\nCALLER: Nahi, dhanyawaad."
+}

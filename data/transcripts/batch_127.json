@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_127",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Uh, good morning. Main Dr. Ramesh Patil se milna chahta hoon, orthopaedic wale. Kab available hain woh?\nAGENT: Good morning! Dr. Ramesh Patil is available on Monday, Wednesday, and Friday from 10 AM to 1 PM. Aapko kaunse din aana convenient rahega?\nCALLER: Friday theek rahega. Morning slot dijiye.\nAGENT: Friday ke liye 10:30 AM ka slot available hai. Aapka naam aur contact number?\nCALLER: Vijay Kulkarni. Number hai 9812003344.\nAGENT: Perfect. Appointment book ho gayi — Mr. Vijay Kulkarni, Dr. Ramesh Patil ke saath, is Friday 10:30 AM. Confirmation SMS aayega aapke number pe.\nCALLER: Theek hai, dhanyawad.\nAGENT: Aapka swagat hai! Khyaal rakhein."
+}

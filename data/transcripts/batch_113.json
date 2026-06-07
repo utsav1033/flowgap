@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_113",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. Meri anti-seizure medication ka refill chahiye. Mujhe epilepsy hai aur Doctor ne kaha tha regular lena zaroori hai.\nAGENT: Bilkul samajhta hoon — yeh medication kabhi bhi band nahi honi chahiye. Aapka naam aur doctor?\nCALLER: Ganesh Vaidya. Dr. Leena Verma mere neurologist hain.\nAGENT: Haan, record mein dekh raha hoon. Levetiracetam 500mg last prescribed 8 weeks ago. Main Dr. Verma ko urgent refill request bhejta hoon abhi. Anti-seizure medication mein hum delay nahi karte.\nCALLER: Dhanyawaad. Kitni jaldi milegi?\nAGENT: Dr. Verma zyaadatar aaj ya kal tak respond karti hain urgent cases mein. Hum aapko call karenge jaise hi approval aaye. Abhi kitne dino ki dawai bachi hai?\nCALLER: 4-5 din ki hai.\nAGENT: Theek hai, koi dikkat nahi. Request urgent mark ho gayi. Hum aaj shaam tak contact karenge aapko."
+}

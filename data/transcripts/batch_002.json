@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_002",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, mujhe ek appointment chahiye. Dermatology ke liye.\nAGENT: Bilkul, aap sahi jagah call kiye hain. Aapka naam aur contact number bata sakte hain?\nCALLER: Rahul Patankar. Number hai 9765432100.\nAGENT: Thank you Rahul ji. Dermatology mein Dr. Sneha Kulkarni available hain. Aapko kab convenient hai — weekday ya weekend?\nCALLER: Weekday theek hai, actually Saturday bhi chalega agar ho toh.\nAGENT: Saturday ko Dr. Kulkarni 11 AM se 1 PM tak available hain. Koi specific time preferred hai?\nCALLER: 11:30 ho sakta hai?\nAGENT: Haan, 11:30 AM Saturday ko book kar diya Rahul ji. SMS confirmation aayega aapke number pe. Kuch aur help chahiye?\nCALLER: Nahi, bas itna hi. Thank you!"
+}

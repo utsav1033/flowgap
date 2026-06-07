@@ -48,8 +48,7 @@ def run_pipeline() -> dict:
     vectors = embed_texts(call_texts)
 
     print("[3/6] Clustering...")
-    # min_cluster_size=5 suits per-call scale (400 calls vs thousands of turns)
-    labels = cluster_embeddings(vectors, min_cluster_size=5, min_samples=2)
+    labels = cluster_embeddings(vectors)
 
     label_counts = Counter(labels.tolist())
     n_clusters = sum(1 for k in label_counts if k != -1)

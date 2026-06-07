@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_186",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, my employer has Paramount Health TPA. Just wanted to confirm before I come in for a check-up — is it accepted?\nAGENT: Hello! Let me check... Yes, Paramount Health TPA is on our approved panel. You can use it for OPD as well as in-patient procedures.\nCALLER: Oh nice. For OPD do I need any pre-approval?\nAGENT: For routine OPD consultations, most Paramount plans don't require pre-approval. Just show your TPA card and a valid photo ID at the front desk. The consultant charges will be billed directly.\nCALLER: What if I need a diagnostic test like a blood test or X-ray?\nAGENT: For diagnostics ordered during your OPD visit, those are typically covered under the same cashless arrangement. Just make sure the doctor's prescription is stamped and the lab request goes through our in-house diagnostics wing.\nCALLER: Perfect. I'll come by Thursday then.\nAGENT: Wonderful, we'll see you Thursday. Is there anything else I can help with?\nCALLER: No, all good. Thanks so much.\nAGENT: Take care!"
+}

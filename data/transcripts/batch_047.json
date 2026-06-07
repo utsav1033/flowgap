@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_047",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, mujhe apni appointment cancel karni hai. Meri tabiyat theek nahi hai aur main aa nahi sakta.\nAGENT: Koi baat nahi. Pehle aap theek ho jaiye. Aapka naam aur appointment details?\nCALLER: Rajan Nair. Aaj shaam ko 6 baje tha. Dr. Arun Mahajan ke saath.\nAGENT: Haan dekha. Rajan Nair, aaj 6 PM, Dr. Mahajan. Cancel kar doon completely?\nCALLER: Haan, aur jab main theek ho jaaunga toh nayi date le loonga.\nAGENT: Bilkul. Cancel ho gaya. Jab chahein call kar ke nayi appointment le lena. Jaldi sehat theek ho aapki.\nCALLER: Shukriya. Bahut acha service hai aapka."
+}

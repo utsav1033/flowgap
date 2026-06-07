@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_201",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, uh, I need some help.\nAGENT: Thank you for calling Sunrise Multispeciality Clinic, Pune. How may I assist you?\nCALLER: I'm calling regarding book appointment.\nAGENT: Sure, I can help with that request.\nCALLER: Thank you.\nAGENT: Your request has been completed successfully."
+}

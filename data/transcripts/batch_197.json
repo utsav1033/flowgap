@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_197",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, main puchna chahta tha ki kya aap log cash payment accept karte ho ya sirf digital hi hai?\nAGENT: Haan, hum dono accept karte hain — cash bhi aur digital bhi. Billing counter par aap cash, UPI, debit ya credit card se payment kar sakte hain.\nCALLER: Achha. Aur kya koi surcharge hai card pe?\nAGENT: Credit card par 1.5% convenience charge lagta hai. UPI aur debit card par koi extra charge nahin hai.\nCALLER: Oh okay. Main UPI se dene ki koshish karunga. Mera naam Rithvik Nair hai, mujhe apna outstanding balance jaanna tha.\nAGENT: Ji Mr. Nair. Aapka registered number?\nCALLER: 9911223344.\nAGENT: Mr. Rithvik Nair ka balance hai ₹3,800 — ek OPD visit aur ek ultrasound ke liye. UPI ID hai sunriseclinic@axisbank.\nCALLER: Done, main abhi pay karta hoon.\nAGENT: Shukriya Mr. Nair. Payment ke baad screenshot WhatsApp kar dijiye 9876543200 par, confirmation mil jaayegi."
+}

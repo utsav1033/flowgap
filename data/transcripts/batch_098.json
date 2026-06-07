@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_098",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. I need a refill on my son's ADHD medication. He's a patient of Dr. Meera Goswami here.\nAGENT: I understand. ADHD medications are typically controlled substances, so there may be some additional steps. Your son's name and date of birth?\nCALLER: Aditya Rane. Born 14 September 2012.\nAGENT: Thank you. I'll submit a refill request to Dr. Goswami. For controlled medications, she may prefer a brief consultation or at minimum a telephonic review before issuing the prescription. We'll call you by tomorrow to confirm.\nCALLER: Okay. How many days of medication does he have left approximately — should I be worried about running out?\nAGENT: Please keep track — if it's less than 5 days, let us know and we'll flag it as urgent for Dr. Goswami. What's the current stock?\nCALLER: About 6 days worth. Okay we have some buffer.\nAGENT: Good. We'll have a response for you by tomorrow. Thank you for calling ahead."
+}

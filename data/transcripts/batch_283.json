@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_283",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: My name is Aarav Joshi.\nAGENT: Welcome to Sunrise Multispeciality Clinic, Pune. How may I assist you?\nCALLER: I need help with billing payment.\nAGENT: Certainly. I've handled your billing payment request.\nCALLER: Great, thank you.\nAGENT: You're welcome. Have a good day."
+}

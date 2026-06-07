@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_178",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hello, my name is Tanvi Agarwal. I had a thyroid test done on Friday and the doctor said results would come in 48 hours but it's been 5 days now.\nAGENT: I'm sorry for the delay, Ms. Agarwal. That must be frustrating especially when you're waiting for results.\nCALLER: Yes, very. I just want to know if they're ready.\nAGENT: Completely understandable. Unfortunately, I don't have direct access to the laboratory systems to check the status of individual reports from this line. I wouldn't want to give you a wrong update on something important. Let me transfer you to our lab team right away — they'll be able to tell you exactly where things stand.\nCALLER: Okay please, yes do that.\nAGENT: Connecting you to our laboratory staff now. Thank you for your patience, Ms. Agarwal."
+}

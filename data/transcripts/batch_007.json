@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_007",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Namaste, mujhe ENT specialist se milna hai. Appointment mil sakta hai?\nAGENT: Namaste! Haan, zaroor. Aapka naam aur number please?\nCALLER: Deepak Shinde. 9876501234.\nAGENT: Shukriya Deepak ji. Humara ENT specialist Dr. Arun Mahajan hai. Unka agle Somvaar aur Mangalvaar ko slot available hai.\nCALLER: Somvaar theek rahega. Subah ka koi slot hai?\nAGENT: Haan, Somvaar subah 10 AM aur 11:30 AM available hai.\nCALLER: 10 baje book kar dijiye.\nAGENT: Ho gaya. Deepak Shinde, Somvaar 10:00 AM, Dr. Arun Mahajan. Confirmation SMS milega. Aur kuch chahiye?\nCALLER: Nahi, bahut dhanyawaad."
+}

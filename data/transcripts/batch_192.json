@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_192",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. I'd like to cancel my appointment and I'm wondering if there's a cancellation charge.\nAGENT: Hello! There's no cancellation charge as long as you notify us at least 4 hours before your appointment time. May I know your name?\nCALLER: Jasmine D'Souza.\nAGENT: Ms. D'Souza, I see your appointment with Dr. Harshad Mhatre this Friday at 2 PM. Are you cancelling this?\nCALLER: Yes please.\nAGENT: Done. Appointment cancelled with no charge. Whenever you'd like to rebook, we're here.\nCALLER: Can I also know how long the usual wait time is at the clinic when you walk in?\nAGENT: For OPD with an appointment, wait time is usually 10 to 20 minutes. Without an appointment it can go up to 45 minutes depending on the crowd, particularly on Monday mornings.\nCALLER: Good to know. Thank you!\nAGENT: Anytime, Ms. D'Souza. Have a lovely day!"
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_159",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Haan, hello. Main appointment cancel karna chahta hoon. Actually main bahar hun out of town, wapas aa nahi sakta.\nAGENT: Koi baat nahi. Aapka naam aur registered number?\nCALLER: Devendra Pawar. 9822334455.\nAGENT: Aapki appointment Dr. Hemant Shirke ke saath, kal dono baje ki hai. Cancel karni hai ya shift karni hai?\nCALLER: Shift karo, uh, agli week Friday ko same time rakh sako toh.\nAGENT: Friday next week, 2 PM — Dr. Shirke available hain. Confirm karta hoon?\nCALLER: Haan, confirm karo.\nAGENT: Ho gayi reschedule! Friday agle hafte, 2 PM, Dr. Hemant Shirke ke saath. SMS aa jayega. Aap jaldi wapas aana!\nCALLER: Haha, shukriya."
+}

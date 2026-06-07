@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_038",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hello. Meri maa ki knee surgery hui thi yahan pe, 10 din pehle. Unhe sujan aa rahi hai leg mein. Kya normal hai?\nAGENT: Samajh sakta hoon aap kitne concerned hain. Aapka naam aur maa ka naam?\nCALLER: Main Prashant Deshpande hoon. Maa ka naam Shobha Deshpande hai.\nAGENT: Prashant ji, main yahan se post-surgery complications ke baare mein medically advise karne ki sthiti mein nahi hoon — yeh bahut important matter hai jo ek trained staff member ko handle karna chahiye.\nCALLER: Toh kya karna chahiye? Doctor ko dikhana padega?\nAGENT: Haan, bilkul. Aur is waqt sabse zaroori hai ki main aapko humare surgical team ya nursing staff se connect karun jo turant guide kar sakein. Please hold karein — let me connect you to our staff right away.\nCALLER: Theek hai, jaldi karo please.\nAGENT: Zaroor, ek dum abhi connect kar raha hoon."
+}

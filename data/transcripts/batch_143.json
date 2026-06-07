@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_143",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I want to meet a gastrologist, or, uh, gastroenterologist I think it's called. Having stomach issues for a while.\nAGENT: Yes, gastroenterologist — and we have Dr. Leela Nambiar in that department. She's available on Tuesdays and Thursdays. Do you have a preference?\nCALLER: Thursday is better. Any slot in the afternoon?\nAGENT: Thursday 2:30 PM is available. Shall I go ahead?\nCALLER: Yes, please. My name is Santosh Biswas and my contact number is 9876543211.\nAGENT: Confirmed, Mr. Biswas! Your appointment with Dr. Leela Nambiar is this Thursday at 2:30 PM. Please avoid heavy meals before the consultation. Confirmation SMS on its way.\nCALLER: Noted. Thanks."
+}

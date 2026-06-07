@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_171",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Good afternoon. I'm calling to check whether United Health Care TPA is accepted at your clinic for a planned procedure.\nAGENT: Good afternoon! Yes, United Health Care TPA is on our approved list. What procedure are you looking at?\nCALLER: It's a laparoscopic cholecystectomy — gallbladder removal. My name is Geeta Venkataraman.\nAGENT: Ms. Venkataraman, that procedure is covered under most TPA plans. You'll need a pre-authorization letter from your insurer before admission. Our TPA coordinator will help initiate that on your behalf if you come in for a pre-admission consultation.\nCALLER: How far in advance do I need to do that?\nAGENT: We recommend at least 3 to 5 working days before your surgery date. It gives enough time for back-and-forth with the insurance company if any documents are needed.\nCALLER: Understood. And what documents do I bring for the consultation?\nAGENT: Bring your insurance card, employee ID if it's a group policy, the surgeon's referral, and any relevant diagnostic reports like ultrasound results. Our TPA desk is open weekdays 9 AM to 5 PM.\nCALLER: Thank you, very helpful.\nAGENT: Happy to help, Ms. Venkataraman. Wishing you a smooth procedure!"
+}

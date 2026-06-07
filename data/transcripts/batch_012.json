@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_012",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I need to cancel my appointment. Something came up at work.\nAGENT: I'm sorry to hear that. Could I have your name and the appointment date so I can pull it up?\nCALLER: Ananya Kulkarni. It was for this Thursday, I think 11 AM.\nAGENT: Let me check... yes, I see an appointment for Ananya Kulkarni, Thursday 11 AM with Dr. Pramod Joshi. You'd like to cancel this?\nCALLER: Yes, please. And uh, actually can I reschedule instead? To next week maybe?\nAGENT: Absolutely. Dr. Joshi has openings next Tuesday at 10 AM and next Wednesday at 3 PM. Which works for you?\nCALLER: Tuesday 10 AM please.\nAGENT: Done! Your appointment is rescheduled to Tuesday at 10 AM with Dr. Joshi. Is there anything else?\nCALLER: No, that's great. Thank you for understanding.\nAGENT: No problem at all. We'll see you next Tuesday!"
+}

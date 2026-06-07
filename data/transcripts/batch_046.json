@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_046",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I want to push my appointment. Got stuck with something at home, can't make it tomorrow.\nAGENT: No problem at all. Could I have your name and the appointment details?\nCALLER: Omkar Kulkarni. It was tomorrow at 11 AM with the GP.\nAGENT: Yes, I see it — Omkar Kulkarni, 11 AM tomorrow with Dr. Ramesh Iyer. When would you like to reschedule?\nCALLER: Uh, can I do this Friday? Any time in the afternoon?\nAGENT: Friday afternoon has 2 PM and 4:30 PM available with Dr. Iyer. Which do you prefer?\nCALLER: 4:30 PM is better.\nAGENT: Done! Rescheduled to Friday at 4:30 PM. You'll get an updated SMS. Anything else?\nCALLER: Nope, that's it. Cheers."
+}

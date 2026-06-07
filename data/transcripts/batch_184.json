@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_184",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi there, I'm calling for my father. He's 72 and needs to see a neurologist. He's been having some memory issues.\nAGENT: Of course. That's very thoughtful of you. We have Dr. Amit Goswami in neurology. He's quite experienced with geriatric patients. He's available Monday at 2 PM and Wednesday at 4 PM.\nCALLER: Monday 2 PM please.\nAGENT: Can I have your father's name and your contact number?\nCALLER: His name is Baldev Singh. My number is 9988776655.\nAGENT: Got it. Mr. Baldev Singh's appointment with Dr. Goswami is confirmed for this Monday at 2 PM. Please bring any previous neurological reports or prescriptions if available.\nCALLER: Will do. Is there anything we should note before the visit?\nAGENT: It helps to write down any specific incidents or changes in behaviour you've noticed — dates if possible — and bring a list of all current medications. This really helps Dr. Goswami give a thorough assessment.\nCALLER: Very useful, thank you.\nAGENT: Wishing your father good health. See you Monday!"
+}

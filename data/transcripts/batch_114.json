@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_114",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I need to book a consultation for memory issues. My grandfather keeps forgetting things. He's 78.\nAGENT: I understand. Memory concerns in elderly patients are best evaluated by our neurologist or geriatric specialist. Your grandfather's name?\nCALLER: Balwant Singh. My number is 9711223345.\nAGENT: Dr. Leena Verma handles memory and cognitive assessments. She has Thursday at 10 AM available. Shall I book for Balwant Singh?\nCALLER: Yes please. We'll bring his medical records.\nAGENT: Please do — any previous investigations or prescriptions would be very helpful. Balwant Singh, Thursday 10 AM with Dr. Verma. SMS coming to your number.\nCALLER: Thank you. I hope we get some clarity.\nAGENT: I hope so too. You're doing the right thing by getting him checked."
+}

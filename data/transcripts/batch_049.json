@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_049",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. My name is Prakash Datar. I had a scan appointment — uh, MRI — for this morning but I missed it. Can I reschedule?\nAGENT: Hello Prakash ji. No worries. Let me check... yes, I see the MRI slot from this morning. We can reschedule that. Are you available this week still?\nCALLER: Ideally Thursday or Friday. Mornings preferred.\nAGENT: Thursday morning at 9:30 AM is open in the radiology department. Shall I book that?\nCALLER: Yes please, Thursday 9:30 AM.\nAGENT: Done. Prakash Datar, Thursday at 9:30 AM for the MRI. Please remember to follow any fasting or prep guidelines mentioned earlier. SMS on its way.\nCALLER: Noted. Thanks a lot."
+}

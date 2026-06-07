@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_032",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Uh hello. I was just wondering, do you have a blood bank or do you only do routine tests?\nAGENT: We have a NABL-accredited pathology lab that handles all routine and many specialised blood tests. However, we do not have a blood bank in-house. For blood transfusion requirements, we coordinate with authorised blood banks in the city.\nCALLER: Okay. What about 24-hour lab services?\nAGENT: Our main lab runs from 7 AM to 9 PM on weekdays. For emergency labs after hours, we have a reduced panel of critical tests available through our emergency department.\nCALLER: That makes sense. And sample collection at home — do you offer that?\nAGENT: Yes! We have a home sample collection service available within a 10-kilometre radius. You can book it on our app or by calling this number.\nCALLER: Wonderful. That's all I needed to know.\nAGENT: Glad I could help! Have a good day."
+}

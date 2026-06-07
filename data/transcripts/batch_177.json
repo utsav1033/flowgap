@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_177",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, mera naam Vikram Shetty hai. Main puchna chahta hoon ki Medi Assist TPA mein mere appendix ke operation ka coverage milega?\nAGENT: Haan Mr. Shetty, Medi Assist hamare empanelled TPAs mein se ek hai. Appendectomy generally covered hoti hai surgical policies mein.\nCALLER: Achha. Cashless milega ya reimbursement?\nAGENT: Hum cashless facility provide karte hain Medi Assist ke liye. Aapko bas admission se pehle pre-auth leni hogi. Iske liye surgeon ka estimate aur current reports chahiye honge.\nCALLER: Aur room rent ka kya — koi limit hai?\nAGENT: Room rent limits aapki specific policy par depend karti hain. Yeh detail aapke insurance card ya policy document mein hogi. Admission ke waqt humare TPA desk wale exact covered amount bata sakte hain.\nCALLER: Theek hai samajh gaya. Bahut helpful tha, thank you.\nAGENT: Bahut shukriya Mr. Shetty. Jaldi se theek ho jaayein!"
+}

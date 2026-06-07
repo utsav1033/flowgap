@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_123",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I wanted to check if your clinic accepts Star Health Insurance. My policy is a family floater.\nAGENT: Good afternoon! Yes, we are empanelled with Star Health Insurance. We accept cashless claims for most of their plans including family floater policies.\nCALLER: Oh great. And what documents do I need to carry for the cashless process?\nAGENT: You'll need your Star Health insurance card, a valid photo ID like Aadhaar or PAN, and the pre-authorization letter if your treatment is planned. For OPD consultations, just the card and ID are sufficient.\nCALLER: Okay, and is there any specific counter at the clinic for TPA submissions?\nAGENT: Yes, there's a dedicated TPA desk on the ground floor near the billing section. It operates from 9 AM to 6 PM on weekdays and 9 AM to 1 PM on Saturdays.\nCALLER: Perfect. That answers everything, thank you.\nAGENT: Happy to help! See you soon at Sunrise Clinic."
+}

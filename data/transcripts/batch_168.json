@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_168",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Uh, hello, I want to book a, uh, dermatology appointment. My skin has been breaking out really badly.\nAGENT: Of course! We have Dr. Kavitha Rao in our dermatology department. She's available this Wednesday at 4 PM or next Monday at 11 AM. Any preference?\nCALLER: Wednesday 4 PM, yeah that works.\nAGENT: Great. Can I have your full name and mobile number?\nCALLER: Neha Gupta. And my number is 7890123456.\nAGENT: Perfect. Appointment confirmed for Ms. Neha Gupta with Dr. Kavitha Rao this Wednesday at 4 PM. Please carry a valid ID. Is there anything else I can help you with?\nCALLER: No that's all. Thank you!\nAGENT: You're welcome. See you Wednesday!"
+}

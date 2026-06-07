@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_146",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I need to cancel my appointment. I'm actually feeling better and I don't think I need to come in anymore.\nAGENT: Glad to hear you're feeling better! Let me find your appointment. Your name and number please?\nCALLER: Rahul Menon. 9833221100.\nAGENT: Found it. You have an appointment with Dr. Sunita Rao in ophthalmology on Wednesday at 2 PM. Shall I go ahead and cancel?\nCALLER: Yes, please cancel it.\nAGENT: Done, Mr. Menon. Appointment cancelled. If the symptoms return, please don't hesitate to book again. Take care!\nCALLER: Will do, thanks."
+}

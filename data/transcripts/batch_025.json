@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_025",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Haan hello. Mujhe pata karna tha ki aap online payment accept karte hain ya nahi.\nAGENT: Haan ji, hum UPI, net banking aur debit/credit card sab accept karte hain — online aur clinic mein dono jagah.\nCALLER: Aur koi payment link bhej sakte hain mujhe? Bill abhi settle karna hai but main aa nahi sakta personally.\nAGENT: Bilkul. Aapka patient ID ya invoice number batayein.\nCALLER: Patient ID SNC-P-77432 hai.\nAGENT: Theek hai. Aapke registered number pe payment link bhej deta hoon. 5 minute mein aa jaana chahiye. Amount hai 2,800 rupaye.\nCALLER: Perfect, link aa gaya toh kar dunga. Thank you.\nAGENT: Aapka swagat hai. Koi dikkat ho toh call kar lena."
+}

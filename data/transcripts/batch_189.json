@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_189",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, this is Meghna Thosar. My eye doctor referred me to an ophthalmologist for a possible retina issue. I'd like to get the earliest possible appointment.\nAGENT: Absolutely, Ms. Thosar. Retinal issues are time-sensitive so we want to get you seen quickly. Dr. Vijay Parekh is our senior ophthalmologist specialising in retina. He has a cancellation slot tomorrow at 9 AM — would that work?\nCALLER: Yes, absolutely! Tomorrow works perfectly.\nAGENT: Wonderful. Please bring your referral letter and any recent eye prescriptions or scans. Your number for confirmation?\nCALLER: 9654321087.\nAGENT: All set. Dr. Parekh at 9 AM tomorrow. You'll receive an SMS shortly. Please don't delay if you notice any sudden changes in vision before then — you can always walk in or call emergency.\nCALLER: Thank you for the quick response.\nAGENT: Of course. Take care, Ms. Thosar!"
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_180",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, main appointment cancel karwana chahta hoon. I'm not feeling well enough to come today actually, ironic as that sounds.\nAGENT: Oh, please take care! Could you share your name and appointment details?\nCALLER: Rohit Chandra. I had a 3 PM slot with Dr. Anjali Verma today.\nAGENT: Got it. I see that appointment. I'll cancel it now. Once you're feeling better, would you like me to note a preferred time for rebooking?\nCALLER: Maybe next week sometime, in the morning. But I'll call back, I don't know my schedule yet.\nAGENT: Totally fine. The appointment is cancelled now. Please rest and do call us when you're ready to book again. Get well soon, Mr. Chandra!\nCALLER: Thank you, take care."
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_030",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. Mujhe parking ke baare mein puchna tha. Agar main car lekar aauon toh parking milegi?\nAGENT: Haan ji, humare paas basement parking available hai. Kaafi spacious hai, aur pehle 2 ghante ke liye free hai. Uske baad 20 rupaye per hour charge hoga.\nCALLER: Aur two-wheelers ke liye?\nAGENT: Two-wheeler parking bilkul free hai humari clinic ke side mein dedicated area mein.\nCALLER: Accha, aur clinic mein cafeteria ya canteen hai?\nAGENT: Haan, ground floor pe ek small cafeteria hai jo subah 8 baje se raat 9 baje tak open rehti hai. Light snacks, coffee, aur meals milti hain.\nCALLER: Bahut acha, shukriya!"
+}

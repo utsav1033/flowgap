@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_035",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hello, I came for a blood test two days ago. Uh, I still haven't received my reports. Can you tell me the status?\nAGENT: I understand the concern. Could I have your name and the date the test was done?\nCALLER: Nandini Sawant. Test was done on... Monday I think. CBC and thyroid panel.\nAGENT: Thank you, Nandini. I'm sorry, but I'm not able to access lab report status or pull up test results from here. This requires someone from our laboratory department to help you directly.\nCALLER: Oh. Can you at least tell me if the reports are ready?\nAGENT: I completely understand the urgency, but I don't have visibility into the lab system from this line. I wouldn't want to give you incorrect information. Let me connect you to our staff who can check this for you right away.\nCALLER: Okay, please do that.\nAGENT: Of course. Please hold for a moment — let me connect you to our staff now."
+}

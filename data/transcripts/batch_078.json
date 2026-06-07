@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_078",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. I have an Arogya Sanjeevani policy. Is that covered at your clinic?\nAGENT: Arogya Sanjeevani is a standard health plan offered by multiple insurers. Could you tell me which company issued yours?\nCALLER: Uh, it's from Oriental Insurance.\nAGENT: Yes, we are empanelled with Oriental Insurance. Your Arogya Sanjeevani policy should be usable here for cashless claims within the coverage limits.\nCALLER: My coverage is 5 lakhs. I need a knee replacement. Should be within limit.\nAGENT: Knee replacement costs vary but are often within 5 lakhs range. Please confirm with Oriental Insurance and get a pre-auth before the procedure. Our insurance desk will assist you from our end.\nCALLER: Will do. Thanks for the guidance."
+}

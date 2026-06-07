@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_118",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I need to cancel my appointment. I'm going to go abroad for a month and I won't be here.\nAGENT: No problem at all. Safe travels! Your name and appointment details?\nCALLER: Ankita Phadke. I had a follow-up with Dr. Sneha Kulkarni, dermatology, next Thursday.\nAGENT: Found it. Cancelling Ankita Phadke, Thursday follow-up with Dr. Kulkarni. Done! When you're back, just call us to rebook.\nCALLER: Will do. Will I need to explain the gap in treatment to the doctor?\nAGENT: Just mention it to Dr. Kulkarni when you're back. A brief update on your skin condition during the time away will help her continue the treatment plan appropriately.\nCALLER: Good advice. Thanks and bye!\nAGENT: Enjoy your trip! See you when you're back."
+}

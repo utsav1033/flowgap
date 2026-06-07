@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_092",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. I need to reschedule my sleep study. I had it booked for Saturday but I forgot I have an office event that weekend.\nAGENT: No worries. Could I have your name?\nCALLER: Rajendra Bhatt.\nAGENT: Found it. Sleep study this Saturday night. Next available Saturday after that would be in two weeks. Would that work?\nCALLER: Two weeks should be fine.\nAGENT: Rescheduled to two weeks from this Saturday. Same time, 9 PM arrival. SMS with updated date coming shortly.\nCALLER: Perfect. Thank you for accommodating."
+}

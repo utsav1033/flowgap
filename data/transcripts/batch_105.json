@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_105",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I need to shift my father's physiotherapy session. He has some pain and the physio himself suggested resting for a few days.\nAGENT: Oh understood, rest is important. Your father's name and current appointment?\nCALLER: Chandrakant Divekar. He has tomorrow at 10 AM with Mr. Ganesh Khot.\nAGENT: Got it. Shall I reschedule to next week? Mr. Khot has Monday and Wednesday mornings open.\nCALLER: Wednesday, next week please. Same 10 AM if possible.\nAGENT: 10 AM Wednesday next week — confirmed for Chandrakant Divekar. Hope he recovers well. SMS will be sent.\nCALLER: Thank you for understanding."
+}

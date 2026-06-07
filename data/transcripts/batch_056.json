@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_056",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. I had a surgery at Sunrise last month. I want to file a reimbursement claim because I paid out of pocket. Can you help with the documents?\nAGENT: Of course. For reimbursement claims, you'll need the original discharge summary, itemised bills, all prescriptions, and your insurance policy details.\nCALLER: I have most of those. Can I get a duplicate discharge summary from you if I've lost the original?\nAGENT: Yes, you can request a duplicate discharge summary from our medical records department. Please visit in person with your patient ID and a valid ID proof. It usually takes 2 working days.\nCALLER: That's helpful. And you'll provide all the itemised bills too?\nAGENT: Yes, our billing department can provide itemised bill copies. Please bring your invoice number or patient ID when you come. Is there anything else?\nCALLER: No, I think that covers it. Thank you."
+}

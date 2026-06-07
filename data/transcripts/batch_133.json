@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_133",
+  "intent": "doctor_availability_specific",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi, I wanted to find out if Dr. Vikram Rao is available this Saturday. He's a cardiologist I think.\nAGENT: Let me check that for you. Could you also share whether this is for a follow-up or a new consultation?\nCALLER: It's a follow-up. He did my angioplasty last year.\nAGENT: I see. I'm sorry, but specific doctor scheduling details, especially for post-procedure follow-ups with senior specialists, are something I'm not able to confirm accurately from this line. I wouldn't want to give you incorrect information. Let me connect you to our staff who have direct access to Dr. Vikram Rao's schedule.\nCALLER: Alright, please transfer me then.\nAGENT: Of course. Please hold and I'll connect you to our staff right away."
+}

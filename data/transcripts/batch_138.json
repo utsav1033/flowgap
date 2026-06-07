@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_138",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi there. My son needs to see a pediatrician, he's been running a fever for three days. Can I get an appointment today?\nAGENT: Oh, I hope he feels better soon! We have Dr. Deepa Thakur in pediatrics. She has a walk-in slot available today from 4 PM to 6 PM, or I can book a specific 4:30 PM slot for you.\nCALLER: 4:30 would be great, let's do that.\nAGENT: May I get the child's name and your contact number?\nCALLER: The child is Arjun Kapoor, he's 6 years old. My number is 9712345678.\nAGENT: Booked! Arjun Kapoor with Dr. Deepa Thakur today at 4:30 PM. Please bring any previous prescriptions or vaccination records. See you soon, and I hope Arjun recovers quickly!\nCALLER: Thank you, we'll be there."
+}

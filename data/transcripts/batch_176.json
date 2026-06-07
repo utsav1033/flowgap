@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_176",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, this is Kabir Mehta calling. I'd like to see an ENT specialist. I've had a blocked ear for about a week now and it's getting worse.\nAGENT: Hello Mr. Mehta! Dr. Sanjay Deshpande is our ENT specialist. He's available tomorrow at 5 PM or the day after at 10 AM. Which suits you?\nCALLER: Tomorrow 5 PM.\nAGENT: Noted. Can I confirm your mobile number for our records?\nCALLER: Sure, 8800990011.\nAGENT: Your appointment is confirmed for tomorrow at 5 PM with Dr. Deshpande. Please avoid putting anything in your ear until the consultation. See you then!\nCALLER: Will do, thanks."
+}

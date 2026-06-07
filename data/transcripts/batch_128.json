@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_128",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hello, my mother had a knee replacement surgery at your clinic about ten days ago. She's having some swelling near the incision site and I'm a bit worried.\nAGENT: I understand your concern. Could you tell me your mother's name and her treating doctor?\nCALLER: Her name is Sarla Mehta. The surgery was done by Dr. Anand Joshi.\nAGENT: Thank you. Post-operative concerns like swelling really need to be reviewed by our clinical team or the treating surgeon directly. I don't have the ability to advise on that from this line. Let me transfer you to our nursing staff who can assess this properly and get Dr. Joshi's team involved if needed.\nCALLER: Yes please, please transfer quickly, I'm very worried.\nAGENT: Absolutely, please hold — I'm connecting you to our staff right now. They'll take care of you."
+}

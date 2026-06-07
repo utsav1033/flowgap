@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_057",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I'm trying to pay my bill but your online portal is giving me an error. Can you help?\nAGENT: I'm sorry for the inconvenience. Could I get your patient ID so I can check what's outstanding?\nCALLER: SNC-P-91023. Name is Nikhil Sawant.\nAGENT: I can see your balance of 3,400 rupees. The portal may be under maintenance right now. You can also pay via UPI to our official ID or I can send you a direct payment link.\nCALLER: Payment link would be easier. Send it to my registered number.\nAGENT: Sending now. You should receive it in about 2 minutes. Once paid, receipt will be sent automatically.\nCALLER: Got it. Thanks for sorting that quickly."
+}

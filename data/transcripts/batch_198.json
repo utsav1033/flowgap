@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_198",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I'm calling on behalf of my grandmother. She's 80 and needs a general physician. She hasn't been eating well lately and feels very weak.\nAGENT: Thank you for looking out for her. Dr. Sheela Nair is our senior general physician who's wonderful with elderly patients. She's available today at 4 PM — would that work?\nCALLER: Today itself? That's actually great. Yes please.\nAGENT: Wonderful. What's your grandmother's name?\nCALLER: Kamakshi Subramanian.\nAGENT: And your contact number?\nCALLER: My number is 8561234790.\nAGENT: Confirmed! Mrs. Kamakshi Subramanian with Dr. Sheela Nair today at 4 PM. Please bring a list of any medications she's currently on, even OTC ones. This helps a lot.\nCALLER: Yes, I'll bring all of them. Thank you so much.\nAGENT: Wishing your grandmother a quick improvement. See you this afternoon!"
+}

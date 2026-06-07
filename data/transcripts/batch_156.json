@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_156",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, does your clinic have an ambulance service or some emergency transport?\nAGENT: Yes! Sunrise Multispeciality Clinic operates two ambulances available 24 hours a day. For emergencies within Pune, response time is typically 15 to 25 minutes. You can call our emergency line directly or ask for the ambulance through this number.\nCALLER: Is there a charge for the ambulance?\nAGENT: For patients being admitted to our clinic, the ambulance within a 10 km radius is complimentary. Beyond that, charges apply based on distance. For non-admission transport, standard charges start at ₹800.\nCALLER: And do the ambulances have oxygen and basic life support equipment?\nAGENT: Yes, both ambulances are BLS-equipped — oxygen cylinders, defibrillator, stretcher, IV setup, and are staffed with a trained paramedic.\nCALLER: Okay, good to know. Thank you.\nAGENT: Happy to help! Stay safe."
+}

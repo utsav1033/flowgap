@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_169",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, mujhe apni medicines ka refill chahiye tha. Main Dr. Sinha ka patient hoon.\nAGENT: Ji zaroor. Aapka naam aur registered mobile number bata sakte hain?\nCALLER: Haan, Mahesh Tiwari. Number hai 9765432100.\nAGENT: Thank you Mr. Tiwari. Main aapka record dekh raha hoon... Dr. Sinha ne last month Metformin aur Atorvastatin prescribe ki thi. Kya inhi ka refill chahiye?\nCALLER: Haan haan, yehi dono. Kab mil sakti hain?\nAGENT: Main Dr. Sinha ke paas refill request bhej deta hoon. Approval ke baad hum aapko call karenge — usually 24 ghante mein hota hai. Pharmacy se aap directly le sakte hain ya home delivery bhi available hai.\nCALLER: Achha theek hai. Home delivery prefer karunga.\nAGENT: Note kar liya. Confirmation SMS aayegi jab prescription ready hogi. Koi aur help chahiye?\nCALLER: Nahin, bas itna hi. Shukriya.\nAGENT: Aapka swagat hai, Mr. Tiwari!"
+}

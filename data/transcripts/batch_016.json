@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_016",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Good morning. I have to shift my appointment — doctor se milna hai but next week instead.\nAGENT: Good morning! Sure. Can I get your name and which appointment you'd like to move?\nCALLER: Lalita Sharma. Mera Monday ko tha... cardiology mein, Dr. Nair ke saath. 9 baje.\nAGENT: Yes, I see it. Dr. Suresh Nair, Monday 9 AM. You'd like to move it to next week?\nCALLER: Haan. Same time agar mile toh acha hoga.\nAGENT: Dr. Nair has the same slot — 9 AM — available next Monday. Shall I book that?\nCALLER: Perfect, yes please.\nAGENT: All set. Your appointment is now next Monday at 9 AM with Dr. Suresh Nair, Lalita ji. SMS will follow.\nCALLER: Thank you so much."
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_015",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, yeh Sunrise Clinic? I want to cancel two appointments actually. Both mine and my wife's.\nAGENT: Sure, I can help with both. Let me take the details one at a time. Your name first?\nCALLER: Mohit Tiwari. And my wife's name is Geeta Tiwari.\nAGENT: And the appointment dates for each?\nCALLER: Mine was this Friday 3 PM with the GP. Geeta's was Saturday morning 10 AM, I think with Dr. Kulkarni.\nAGENT: Let me check... yes, found both. Mohit Tiwari, Friday 3 PM with Dr. Ramesh Iyer, and Geeta Tiwari, Saturday 10 AM with Dr. Sneha Kulkarni. Cancelling both?\nCALLER: Yes please.\nAGENT: Done. Both appointments have been cancelled. You'll get confirmation messages on your registered numbers. Anything else?\nCALLER: No, that's sorted. Thanks."
+}

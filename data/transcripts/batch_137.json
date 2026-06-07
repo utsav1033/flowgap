@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_137",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Haan, namaste. Mujhe yeh jaanna tha ki kya aap log HDFC Ergo insurance accept karte ho?\nAGENT: Haan ji, Sunrise Multispeciality Clinic mein HDFC Ergo ka cashless aur reimbursement dono accepted hai.\nCALLER: Aur agar mujhe surgery karwani ho toh pre-authorization kitne din pehle lena padta hai?\nAGENT: Planned surgeries ke liye ideally 3 to 5 working days pehle pre-authorization apply karna chahiye. Emergency cases mein hum same day bhi process karte hain. Aapko sirf apna TPA card aur doctor ka recommendation letter lana hoga.\nCALLER: Aur kya maternity cover bhi hota hai HDFC Ergo mein?\nAGENT: Yeh aapki specific policy pe depend karta hai. Generally HDFC Ergo ke kuch plans mein maternity after a waiting period covered hoti hai. Main suggest karunga aap apne insurer se confirm karein. Hamare TPA desk pe aap apna policy document lekar aa sakte hain, woh aapko guide karenge.\nCALLER: Theek hai, bahut shukriya.\nAGENT: Aapka swagat hai! Koi bhi sawaal ho toh call karein."
+}

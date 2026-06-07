@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_103",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I think I was given the wrong package pricing. I was quoted 2,500 for a health check-up but my bill says 3,800.\nAGENT: I apologise for the confusion. Could I have your name and invoice number to look into this?\nCALLER: Urmila Bhave. Invoice SNC-2024-12001.\nAGENT: Checking... I can see the 3,800 includes a few additional tests that were added during your visit — an ECG and a blood sugar test — which were not in the basic package.\nCALLER: Oh. The doctor suggested those. I didn't realise they were extra.\nAGENT: Completely understandable. The additional tests were medically recommended during the visit, which is why they were charged separately. I can have our billing team send you a detailed itemised bill if that helps clarify?\nCALLER: Yes please, that would help.\nAGENT: Done — itemised bill sent to your registered email. Sorry for the confusion, Urmila ji."
+}

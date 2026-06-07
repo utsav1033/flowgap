@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_132",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I'm calling because I got a bill from you guys but I think there's a mistake. I was charged for a procedure I never had.\nAGENT: I'm sorry to hear that, and I completely understand your concern. Could you share your name and patient ID or the bill number?\nCALLER: My name is Thomas D'Souza. The bill number is BL-2024-7891.\nAGENT: Thank you, Mr. D'Souza. Let me pull that up. I see a charge for an ECG on the 22nd. Was that not done during your visit?\nCALLER: No, that was not done. I only had a general consultation. I'm quite sure about this.\nAGENT: I believe you. I'm raising a billing dispute ticket right now. Our billing team will review the records and contact you within 48 hours. If the charge is confirmed as an error, it'll be reversed or adjusted against any future bills.\nCALLER: Okay, that sounds fair. Thank you for taking this seriously.\nAGENT: Absolutely, we apologize for the inconvenience. You'll receive a reference number for the dispute via SMS shortly."
+}

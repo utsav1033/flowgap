@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_165",
+  "intent": "lab_reports",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi, umm, I submitted my blood samples three days ago and still haven't gotten the report. Can you tell me what's going on?\nAGENT: I understand your concern. Could I get your name and the date of your test, please?\nCALLER: Rajan Iyer. I gave the sample on Monday, 12th.\nAGENT: Thank you, Mr. Iyer. I'm sorry, but I'm not able to access the laboratory status system or retrieve individual test results from here. I wouldn't want to give you incorrect information about something this important. Let me connect you to our laboratory staff who can give you the exact status. Please hold for a moment.\nCALLER: Okay, sure.\nAGENT: Transferring you now — our lab team will be able to help you right away. Thank you for your patience."
+}

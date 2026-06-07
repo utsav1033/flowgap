@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_044",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, mujhe psychiatrist se milna hai. Kya aapke yahan psychiatry department hai?\nAGENT: Haan ji, humare yahan mental wellness aur psychiatry OPD hai. Aapka naam?\nCALLER: Uh... Riya Sharma. Please confidential rakhiyega.\nAGENT: Bilkul, Riya ji. Aapki privacy humare liye bahut important hai. Sab kuch confidential hai. Aapka contact number?\nCALLER: 9911223344.\nAGENT: Shukriya. Dr. Meera Goswami psychiatrist hain. Next week Monday ya Tuesday available hain. Kab aana chahogi?\nCALLER: Monday theek hai. Evening ho sakti hai?\nAGENT: Haan, Monday 5 PM ka slot hai. Book kar doon?\nCALLER: Haan please.\nAGENT: Done Riya ji. Monday 5 PM, Dr. Meera Goswami. Aap bilkul comfortable feel karein — aap sahi kadam utha rahi hain."
+}

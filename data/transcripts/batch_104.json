@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_104",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I'd like to schedule a pre-marital blood test package. Getting married next month.\nAGENT: Congratulations! Yes, we offer a comprehensive pre-marital health screening package. Your name and number?\nCALLER: Rohan Pillai. And my fiance's name is Ananya Bhat. 9867009988.\nAGENT: Lovely. The package includes blood group, HIV, thalassemia, blood sugar, and a few other standard tests. Both of you can come together. Next available date for two people is Thursday morning.\nCALLER: Thursday morning works for us. What time?\nAGENT: 9 AM, so you can get it done before work. Booked for Rohan Pillai and Ananya Bhat. Please come fasting for 8-10 hours. Congratulations once again!\nCALLER: Thank you so much!"
+}

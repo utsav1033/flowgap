@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_107",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Uh hello. Main ek new patient hoon. Kisi doctor se refer kiya gaya hoon yahan — Dr. Jog ke paas, urology ke liye.\nAGENT: Aapka swagat hai! New patient registration simple hai. Aapka naam aur contact number please.\nCALLER: Kashinath Rao. 9800234561.\nAGENT: Shukriya Kashinath ji. Dr. Kishore Jog urology mein hain. Unka next slot hai Budhwaar 11 AM. Chalega?\nCALLER: Haan, Budhwaar 11 theek hai.\nAGENT: Book ho gaya. New patient hone ke naate please 15 minute pehle aana — registration complete karni hogi. Referral letter bhi saath laana. SMS aayega. Kuch aur?\nCALLER: Nahi, sab samajh gaya. Shukriya."
+}

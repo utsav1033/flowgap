@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_043",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I need an urgent appointment. My father is having chest discomfort since morning.\nAGENT: I understand the urgency. For chest discomfort we strongly recommend coming in as soon as possible. Is he able to travel?\nCALLER: Yes, yes he can. We can come right now actually.\nAGENT: Please come directly to the emergency department. Dr. Suresh Nair, our cardiologist, is in today and can see him. May I have your name for the records?\nCALLER: Vivek Joshi. My father's name is Dattatray Joshi.\nAGENT: Thank you Vivek. Please bring any previous medical records or prescriptions. We'll have the team ready. Come straight to emergency reception.\nCALLER: Okay, we're on our way. Thank you.\nAGENT: Please hurry. We'll be expecting you. Take care."
+}

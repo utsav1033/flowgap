@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_112",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I want an appointment for a sports injury. I play cricket and I hurt my shoulder during practice last weekend.\nAGENT: Sorry to hear that! Our orthopaedic team handles sports injuries. May I have your name and number?\nCALLER: Mayank Shukla. 9833445566.\nAGENT: Dr. Pramod Joshi specialises in sports-related orthopaedic injuries. He has a slot this Friday at 11 AM. Sound good?\nCALLER: Friday works. Should I get any scans done beforehand?\nAGENT: It's usually better to let Dr. Joshi examine you first and then order specific scans if needed. Bring any X-rays or reports you may have already done though.\nCALLER: I had an X-ray done locally. I'll bring it.\nAGENT: Perfect. Mayank Shukla, Friday 11 AM with Dr. Joshi. Get well soon and back on the pitch quickly!\nCALLER: Haha, hope so! Thanks."
+}

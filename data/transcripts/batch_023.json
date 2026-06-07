@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_023",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Good morning. I need to understand the reimbursement process. I paid out of pocket at another clinic and now I want to claim it. But the next time, I want cashless here.\nAGENT: Good morning! I can help clarify both. For your previous out-of-pocket expenses, you'd need to submit all original bills, prescriptions and discharge summary to your TPA directly — we can't process another facility's reimbursement here.\nCALLER: Understood. And for future cashless at Sunrise?\nAGENT: For planned admissions here, you'll need a pre-authorisation from your insurer or TPA. You or your doctor can apply for it. Our insurance desk will also guide you through it on arrival. Which insurer are you with?\nCALLER: Bajaj Allianz.\nAGENT: Yes, we're on Bajaj Allianz's network. You're all set to use cashless here. Just bring your health card and a doctor's referral.\nCALLER: Wonderful. Thanks for the clear explanation."
+}

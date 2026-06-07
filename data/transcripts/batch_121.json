@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_121",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, uh, is this Sunrise Multispeciality Clinic?\nAGENT: Yes, good morning! You've reached Sunrise Multispeciality Clinic, Pune. How may I assist you today?\nCALLER: Haan, so I wanted to, umm, book an appointment. My wife needs to see a gynecologist. Sometime this week if possible.\nAGENT: Of course! We have Dr. Priya Deshmukh available in gynecology. She has slots on Wednesday at 11 AM and Thursday at 3 PM. Which would suit you better?\nCALLER: Thursday 3 PM should be fine. Her name is Kavita Nair, and the number is 9823041567.\nAGENT: Perfect. I've booked an appointment for Mrs. Kavita Nair with Dr. Priya Deshmukh this Thursday at 3 PM. You'll receive a confirmation SMS shortly. Is there anything else?\nCALLER: No no, that's all. Thank you so much.\nAGENT: You're welcome! Have a great day."
+}

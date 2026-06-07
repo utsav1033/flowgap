@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_014",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I have an appointment this evening with your neurologist but I'm not going to be able to make it. Can we move it?\nAGENT: Of course, I understand. May I have your name and registered number?\nCALLER: Siddharth Naik. 9867452301.\nAGENT: Thank you. I can see your 5 PM appointment with Dr. Leena Verma. When would you like to reschedule?\nCALLER: Umm, is next Saturday possible? Preferably morning.\nAGENT: Dr. Verma unfortunately doesn't hold clinic on Saturdays. The next available slots are next Monday at 9 AM or Thursday at 4 PM.\nCALLER: Okay, Thursday 4 PM then.\nAGENT: Perfect. Rescheduled for Siddharth Naik, Thursday at 4 PM with Dr. Leena Verma. You'll receive an updated SMS. Is there anything else?\nCALLER: No, that's fine. Thank you."
+}

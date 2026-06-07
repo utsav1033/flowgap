@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_161",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, uh, is this Sunrise Multispeciality Clinic?\nAGENT: Yes, good morning! You've reached Sunrise Multispeciality Clinic, Pune. How may I assist you today?\nCALLER: Haan, so I need to, umm, fix an appointment. My name is Priya Deshmukh. I've been having some chest pain for the last few days and I want to see a cardiologist.\nAGENT: Of course, Ms. Deshmukh. We have Dr. Ramesh Kulkarni available in cardiology. He has slots on Thursday at 11 AM and Friday at 3 PM. Which would work for you?\nCALLER: Thursday 11 AM should be fine, actually yes, Thursday works.\nAGENT: Perfect. Can I get your contact number and date of birth for registration?\nCALLER: Sure, it's 9823045671, and DOB is 14th March 1985.\nAGENT: Thank you. Your appointment with Dr. Kulkarni is confirmed for this Thursday at 11 AM. Please arrive 15 minutes early and bring any previous reports. You'll receive an SMS confirmation shortly.\nCALLER: Great, thank you so much.\nAGENT: You're welcome, Ms. Deshmukh. Take care and have a good day!"
+}

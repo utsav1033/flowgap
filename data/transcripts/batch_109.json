@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_109",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Good morning. I need to book two back to back appointments — one for me and one for my daughter. Same department, paediatrics and... uh, one for me in general medicine.\nAGENT: Good morning! Of course. Let me start with yours. Your name and number?\nCALLER: Meenakshi Iyer. 9700112345.\nAGENT: And your daughter's name?\nCALLER: Kavya Iyer. She's 7.\nAGENT: For you with Dr. Ramesh Iyer in general medicine — 10 AM tomorrow. For Kavya with Dr. Anita Saraf paediatrics — 10:30 AM same day. That way you can finish both in one trip.\nCALLER: That's so thoughtful! Yes, please book both.\nAGENT: Both confirmed — Meenakshi Iyer 10 AM and Kavya Iyer 10:30 AM tomorrow. Two SMS confirmations coming. Anything else?\nCALLER: No, that's perfect. Thank you!"
+}

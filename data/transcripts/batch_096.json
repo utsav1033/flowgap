@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_096",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. I want to know if pre-existing conditions like hypertension will be covered under cashless at your clinic.\nAGENT: Great question. Coverage for pre-existing conditions depends entirely on your specific policy and how long you've held it. Most policies cover pre-existing conditions after a waiting period of 2-4 years.\nCALLER: My policy is 5 years old. I'm with ICICI Lombard.\nAGENT: ICICI Lombard is in our network. With a 5-year-old policy, hypertension-related treatment is likely covered, but please confirm with ICICI Lombard directly to be certain, as exclusions vary by plan.\nCALLER: And your insurance desk can help if I bring the policy documents?\nAGENT: Absolutely. They'll coordinate with ICICI Lombard on your behalf. Please come Monday to Saturday between 9 AM and 5 PM.\nCALLER: Thank you very much."
+}

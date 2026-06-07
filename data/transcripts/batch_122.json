@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_122",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, umm, I had an appointment tomorrow morning and I need to, uh, cancel it actually.\nAGENT: Sure, I can help with that. May I have your name and registered phone number?\nCALLER: It's Rohit Sharma. Phone number is 9765432100.\nAGENT: Thank you, Mr. Sharma. I can see your appointment with Dr. Ajay Kulkarni tomorrow at 10:30 AM. Would you like to cancel it completely or reschedule to another date?\nCALLER: Just cancel for now. I'll call back when I'm free next week maybe.\nAGENT: Understood. Your appointment has been cancelled. Whenever you're ready, feel free to call us back and we'll find a suitable slot. Is there anything else I can do for you?\nCALLER: No, that's it. Thanks.\nAGENT: Of course, take care!"
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_110",
+  "intent": "insurance_tpa",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. I want to understand something. If I come for a cashless OPD visit and the insurer rejects my claim later, will I still have to pay?\nAGENT: That's an important question. For cashless OPD, the insurer typically pre-approves the claim before treatment. If pre-approval is granted and then reversed post-visit due to a policy clause, you would unfortunately be liable for payment.\nCALLER: That's a risk. Is there any way to minimise it?\nAGENT: Yes — always confirm your OPD coverage and applicable sub-limits with your insurer before visiting. Our insurance desk can also help you understand what's likely to be approved based on your plan.\nCALLER: And if I just pay out of pocket and then claim reimbursement, is that safer?\nAGENT: Reimbursement gives you more control — you pay first and then claim. The risk is the same on the insurer's end but you won't be caught off-guard at the billing counter. Either way, having the documents in order is key.\nCALLER: Very helpful. I'll think about it. Thank you."
+}

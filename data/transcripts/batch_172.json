@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_172",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Haan hello, main apni maa ke liye appointment lena chahta hoon. Unhe sugar ki problem hai — diabetes specialist chahiye.\nAGENT: Bilkul. Aapki maa ka naam kya hai aur unki umar kitni hai?\nCALLER: Sunanda Kulkarni. 63 saal ki hain.\nAGENT: Theek hai. Hamare endocrinologist Dr. Priti Joshi available hain — kal dopahar 2 baje ka slot khali hai, ya phir shukravaar subah 10 baje. Kaunsa better rahega?\nCALLER: Kal ka, kal 2 baje.\nAGENT: Perfect. Unka registered number kya hai?\nCALLER: 9900112233.\nAGENT: Done! Mrs. Sunanda Kulkarni ka appointment Dr. Priti Joshi ke saath kal 2 baje confirm ho gaya. Pichle reports aur medicines ki list saath leke aayein. SMS confirmation aayegi thodi der mein.\nCALLER: Bahut shukriya bhai.\nAGENT: Koi baat nahin! Maa ji ka khayal rakhna."
+}

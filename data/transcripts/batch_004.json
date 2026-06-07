@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_004",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, Sunrise Clinic? Mera beta hai, uske liye pediatrician appointment book karni hai.\nAGENT: Haan ji, zaroor. Bachche ka naam aur umar bata sakte hain aap?\nCALLER: Arjun Mehta. Abhi 4 saal ka hai. Usse fever aa raha hai last 2 days se.\nAGENT: Samajh gaya. Aapka contact number?\nCALLER: 9890123456.\nAGENT: Dhanyawaad. Dr. Anita Saraf humari pediatrician hain. Aaj evening 5:30 PM ka slot available hai. Chalega?\nCALLER: Haan haan, aaj hi theek hai. Confirm kar dijiye.\nAGENT: Bilkul. Arjun Mehta ke liye aaj 5:30 PM Dr. Anita Saraf ke saath book ho gaya. SMS aayega. Baaki kuch?\nCALLER: Nahi, shukriya."
+}

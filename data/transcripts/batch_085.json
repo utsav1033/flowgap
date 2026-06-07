@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_085",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hi. My mother had eye surgery — cataract — 5 days ago at your clinic. The eye patch was removed yesterday and her vision is very blurry. Is that normal?\nAGENT: I can understand your worry. Could you give me her name?\nCALLER: Kamala Nair.\nAGENT: Post-cataract blurry vision on day 5 can have various causes and really requires assessment by the ophthalmologist rather than a general helpline response from me. I'd be doing a disservice to guess.\nCALLER: Should we rush to emergency?\nAGENT: Please don't decide based on what I say — our ophthalmic team or nursing staff are far better placed to advise. Let me connect you to our staff right now so they can assess urgency.\nCALLER: Okay, please do that now.\nAGENT: Connecting immediately — please hold for our staff."
+}

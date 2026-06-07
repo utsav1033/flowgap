@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_140",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, this is Geeta Sawant. I want to reschedule my appointment. I booked it for this Saturday but I have a function at home.\nAGENT: No worries, Ms. Sawant! Could you confirm the phone number on your booking?\nCALLER: 9823776655.\nAGENT: Got it. You have an appointment with Dr. Mohan Gaikwad in general medicine this Saturday at 10 AM. When would you like to move it to?\nCALLER: Can we do the following Monday? Or even Tuesday?\nAGENT: Monday at 10:30 AM is available with Dr. Gaikwad. Would that work?\nCALLER: Haan, that's perfect actually.\nAGENT: Great, your appointment has been moved to Monday at 10:30 AM with Dr. Mohan Gaikwad. An updated confirmation will reach you on your registered number.\nCALLER: Thank you so much.\nAGENT: Anytime! Enjoy your function."
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_040",
+  "intent": "doctor_availability_specific",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hello, Dr. Sharma ko dikhana chahta hoon. Woh ortho department mein hain na? Unka schedule kya hai is hafte?\nAGENT: Aap Dr. Sharma ke specifically baare mein pooch rahe hain — main yeh samajh sakta hoon. Aapka naam?\nCALLER: Girish Kamble.\nAGENT: Girish ji, main aapko honestly bolunga — specific doctor ki is-week availability aur clinic days check karna mujhse is line se possible nahi hai. Kuch doctors ke schedules rotate bhi hote hain.\nCALLER: Matlab aap nahi bata sakte? Koi toh hoga na?\nAGENT: Bilkul hai! Hamare reception staff ke paas har doctor ka updated schedule hota hai. Woh seedha confirm kar sakte hain ki Dr. Sharma is hafte kab available hain. Main aapko abhi unse connect karta hoon.\nCALLER: Achha theek hai.\nAGENT: Ek second — let me connect you to our staff right away. Hold karo please."
+}

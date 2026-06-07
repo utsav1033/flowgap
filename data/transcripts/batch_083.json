@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_083",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I have a small request. I want to change my appointment from morning to an afternoon slot if possible. Same day, same doctor.\nAGENT: Sure, I can try to arrange that. Name and current appointment details?\nCALLER: Vaibhav Kamath. I have 9 AM tomorrow with Dr. Nitin Kadam, gastroenterology.\nAGENT: Let me check Dr. Kadam's afternoon slots tomorrow... He has 2:30 PM available. Does that work?\nCALLER: Yes! 2:30 PM is perfect. Thank you.\nAGENT: Switched from 9 AM to 2:30 PM tomorrow for Vaibhav Kamath with Dr. Kadam. Updated SMS on its way!\nCALLER: Brilliant, thanks."
+}

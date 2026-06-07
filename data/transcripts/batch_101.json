@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_101",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi! I want to book a vaccination slot — for meningitis. I'm going abroad for studies soon.\nAGENT: Congratulations on going abroad! Yes, we do administer travel vaccines including meningitis. Your name and travel date?\nCALLER: Nishant Goswami. I leave in 6 weeks. 9765001234.\nAGENT: Good timing — 6 weeks is fine for this vaccine. We have a travel vaccination slot this Friday morning at 10 AM. Shall I book it?\nCALLER: Yes please! Do I need to bring anything?\nAGENT: Just your passport copy and your university acceptance letter if available. Booked for Nishant Goswami, Friday 10 AM. Have a great time abroad!\nCALLER: Thank you so much!"
+}

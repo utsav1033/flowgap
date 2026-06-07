@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_068",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Good afternoon. I need a refill for my father's diabetes medication. He's been on it for years and his doctor here prescribed it last.\nAGENT: Good afternoon. Sure. Your father's name and date of birth for verification?\nCALLER: Ramachandra Hebbar. Date of birth... 5th June 1948.\nAGENT: Found the record. He's on Metformin 500mg and Glimepiride 2mg, last prescribed by Dr. Pallavi Nambiar about 12 weeks ago. I'll submit a refill request to Dr. Nambiar right away.\nCALLER: It's been 12 weeks — do we need a fresh consultation?\nAGENT: For a long-term diabetic patient, Dr. Nambiar may recommend a brief check-up. She'll decide when she reviews the request. We'll call you by tomorrow with her decision.\nCALLER: Understood. Thank you for being thorough."
+}

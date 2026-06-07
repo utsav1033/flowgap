@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_060",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. I'm calling to ask about package rates. My father needs a full body check-up. Do you have any health packages?\nAGENT: Yes, we do have health check-up packages at Sunrise. We have a Basic, Comprehensive, and Senior Citizen package. Which age group is your father in?\nCALLER: He's 67.\nAGENT: The Senior Citizen package would be most suitable. It includes CBC, lipid profile, thyroid, blood sugar, ECG, chest X-ray, and a consultation. It's priced at 3,200 rupees.\nCALLER: That sounds good. Is there a home collection option?\nAGENT: Yes, for the package we can arrange home sample collection for an additional 200 rupees. The remaining tests like ECG and X-ray would need to be done at the clinic.\nCALLER: Okay let me discuss with my father and call back.\nAGENT: Of course, take your time. We're here whenever you're ready!"
+}

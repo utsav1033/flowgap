@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_067",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. Meri antidepressant medication khatam ho rahi hai. Kya phone pe refill ho sakta hai?\nAGENT: Haan, kuch medications ke liye phone request possible hai, lekin psychiatry medications ke liye doctor ka short telephonic consultation hona better hai. Kya main Dr. Meera Goswami ke saath callback arrange kar sakta hoon?\nCALLER: Haan, please. Mera naam Tanvir Sheikh hai.\nAGENT: Note kar liya Tanvir ji. Aapka registered number pe Dr. Goswami aaj ya kal callback karenge refill ke liye. Koi emergency nahi na abhi?\nCALLER: Nahi, 3-4 din ki dawai bachi hai. Theek hai.\nAGENT: Bilkul. Callback arrange ho jayegi. Aur agar koi problem ho toh turant call karna. Khayal rakhein apna."
+}

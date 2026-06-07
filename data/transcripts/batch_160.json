@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_160",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, umm, my mother needs a urology consultation. She's 68 and having some urinary issues. Can I book for her?\nAGENT: Of course, you can book on her behalf. We have Dr. Sanjay Pawar in urology. He's available Wednesday at 2 PM and Friday at 10 AM. Which works for your mother?\nCALLER: Wednesday is fine. She's slow to move so we'll need a bit of time.\nAGENT: Absolutely understood. Wednesday 2 PM with Dr. Sanjay Pawar. I'll note that mobility assistance may be needed. Her name and your contact number?\nCALLER: Her name is Sulochana Patil. My number is 9845678900.\nAGENT: Booked. Sulochana Patil with Dr. Sanjay Pawar, Wednesday at 2 PM. Wheelchair assistance will be arranged at the entrance — just let the reception know when you arrive. Confirmation SMS coming to your number.\nCALLER: That's so thoughtful, thank you very much.\nAGENT: It's our pleasure. We'll take good care of her!"
+}

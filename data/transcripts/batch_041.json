@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_041",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, I'd like to schedule an appointment with a dermatologist. I have some skin rashes that won't go away.\nAGENT: Of course, I can help with that. May I have your name and contact number?\nCALLER: Kartik Desai. 9876123450.\nAGENT: Thank you Kartik. Dr. Sneha Kulkarni is our dermatologist. She has slots available this week on Wednesday and Friday.\nCALLER: Wednesday would work. What times are available?\nAGENT: We have 10 AM, 12 PM, and 3 PM on Wednesday.\nCALLER: 12 PM please.\nAGENT: Booked! Kartik Desai, Wednesday at 12:00 PM with Dr. Sneha Kulkarni. Confirmation SMS will follow.\nCALLER: Perfect, thank you."
+}

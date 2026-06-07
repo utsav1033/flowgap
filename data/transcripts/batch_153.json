@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_153",
+  "intent": "prescription_refill",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. Umm, I need my diabetes medicines refilled. I've been getting them from your clinic for like six months now.\nAGENT: Sure! May I have your name and registered number?\nCALLER: Sudarshan Rao. Number is 9701234567. I take Metformin 500mg and Glimepiride 1mg.\nAGENT: Thank you, Mr. Rao. I can see your prescription history. Your last prescription from Dr. Arun Srinivas is on record. I'll flag a refill request — he usually approves within a day. Do you want home delivery or will you pick up?\nCALLER: I'll pick up. My office is near your clinic anyway.\nAGENT: Perfect. Once approved, the medicines will be kept ready at our pharmacy counter in your name. We'll send you an SMS confirmation when it's ready for pickup.\nCALLER: Great, thank you for making this easy.\nAGENT: Anytime, Mr. Rao. Stay well!"
+}

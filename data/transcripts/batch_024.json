@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_024",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I received a bill from your clinic but I think there's a mistake in it. One of the items doesn't match what I was told.\nAGENT: I'm sorry for the inconvenience. Could you share your name and the invoice or patient ID number?\nCALLER: Neha Gokhale. Invoice number... uh, it's SNC-2024-08821.\nAGENT: Let me pull that up. Yes, I can see the invoice for Neha Gokhale. Which item did you feel was incorrect?\nCALLER: There's a charge for a procedure I didn't get. Something called 'nebulisation'. I only came for a consultation.\nAGENT: I understand. I can see that item in the bill. It may have been added in error. I'll flag this for our billing team to review and issue a corrected invoice within one business day. Is the registered number the best way to reach you?\nCALLER: Yes, please. 9867001234.\nAGENT: Got it. I've raised the dispute. You'll hear back from us by tomorrow. Apologies for the confusion, Neha.\nCALLER: Thank you, I hope it gets sorted."
+}

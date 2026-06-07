@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_191",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Haan, hello. Mujhe pulmonologist se milna hai, mujhe khansi 3 hafte se hai, antibiotics se kuch farak nahin pada.\nAGENT: Ji Mr...?\nCALLER: Omkar Thakur.\nAGENT: Mr. Thakur, hamare pulmonologist Dr. Kedar Bhide hain. Unka slot parso yani mangalwar ko shaam 5 baje aur shukravaar subah 11 baje hai. Kaunsa theek rahega?\nCALLER: Mangalvaar shaam theek rahega.\nAGENT: Perfect. Mobile number?\nCALLER: 9345678012.\nAGENT: Confirm ho gaya. Mr. Omkar Thakur, Dr. Bhide ke saath mangalvaar shaam 5 baje. Agar pehle koi X-ray ya CT scan karaya ho toh wo bhi saath leke aayein.\nCALLER: Haan, chest X-ray hai mere paas. Lekar aaunga.\nAGENT: Bahut achha. Jaldi theek ho jaayein!"
+}

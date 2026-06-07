@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_050",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, cancel karna hai mera appointment. Actually teen appointments hain — mujhe, meri wife ko, aur bete ko.\nAGENT: Teen appointments! Zaroor. Ek ek karke details lijiye mujhse.\nCALLER: Main hoon Anil Godbole, meri wife Sushma Godbole, aur beta Tejas Godbole. Teeno ka kal tha alag alag departments mein.\nAGENT: Dekh raha hoon... haan, teeno records mil gaye. Sab kal ke hain. Teeno cancel kar doon?\nCALLER: Haan, urgent travel aa gaya humara.\nAGENT: Samajh gaya. Teeno appointments cancel ho gayi — Anil, Sushma, aur Tejas Godbole. SMS jaayega confirm karne ke liye. Safe travel!\nCALLER: Thank you, wapas aakar nayi date lenge."
+}

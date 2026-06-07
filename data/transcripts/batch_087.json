@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_087",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello. Maine kal UPI se payment ki thi. Amount deduct hua mera account se but receipt nahi mili.\nAGENT: Aapka naam aur approximate payment amount?\nCALLER: Geeta Mankar. 1,200 rupaye. Patient ID SNC-P-77001 hai.\nAGENT: Ek second... haan, payment received ho gayi hai hamare system mein kal dopahar ko. Receipt process mein delay ho gayi lagta hai. Main abhi aapke registered number pe resend karta hoon.\nCALLER: SMS pe aayegi ya email pe?\nAGENT: Dono pe jaayegi — SMS aur email dono pe. 5 minute mein aa jaani chahiye. Kuch aur?\nCALLER: Nahi, bas receipt chahiye thi. Shukriya."
+}

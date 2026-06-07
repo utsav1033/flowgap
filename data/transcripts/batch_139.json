@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_139",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, I, uh, I need to know what payment options you accept at the clinic. I have a large bill coming up.\nAGENT: Sure! We accept cash, all major debit and credit cards, UPI payments including GPay, PhonePe and Paytm, and also net banking. For large bills, we also offer EMI options through select credit cards.\nCALLER: EMI sounds good. Which cards support EMI at your place?\nAGENT: We have EMI arrangements with HDFC, ICICI, SBI, and Axis Bank credit cards. The minimum transaction amount for EMI is ₹10,000 and tenures range from 3 to 12 months. There's no processing fee for 3-month EMI.\nCALLER: I have an HDFC card so that works. Is there any interest?\nAGENT: For 3-month EMI it's zero interest, and for longer tenures the interest rate varies by your card — HDFC will debit that directly. You'd need to confirm the exact rate with your bank.\nCALLER: Understood, that's really helpful. I'll choose EMI when I come in.\nAGENT: Perfect! Just let our billing desk know when you arrive and they'll process it for you. Have a good day!"
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_147",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Uh, hi. I'm looking to get a second opinion on a diagnosis. Can I see a senior doctor?\nAGENT: Of course. Could you share what kind of specialist you're looking for? We have senior consultants across most departments.\nCALLER: Oncology. I was diagnosed with something and I just, uh, want another perspective.\nAGENT: I completely understand. Dr. Avinash Deshpande is our senior oncologist and is highly experienced. He has availability next Tuesday at 11 AM. Would you like to book?\nCALLER: Yes please. I'm Pooja Shah. Contact number is 9988776655.\nAGENT: I've booked your appointment, Ms. Shah. Dr. Avinash Deshpande, next Tuesday at 11 AM. Please bring all your existing reports and biopsy results if any. We'll make sure you get the time and attention you need.\nCALLER: Thank you so much. I really appreciate it.\nAGENT: We're here for you. Please take care of yourself."
+}

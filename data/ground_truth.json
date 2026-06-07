@@ -1,0 +1,1492 @@
+{
+  "batch_001": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_002": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_003": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_004": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_005": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_006": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_007": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_008": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_009": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_010": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_011": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_012": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_013": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_014": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_015": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_016": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_017": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_018": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_019": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_020": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_021": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_022": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_023": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_024": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_025": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_026": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_027": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_028": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_029": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_030": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_031": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_032": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_033": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_034": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_035": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_036": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_037": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_038": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_039": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_040": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_041": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_042": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_043": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_044": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_045": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_046": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_047": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_048": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_049": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_050": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_051": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_052": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_053": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_054": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_055": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_056": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_057": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_058": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_059": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_060": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_061": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_062": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_063": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_064": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_065": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_066": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_067": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_068": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_069": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_070": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_071": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_072": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_073": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_074": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_075": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_076": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_077": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_078": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_079": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_080": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_081": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_082": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_083": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_084": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_085": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_086": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_087": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_088": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_089": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_090": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_091": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_092": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_093": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_094": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_095": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_096": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_097": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_098": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_099": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_100": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_101": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_102": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_103": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_104": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_105": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_106": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_107": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_108": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_109": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_110": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_111": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_112": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_113": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_114": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_115": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_116": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_117": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_118": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_119": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_120": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_121": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_122": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_123": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_124": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_125": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_126": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_127": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_128": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_129": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_130": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_131": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_132": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_133": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_134": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_135": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_136": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_137": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_138": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_139": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_140": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_141": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_142": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_143": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_144": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_145": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_146": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_147": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_148": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_149": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_150": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_151": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_152": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_153": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_154": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_155": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_156": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_157": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_158": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_159": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_160": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_161": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_162": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_163": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_164": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_165": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_166": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_167": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_168": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_169": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_170": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_171": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_172": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_173": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_174": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_175": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_176": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_177": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_178": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_179": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_180": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_181": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_182": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_183": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_184": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_185": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_186": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_187": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_188": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_189": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_190": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_191": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_192": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_193": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_194": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_195": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_196": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_197": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_198": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_199": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_200": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_201": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_202": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_203": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_204": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_205": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_206": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_207": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_208": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_209": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_210": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_211": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_212": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_213": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_214": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_215": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_216": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_217": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_218": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_219": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_220": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_221": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_222": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_223": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_224": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_225": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_226": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_227": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_228": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_229": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_230": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_231": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_232": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_233": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_234": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_235": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_236": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_237": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_238": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_239": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_240": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_241": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_242": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_243": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_244": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_245": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_246": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_247": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_248": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_251": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_252": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_253": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_254": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_255": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_256": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_257": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_258": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_259": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_260": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_261": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_262": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_263": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_264": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_265": {
+    "intent": "book_appointment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_266": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_267": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_268": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_269": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_270": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_271": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_272": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_273": {
+    "intent": "reschedule_cancel",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_274": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_275": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_276": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_277": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_278": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_279": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_280": {
+    "intent": "insurance_tpa",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_281": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_282": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_283": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_284": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_285": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_286": {
+    "intent": "billing_payment",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_287": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_288": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_289": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_290": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_291": {
+    "intent": "clinic_info",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_292": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_293": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_294": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_295": {
+    "intent": "prescription_refill",
+    "is_gap": false,
+    "ended_in_transfer": false
+  },
+  "batch_296": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_297": {
+    "intent": "lab_reports",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_298": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_299": {
+    "intent": "post_op_care",
+    "is_gap": true,
+    "ended_in_transfer": true
+  },
+  "batch_300": {
+    "intent": "doctor_availability_specific",
+    "is_gap": true,
+    "ended_in_transfer": true
+  }
+}

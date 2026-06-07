@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_099",
+  "intent": "reschedule_cancel",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi. Actually I want to cancel my appointment for now and maybe book in about a month. My insurance approval is still pending.\nAGENT: Understood, no problem at all. Name and appointment details?\nCALLER: Narayan Joshi. I had next Tuesday 10 AM with Dr. Vinay Kapoor.\nAGENT: Got it. Narayan Joshi, Tuesday 10 AM with Dr. Kapoor — cancelling this. Once your insurance approval comes through, just call us back and we'll rebook.\nCALLER: Will there be any priority given since I cancelled due to insurance?\nAGENT: We'll note the reason for cancellation. While we can't guarantee priority, we'll try our best to accommodate your preferred slot when you call back.\nCALLER: Fair enough. Thank you.\nAGENT: Good luck with the insurance process. Hope it clears soon!"
+}

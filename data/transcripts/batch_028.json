@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_028",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hi, main apna outstanding balance check karna chahta hoon. Maine jo surgery ki last month, uska poora bill clear nahi hua tha.\nAGENT: Ji zaroor. Aapka naam aur patient ID bata sakte hain?\nCALLER: Umesh Pawar. ID hai... SNC-P-88210.\nAGENT: Ek second... haan, dekha. Umesh Pawar ji, aapka outstanding balance hai 12,400 rupaye. Yeh laparoscopic procedure ke baad ka balance hai.\nCALLER: Haan, wahi. Toh kya main installment mein de sakta hoon?\nAGENT: Hum iske liye billing department se baat kar sakte hain. Usually 2-3 installments allow hoti hain approval ke baad. Main aapka request note kar leta hoon aur billing team aapse kal tak contact karegi.\nCALLER: Theek hai. Mera number update hai na files mein?\nAGENT: Haan, 9822345601 registered hai. Kal call aayegi. Koi aur kaam?\nCALLER: Nahi, shukriya."
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_187",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Uh, hello. I had a C-section at your clinic 10 days ago and, uh, I just noticed some redness and, um, a small discharge from the incision. I'm scared.\nAGENT: Please don't panic — I hear you and I want to make sure you get the right help immediately. Your name please?\nCALLER: Sneha Raghunath.\nAGENT: Ms. Raghunath, what you're describing needs to be evaluated by a medical professional as soon as possible. I'm not in a position to advise you on wound care over this line — it would be irresponsible of me to guess. Let me connect you directly to our maternity ward nursing staff who handle exactly these situations. Please hold.\nCALLER: Please yes, quickly.\nAGENT: Transferring you right now to our post-natal care team. They're trained for this and will guide you on what to do next."
+}

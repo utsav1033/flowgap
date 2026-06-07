@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_166",
+  "intent": "clinic_info",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, what are your clinic timings? And do you have parking available?\nAGENT: Hello! Sunrise Multispeciality Clinic is open Monday through Saturday from 8 AM to 9 PM, and on Sundays from 9 AM to 2 PM for OPD. We do have a basement parking facility that can accommodate around 60 vehicles, and it's free for patients.\nCALLER: Oh great. And where exactly are you located?\nAGENT: We're located at Plot 14, Baner Road, near the Baner-Balewadi junction, Pune 411045. There are landmarks like D-Mart and Symbiosis Institute nearby if you're navigating.\nCALLER: Perfect, and umm, do you have a pharmacy on site?\nAGENT: Yes, we have an in-house pharmacy on the ground floor that's open from 8 AM to 10 PM on all days including Sundays.\nCALLER: That's very helpful, thank you.\nAGENT: You're most welcome. Feel free to call if you have any other questions!"
+}

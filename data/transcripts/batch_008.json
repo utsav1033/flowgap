@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_008",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello? Yes, I want to make an appointment. For... uh, neurology. I've been getting headaches quite often.\nAGENT: I'm sorry to hear that. Yes, we can certainly schedule a neurology consultation for you. Could I take your name and number?\nCALLER: Farhan Qureshi. And my number is... hold on... 9512348760.\nAGENT: Thank you, Farhan. Dr. Leena Verma is our neurologist, and she has a slot available this Thursday at 4 PM or next Tuesday at 11 AM.\nCALLER: This Thursday is too soon, I think. Let's go with Tuesday.\nAGENT: Tuesday, 11 AM with Dr. Leena Verma — all set for Farhan Qureshi. You'll receive an SMS with the appointment details.\nCALLER: Lovely, thank you very much."
+}

@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_059",
+  "intent": "billing_payment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Hello, this is regarding a bill I received. I think I was double-charged for a blood test.\nAGENT: I apologise for that. Let me take a look. Your name and invoice number?\nCALLER: Chandra Bose. Invoice SNC-2024-10987.\nAGENT: Pulling it up... I can see two entries for CBC test. That does look like a duplicate. I'm flagging this for our billing team immediately.\nCALLER: Good. How long will the refund take?\nAGENT: Once the billing team confirms the error — which should be by tomorrow — the refund will be processed within 3-5 business days to your original payment method. You'll receive a message when it's initiated.\nCALLER: Alright, as long as it gets sorted.\nAGENT: We sincerely apologise for the inconvenience, Mr. Bose. It will be corrected."
+}

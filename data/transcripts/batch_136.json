@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_136",
+  "intent": "book_appointment",
+  "is_gap": false,
+  "ended_in_transfer": false,
+  "transcript": "CALLER: Good evening. I need to see a neurologist. I've been having frequent headaches for the past month.\nAGENT: Good evening! We have Dr. Kiran Bhosale in our neurology department. He has availability this week on Wednesday evening and next Monday morning. Any preference?\nCALLER: Monday morning would suit me better. What time?\nAGENT: 9:30 AM on Monday is open. Shall I book that for you?\nCALLER: Yes please. I'm Farhan Shaikh, my number is 9867001122.\nAGENT: Appointment confirmed for Mr. Farhan Shaikh with Dr. Kiran Bhosale, Monday at 9:30 AM. Please bring any previous reports or scans if you have them. Confirmation SMS will be sent shortly.\nCALLER: Sure, will do. Thanks a lot."
+}

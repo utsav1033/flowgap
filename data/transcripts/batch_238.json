@@ -1,0 +1,7 @@
+{
+  "call_id": "batch_238",
+  "intent": "post_op_care",
+  "is_gap": true,
+  "ended_in_transfer": true,
+  "transcript": "CALLER: Hello, uh, I need some help.\nAGENT: Thank you for calling Sunrise Multispeciality Clinic, Pune. How may I assist you?\nCALLER: I'm calling regarding post op care.\nAGENT: I'm sorry, I can't access that information.\nCALLER: Okay, can someone else help?\nAGENT: I can't help with that, let me connect you to our staff."
+}
