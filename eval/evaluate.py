@@ -97,7 +97,7 @@ def print_eval(result: dict):
     print(f"Planted gaps ({result['planted_k']}): {', '.join(result['planted_gaps'])}")
     print(f"\nCluster breakdown ({result['detected_k']} detected gaps):")
     for row in result["cluster_breakdown"]:
-        marker = "✓ TP" if row["is_true_positive"] else "✗ FP"
+        marker = "[TP]" if row["is_true_positive"] else "[FP]"
         print(
             f"  [{marker}] cluster_{row['cluster_id']:2d}  "
             f"label: {row['detected_label']!r:35s}  "
@@ -114,4 +114,4 @@ if __name__ == "__main__":
     out = ROOT / "data" / "eval_results.json"
     with open(out, "w") as f:
         json.dump(result, f, indent=2)
-    print(f"\n✅ Eval results saved to {out}")
+    print(f"\n[OK] Eval results saved to {out}")

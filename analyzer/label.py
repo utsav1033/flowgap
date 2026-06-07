@@ -132,7 +132,7 @@ def label_clusters(
             }
         else:
             fb = _keyword_label(representatives)
-            print(f"    cluster_{cid}: keyword fallback → {fb['intent_name']!r}")
+            print(f"    cluster_{cid}: keyword fallback -> {fb['intent_name']!r}")
             cluster_labels[cid] = {**fb, "size": len(turns)}
 
     return cluster_labels

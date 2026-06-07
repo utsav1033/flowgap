@@ -61,6 +61,14 @@ def run_pipeline() -> dict:
     # call_cluster_map: direct 1-to-1 since we embedded per call
     call_cluster_map = {calls[i]["call_id"]: int(labels[i]) for i in range(len(calls))}
 
+    # Cluster centroids in 384-dim embedding space (not UMAP space) for semantic matching
+    import numpy as np
+    unique_cids = set(labels.tolist()) - {-1}
+    cluster_centroids = {
+        cid: vectors[labels == cid].mean(axis=0)
+        for cid in unique_cids
+    }
+
     print("[4/6] Labeling clusters with LLM...")
     cluster_labels = label_clusters(labels.tolist(), call_texts)
     for cid, info in sorted(cluster_labels.items()):
@@ -71,12 +79,12 @@ def run_pipeline() -> dict:
     print(f"      Graph: {len(graph['nodes'])} nodes, {len(graph['edges'])} edges")
 
     print("[5/6] Detecting gaps...")
-    gaps = detect_gaps(graph, cluster_labels)
+    gaps = detect_gaps(graph, cluster_labels, cluster_centroids)
     metric = compute_headline_metric(graph, gaps)
     print(f"      Headline: {metric['gap_calls']}/{metric['total_calls']} calls "
           f"({metric['gap_rate']*100:.1f}%) hit a gap")
     for g in gaps:
-        print(f"        GAP: {g['intent_name']!r} — {g['call_count']} calls, "
+        print(f"        GAP: {g['intent_name']!r} - {g['call_count']} calls, "
               f"{g['transfer_rate']*100:.0f}% transfer, sim={g.get('max_flow_similarity', '?')}")
 
     print("[6/6] Generating node specs for gaps...")

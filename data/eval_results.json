@@ -6,77 +6,80 @@
   ],
   "cluster_breakdown": [
     {
-      "cluster_id": 5,
-      "detected_label": "thank_regarding_info",
-      "size": 15,
-      "dominant_planted_intent": "clinic_info",
-      "dominant_fraction": 0.73,
-      "is_true_positive": false
-    },
-    {
-      "cluster_id": 12,
-      "detected_label": "nahi_appointment_mujhe",
-      "size": 15,
+      "cluster_id": 6,
+      "detected_label": "nahi_mujhe_appointment",
+      "size": 57,
       "dominant_planted_intent": "book_appointment",
-      "dominant_fraction": 0.67,
+      "dominant_fraction": 0.32,
       "is_true_positive": false
     },
     {
-      "cluster_id": 2,
-      "detected_label": "regarding_insurance_thank",
-      "size": 8,
-      "dominant_planted_intent": "insurance_tpa",
-      "dominant_fraction": 1.0,
-      "is_true_positive": false
-    },
-    {
-      "cluster_id": 0,
-      "detected_label": "policy_your_thank",
-      "size": 7,
-      "dominant_planted_intent": "insurance_tpa",
-      "dominant_fraction": 1.0,
-      "is_true_positive": false
-    },
-    {
-      "cluster_id": 1,
-      "detected_label": "name_insurance_great",
-      "size": 7,
-      "dominant_planted_intent": "insurance_tpa",
-      "dominant_fraction": 1.0,
-      "is_true_positive": false
-    },
-    {
-      "cluster_id": 10,
-      "detected_label": "bahut_shukriya_insurance",
-      "size": 6,
-      "dominant_planted_intent": "insurance_tpa",
-      "dominant_fraction": 1.0,
-      "is_true_positive": false
-    },
-    {
-      "cluster_id": 11,
-      "detected_label": "main_mujhe_karna",
-      "size": 6,
+      "cluster_id": 3,
+      "detected_label": "bill_think_invoice",
+      "size": 26,
       "dominant_planted_intent": "billing_payment",
       "dominant_fraction": 1.0,
       "is_true_positive": false
     },
     {
-      "cluster_id": 9,
-      "detected_label": "appointment_tomorrow_perfect",
-      "size": 5,
+      "cluster_id": 5,
+      "detected_label": "insurance_cashless_your",
+      "size": 19,
+      "dominant_planted_intent": "insurance_tpa",
+      "dominant_fraction": 1.0,
+      "is_true_positive": false
+    },
+    {
+      "cluster_id": 18,
+      "detected_label": "thank_appointment_saturday",
+      "size": 13,
       "dominant_planted_intent": "reschedule_cancel",
+      "dominant_fraction": 0.69,
+      "is_true_positive": false
+    },
+    {
+      "cluster_id": 12,
+      "detected_label": "test_days_blood",
+      "size": 10,
+      "dominant_planted_intent": "lab_reports",
+      "dominant_fraction": 0.9,
+      "is_true_positive": true
+    },
+    {
+      "cluster_id": 17,
+      "detected_label": "thank_morning_appointment",
+      "size": 9,
+      "dominant_planted_intent": "reschedule_cancel",
+      "dominant_fraction": 0.78,
+      "is_true_positive": false
+    },
+    {
+      "cluster_id": 10,
+      "detected_label": "surgery_should_your",
+      "size": 8,
+      "dominant_planted_intent": "post_op_care",
+      "dominant_fraction": 1.0,
+      "is_true_positive": true
+    },
+    {
+      "cluster_id": 13,
+      "detected_label": "thank_possible_yeah",
+      "size": 5,
+      "dominant_planted_intent": "book_appointment",
       "dominant_fraction": 1.0,
       "is_true_positive": false
     }
   ],
-  "matched_planted_gaps": [],
-  "true_positives": 0,
-  "false_positives": 8,
-  "false_negatives": 3,
-  "precision": 0.0,
-  "recall": 0.0,
-  "f1": 0.0,
+  "matched_planted_gaps": [
+    "lab_reports",
+    "post_op_care"
+  ],
+  "true_positives": 2,
+  "false_positives": 6,
+  "false_negatives": 1,
+  "precision": 0.25,
+  "recall": 0.667,
+  "f1": 0.364,
   "planted_k": 3,
   "detected_k": 8
 }

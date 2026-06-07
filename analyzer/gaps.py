@@ -1,10 +1,17 @@
 """
-Detect gaps: discovered intent clusters not covered by intended_flow.yaml,
-or clusters with high transfer rates.
+Detect gaps: discovered intent clusters not covered by intended_flow.yaml.
 
-Matching is embedding-based (cosine similarity) so labels like
-"lab report retrieval" correctly match against "lab_reports" in the flow,
-and fallback labels like "cluster_12" correctly fail to match.
+Matching is centroid-based, not label-based:
+  - Each cluster's centroid = mean of its member call embeddings (384-dim MiniLM).
+  - Flow nodes are embedded from their id + tool descriptions for richer context.
+  - A cluster is "in flow" if its centroid has cosine similarity >= SIM_THRESHOLD
+    to any non-utility flow node.
+
+This is robust to garbage LLM/keyword labels because it operates on the actual
+call content, not the label string.
+
+transfer_rate is kept as a severity/ranking field on gaps, NOT part of the in-flow
+decision (that would be circular -- it re-reads planted ground truth).
 """
 
 import sys
@@ -17,34 +24,61 @@ ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 
 INTENDED_FLOW_PATH = ROOT / "gen" / "intended_flow.yaml"
-TRANSFER_RATE_THRESHOLD = 0.5
-SIM_THRESHOLD = 0.60  # cosine similarity: cluster label vs intended-flow node text
+
+SIM_THRESHOLD = 0.60  # configurable; print scores so caller can tune
+
+# Routing/utility nodes -- excluded from the "does this cluster match the flow?" check
+_UTILITY_NODES = {"greeting", "intent_classification", "anything_else", "transfer_to_human"}
 
 
-def load_intended_nodes() -> list[str]:
-    """Return list of node IDs from intended_flow.yaml."""
+def load_intended_nodes() -> list[dict]:
+    """
+    Return non-utility flow nodes as {id, text} dicts.
+    'text' uses the node's description field when present (rich natural-language +
+    Hinglish phrases that reflect how callers actually express that intent), falling
+    back to the node id when absent. Tools are appended as extra signal either way.
+    """
     with open(INTENDED_FLOW_PATH) as f:
         flow = yaml.safe_load(f)
-    return [n["id"] for n in flow.get("nodes", [])]
+    nodes = []
+    for n in flow.get("nodes", []):
+        nid = n["id"]
+        if nid in _UTILITY_NODES:
+            continue
+        desc = n.get("description", "")
+        base = desc.strip() if desc else nid.replace("_", " ")
+        tool_text = " ".join(t.replace("_", " ") for t in n.get("tools", []))
+        text = f"{base} {tool_text}".strip()
+        nodes.append({"id": nid, "text": text})
+    return nodes
 
 
 def detect_gaps(
     graph: dict,
     cluster_labels: dict[int, dict],
+    cluster_centroids: dict[int, np.ndarray],
+    sim_threshold: float = SIM_THRESHOLD,
 ) -> list[dict]:
     """
-    A cluster is a gap if:
-      (a) its label has cosine similarity < SIM_THRESHOLD to every intended-flow node, AND
-      (b) it has meaningful call volume (>= 3 calls)
-      OR (c) its transfer_rate > TRANSFER_RATE_THRESHOLD regardless of (a)
+    Parameters
+    ----------
+    graph             : output of graph.build_graph()
+    cluster_labels    : {cluster_id: {intent_name, description, size}}
+    cluster_centroids : {cluster_id: mean_embedding_vector (384-dim)}
+    sim_threshold     : centroid cosine sim to best flow node required to be "in flow"
 
     Returns list of gap dicts sorted by call_count desc.
     """
     from analyzer.embed import embed_texts
 
-    intended_ids = load_intended_nodes()
-    # readable text for embedding
-    flow_texts = [n.replace("_", " ") for n in intended_ids]
+    flow_nodes = load_intended_nodes()
+    if not flow_nodes:
+        return []
+
+    # Embed flow node descriptions in the same MiniLM 384-dim space as call embeddings
+    fv = embed_texts([n["text"] for n in flow_nodes])
+    fv_n = fv / (np.linalg.norm(fv, axis=1, keepdims=True) + 1e-9)
+    flow_ids = [n["id"] for n in flow_nodes]
 
     candidates = [
         node for node in graph["nodes"]
@@ -53,40 +87,41 @@ def detect_gaps(
     if not candidates:
         return []
 
-    cand_texts = [node["label"].replace("_", " ") for node in candidates]
-
-    # Single embedding batch: all candidate labels + all flow node texts
-    vecs = embed_texts(cand_texts + flow_texts)
-    cv = vecs[:len(cand_texts)]
-    fv = vecs[len(cand_texts):]
-
-    # Normalised cosine similarity matrix  (n_candidates × n_flow_nodes)
-    cv_n = cv / (np.linalg.norm(cv, axis=1, keepdims=True) + 1e-9)
-    fv_n = fv / (np.linalg.norm(fv, axis=1, keepdims=True) + 1e-9)
-    sims = cv_n @ fv_n.T
-    max_sims = sims.max(axis=1)  # best flow-node match per candidate
+    print(f"      Centroid similarity to flow (threshold={sim_threshold}):")
 
     gaps = []
-    for i, node in enumerate(candidates):
-        max_sim = float(max_sims[i])
-        in_flow = max_sim >= SIM_THRESHOLD
-        high_transfer = node["transfer_rate"] >= TRANSFER_RATE_THRESHOLD
+    for node in candidates:
+        cid = node["cluster_id"]
+        centroid = cluster_centroids.get(cid)
+        if centroid is None:
+            continue
 
-        if not in_flow or high_transfer:
+        # Normalise centroid and compute cosine similarity to every flow node
+        c_n = centroid / (np.linalg.norm(centroid) + 1e-9)
+        sims = c_n @ fv_n.T        # shape (n_flow_nodes,)
+        best_idx = int(np.argmax(sims))
+        max_sim = float(sims[best_idx])
+        best_node = flow_ids[best_idx]
+
+        in_flow = max_sim >= sim_threshold
+        verdict = "[in flow]" if in_flow else "[GAP]   "
+        print(
+            f"        cluster_{cid:2d}  {node['label']!r:32s}  "
+            f"best={best_node!r:25s}  sim={max_sim:.3f}  {verdict}"
+        )
+
+        if not in_flow:
             gaps.append({
-                "cluster_id": node["cluster_id"],
+                "cluster_id": cid,
                 "intent_name": node["label"],
                 "description": node["description"],
                 "call_count": node["call_count"],
                 "transfer_count": node["transfer_count"],
                 "transfer_rate": node["transfer_rate"],
-                "in_intended_flow": in_flow,
+                "in_intended_flow": False,
                 "max_flow_similarity": round(max_sim, 3),
-                "reason": (
-                    "not_in_flow" if not in_flow
-                    else "high_transfer_rate" if high_transfer
-                    else "both"
-                ),
+                "best_flow_match": best_node,
+                "reason": "not_in_flow",
             })
 
     gaps.sort(key=lambda g: -g["call_count"])
