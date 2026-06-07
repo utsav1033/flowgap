@@ -9,48 +9,16 @@ nodes:
   - id: greeting
   - id: intent_classification
   - id: book_appointment
-    description: >
-      book appointment new appointment see a doctor consultation slot booking
-      appointment chahiye doctor se milna mujhe appointment chahiye
-      nahi appointment doctor available hai schedule appointment visit karna
-      doctor ko dikhana want to meet doctor fix an appointment book karo
-      doctor dekhna hai mujhe doctor se milna hai ek appointment fix karo
     tools: ["check_doctor_availability", "book_appointment"]
   - id: reschedule_cancel
-    description: >
-      reschedule appointment cancel appointment change appointment postpone
-      shift appointment to different day appointment change karna cancel karna
-      appointment nahi aana cancel my appointment reschedule karna badalna
-      change the date move appointment want to cancel rebook later
     tools: ["find_appointment", "modify_appointment"]
   - id: insurance_tpa
-    description: >
-      insurance TPA cashless claim policy coverage pre-authorization mediclaim
-      health insurance cashless hospital insurance verification claim process
-      insurance ka coverage TPA approval insurance accept karte ho
-      cashless facility insurance valid hai mediclaim policy insurance details
-      insurance card coverage kitna hai claim karna hai
     tools: ["verify_tpa", "lookup_policy"]
   - id: billing_payment
-    description: >
-      billing invoice payment amount due medical bill hospital charges refund
-      bill payment link bill bharna payment karna bill kitna hua billing query
-      how much is the bill pay my bill bill amount total charges
-      invoice send karo payment method bill clear karna outstanding bill
     tools: ["fetch_invoice", "send_payment_link"]
   - id: clinic_info
-    description: >
-      clinic information hospital timings address location which doctors available
-      specialists opening hours clinic details kahan hai doctor list facilities
-      departments working hours what time does clinic open visiting hours
-      clinic ka time kya hai clinic address clinic mein kaun se doctor hain
     tools: ["get_clinic_info"]
   - id: prescription_refill
-    description: >
-      prescription refill medication medicine repeat prescription refill request
-      doctor ne likha tha prescription chahiye medicine list dosage pharmacy
-      repeat medicine same prescription old prescription medicine refill
-      dawa likhwani hai same medicine phir chahiye prescription renewal
     tools: ["lookup_prescription", "raise_refill_request"]
   - id: anything_else
   - id: transfer_to_human       # fallback -- where unhandled intents die
