@@ -204,83 +204,156 @@
         "call_count": 13,
         "transfer_count": 6,
         "transfer_rate": 0.46153846153846156
+      },
+      {
+        "id": "intent_classification",
+        "cluster_id": -2,
+        "label": "intent_classification",
+        "description": "Routes incoming caller intent to the appropriate cluster",
+        "call_count": 298,
+        "transfer_count": 0,
+        "transfer_rate": 0.0
+      },
+      {
+        "id": "transfer_to_human",
+        "cluster_id": -3,
+        "label": "transfer_to_human",
+        "description": "Calls escalated to a human agent",
+        "call_count": 38,
+        "transfer_count": 38,
+        "transfer_rate": 1.0
       }
     ],
     "edges": [
       {
-        "from": "resolution",
-        "to": "resolution",
-        "count": 397
+        "from": "intent_classification",
+        "to": "book_thank_regarding",
+        "count": 16
       },
       {
-        "from": "greeting",
-        "to": "resolution",
-        "count": 112
+        "from": "intent_classification",
+        "to": "reschedule_cancel_thank",
+        "count": 7
       },
       {
-        "from": "information_gathering",
-        "to": "resolution",
-        "count": 65
+        "from": "intent_classification",
+        "to": "name_reschedule_cancel",
+        "count": 7
       },
       {
-        "from": "resolution",
-        "to": "greeting",
-        "count": 51
+        "from": "intent_classification",
+        "to": "bill_think_invoice",
+        "count": 26
       },
       {
-        "from": "resolution",
-        "to": "closing",
-        "count": 39
+        "from": "intent_classification",
+        "to": "book_appointment_thank",
+        "count": 16
       },
       {
-        "from": "resolution",
-        "to": "transfer",
-        "count": 29
+        "from": "intent_classification",
+        "to": "insurance_cashless_your",
+        "count": 19
       },
       {
-        "from": "transfer",
-        "to": "transfer",
-        "count": 14
+        "from": "intent_classification",
+        "to": "nahi_mujhe_appointment",
+        "count": 57
       },
       {
-        "from": "resolution",
-        "to": "information_gathering",
-        "count": 11
+        "from": "nahi_mujhe_appointment",
+        "to": "transfer_to_human",
+        "count": 9
       },
       {
-        "from": "information_gathering",
-        "to": "transfer",
+        "from": "intent_classification",
+        "to": "great_thank_name",
+        "count": 7
+      },
+      {
+        "from": "intent_classification",
+        "to": "regarding_insurance_thank",
+        "count": 9
+      },
+      {
+        "from": "intent_classification",
+        "to": "thank_medication_refill",
+        "count": 15
+      },
+      {
+        "from": "intent_classification",
+        "to": "surgery_should_your",
         "count": 8
       },
       {
-        "from": "closing",
-        "to": "resolution",
-        "count": 7
+        "from": "surgery_should_your",
+        "to": "transfer_to_human",
+        "count": 8
       },
       {
-        "from": "transfer",
-        "to": "resolution",
-        "count": 7
+        "from": "intent_classification",
+        "to": "cancel_appointment_next",
+        "count": 13
       },
       {
-        "from": "closing",
-        "to": "closing",
-        "count": 6
+        "from": "intent_classification",
+        "to": "test_days_blood",
+        "count": 10
       },
       {
-        "from": "closing",
-        "to": "greeting",
+        "from": "test_days_blood",
+        "to": "transfer_to_human",
+        "count": 9
+      },
+      {
+        "from": "intent_classification",
+        "to": "thank_possible_yeah",
         "count": 5
       },
       {
-        "from": "transfer",
-        "to": "closing",
-        "count": 1
+        "from": "intent_classification",
+        "to": "thank_there_father",
+        "count": 9
       },
       {
-        "from": "information_gathering",
-        "to": "information_gathering",
-        "count": 1
+        "from": "thank_there_father",
+        "to": "transfer_to_human",
+        "count": 3
+      },
+      {
+        "from": "intent_classification",
+        "to": "what_your_thank",
+        "count": 10
+      },
+      {
+        "from": "intent_classification",
+        "to": "thank_info_regarding",
+        "count": 10
+      },
+      {
+        "from": "intent_classification",
+        "to": "thank_morning_appointment",
+        "count": 9
+      },
+      {
+        "from": "intent_classification",
+        "to": "thank_appointment_saturday",
+        "count": 13
+      },
+      {
+        "from": "intent_classification",
+        "to": "thank_appointment_been",
+        "count": 8
+      },
+      {
+        "from": "intent_classification",
+        "to": "available_think_before",
+        "count": 13
+      },
+      {
+        "from": "available_think_before",
+        "to": "transfer_to_human",
+        "count": 6
       }
     ],
     "total_calls": 298,

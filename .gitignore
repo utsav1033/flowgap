@@ -1,2 +1,30 @@
+# secrets — never commit real keys
 .env
-.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.egg
+
+# Next.js / Node
+web/.next/
+web/node_modules/
+web/.turbo/
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+*.swp
+*.swo

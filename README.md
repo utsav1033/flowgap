@@ -1,9 +1,8 @@
 # FlowGap
 
-**Turn call logs into flow improvements.** FlowGap reads a voice agent's call transcripts,
-discovers what callers *actually* asked for, and surfaces the intents the agent's flow doesn't
-handle — the ones quietly ending in a human transfer. For each gap, it drafts a drop-in flow
-node to close it.
+Turn call logs into flow improvements. FlowGap reads a voice agent's call transcripts,
+discovers the recurring intents callers actually have that the flow doesn't handle — the
+ones quietly ending in a human transfer. For each gap, it drafts a drop-in flow node to close it.
 
 > Point it at your call logs and it tells you the % of calls your agent is silently handing to
 > a human — and hands back the exact nodes that would recover them.
