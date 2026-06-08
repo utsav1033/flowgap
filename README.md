@@ -13,16 +13,16 @@ Three views — toggle between them to see where the gaps are and what a fix loo
 
 **INTENDED** — the flow as the designer declared it:
 
-![Intended flow](images/graph-intended.png)
+![Intended flow](images/intended flo1.png)
 
 **ACTUAL** — what really happens. Red nodes are unhandled intents the pipeline discovered;
 they drain to Transfer to Human instead of being resolved:
 
-![Actual flow with gaps](images/graph-actual.png)
+![Actual flow with gaps](images/actual flo2.png)
 
 **PATCHED** — the same flow with gap nodes wired in, ready for review:
 
-![Patched flow](images/graph-patched.png)
+![Patched flow](images/patched flo3.png)
 
 ---
 
