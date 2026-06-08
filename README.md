@@ -7,6 +7,23 @@ ones quietly ending in a human transfer. For each gap, it drafts a drop-in flow 
 > Point it at your call logs and it tells you the % of calls your agent is silently handing to
 > a human — and hands back the exact nodes that would recover them.
 
+## Flow analysis dashboard
+
+Three views — toggle between them to see where the gaps are and what a fix looks like.
+
+**INTENDED** — the flow as the designer declared it:
+
+![Intended flow](images/graph-intended.png)
+
+**ACTUAL** — what really happens. Red nodes are unhandled intents the pipeline discovered;
+they drain to Transfer to Human instead of being resolved:
+
+![Actual flow with gaps](images/graph-actual.png)
+
+**PATCHED** — the same flow with gap nodes wired in, ready for review:
+
+![Patched flow](images/graph-patched.png)
+
 ---
 
 ## Why this matters for a voice-agent platform
@@ -63,7 +80,8 @@ the fact, so nothing here adds call latency.
 Evaluated on **298 synthetic clinic calls** spanning 6 handled intents plus 3 deliberately
 planted gap intents — planted so detection can be scored against ground truth.
 
-Coarse unhandled intents were recovered as clean clusters, by meaning alone:
+**49% of calls** hit an unhandled intent and transferred to a human. Coarse unhandled intents
+were recovered as clean clusters, by meaning alone:
 
 | Gap intent                   | Calls | Cluster purity | Transfer rate | Detected |
 |------------------------------|-------|----------------|---------------|----------|
@@ -117,12 +135,13 @@ unenforced in practice.
 ## Run it
 
 ```bash
+cp .env.example .env        # add your GEMINI_API_KEY
 pip install -r requirements.txt
 python gen/import_batches.py     # load transcripts
 python analyzer/run.py           # analysis -> data/analysis.json
 python eval/evaluate.py          # score vs planted ground truth
-uvicorn api.main:app --reload    # API
-cd web && npm run dev            # frontend
+uvicorn api.main:app --reload    # API on :8000
+cd web && npm run dev            # frontend on :3000
 ```
 
 ## Stack
