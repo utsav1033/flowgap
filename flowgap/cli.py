@@ -87,41 +87,37 @@ def _yaml_text(spec: str) -> Text:
     return out
 
 
-# 3x5 pixel glyphs for the headline number, drawn with half-blocks (3 lines tall)
-_GLYPHS = {
-    "0": ["###", "#.#", "#.#", "#.#", "###"], "1": [".#.", "##.", ".#.", ".#.", "###"],
-    "2": ["###", "..#", "###", "#..", "###"], "3": ["###", "..#", "###", "..#", "###"],
-    "4": ["#.#", "#.#", "###", "..#", "..#"], "5": ["###", "#..", "###", "..#", "###"],
-    "6": ["###", "#..", "###", "#.#", "###"], "7": ["###", "..#", "..#", "..#", "..#"],
-    "8": ["###", "#.#", "###", "#.#", "###"], "9": ["###", "#.#", "###", "..#", "###"],
-    ".": [".", ".", ".", ".", "#"], "%": ["#.#", "..#", ".#.", "#..", "#.#"],
-}
+_BANNER = """\
+███████╗██╗      ██████╗ ██╗    ██╗ ██████╗  █████╗ ██████╗
+██╔════╝██║     ██╔═══██╗██║    ██║██╔════╝ ██╔══██╗██╔══██╗
+█████╗  ██║     ██║   ██║██║ █╗ ██║██║  ███╗███████║██████╔╝
+██╔══╝  ██║     ██║   ██║██║███╗██║██║   ██║██╔══██║██╔═══╝
+██║     ███████╗╚██████╔╝╚███╔███╔╝╚██████╔╝██║  ██║██║
+╚═╝     ╚══════╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝
+"""
 
 
-def _big(text: str) -> list[str]:
-    rows = [""] * 5
-    for ch in text:
-        for i, line in enumerate(_GLYPHS[ch]):
-            rows[i] += line + "."
-    rows.append("." * len(rows[0]))
-    half = {(True, True): "██", (True, False): "▀▀", (False, True): "▄▄", (False, False): "  "}
-    return [
-        "".join(half[(a == "#", b == "#")] for a, b in zip(rows[r], rows[r + 1])).rstrip()
-        for r in (0, 2, 4)
-    ]
+def _print_banner():
+    """FLOWGAP in ANSI Shadow: solid blocks in the accent, the shadow dim."""
+    for line in _BANNER.rstrip("\n").splitlines():
+        text = Text()
+        for ch in line:
+            text.append(ch, style=ACCENT if ch == "█" else "dim")
+        console.print(text, no_wrap=True)
 
 
 def _print_report(analysis: dict, top: Optional[int] = None):
     m = analysis["metric"]
     n = m["n_gaps"]
-    headline = Text()
-    headline.append("\n".join(_big(f"{m['gap_rate'] * 100:.1f}%")), style=f"bold {ACCENT}")
-    headline.append_text(Text.assemble(
-        "\n\n", ("of calls hit an intent your flow doesn't handle", "bold"), "\n",
+    headline = Text.assemble(
+        (f"{m['gap_rate'] * 100:.1f}%", f"bold {ACCENT}"),
+        (" of calls hit an intent your flow doesn't handle", "bold"), "\n",
         (f"{m['gap_calls']} of {m['total_calls']} calls · {n} gap{'s' if n != 1 else ''} found", "dim"),
-    ))
+    )
     console.print()
-    console.print(Panel(headline, border_style="dim", box=box.ROUNDED, padding=(1, 3), expand=False))
+    _print_banner()
+    console.print()
+    console.print(Panel(headline, border_style="dim", box=box.ROUNDED, padding=(0, 2), expand=False))
     gaps = analysis["gaps"][:top] if top else analysis["gaps"]
     if not gaps:
         return
