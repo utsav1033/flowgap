@@ -92,16 +92,7 @@ def _is_keyword_label(g: dict) -> bool:
 
 
 def _display_name(g: dict) -> Text:
-    """Keyword labels read as words ("surgery · worried · wound"), LLM labels as-is."""
-    if not _is_keyword_label(g):
-        return Text(g["intent_name"].replace("_", " "), style="bold")
-    words = g["intent_name"].split("_")
-    out = Text()
-    for j, w in enumerate(words):
-        if j:
-            out.append(" · ", style="dim")
-        out.append(w, style="bold")
-    return out
+    return Text(g["intent_name"].replace("_", " "), style="bold")
 
 
 def _truncate(text: str, width: int) -> str:
@@ -117,16 +108,13 @@ def _next_steps(*steps: tuple[str, str]):
 
 def _title(subtitle: str):
     console.print()
-    console.print(Text.assemble(("flowgap", f"bold {ACCENT}"), ("  ·  ", "dim"), (subtitle, "dim")))
+    console.print(Text(subtitle, style="dim"))
     console.print()
 
 
 def _print_report(analysis: dict, top: Optional[int] = None):
     m = analysis["metric"]
     console.print()
-    console.print(Text("flowgap", style=f"bold {ACCENT}"))
-    console.print()
-
     if not analysis["gaps"]:
         console.print(f"[bold]Your agent handles every intent in these {m['total_calls']} calls.[/bold]\n")
         return
@@ -147,7 +135,7 @@ def _print_report(analysis: dict, top: Optional[int] = None):
         rate = g["transfer_rate"]
         table.add_row(
             str(i),
-            g["intent_name"].replace("_", " "),
+            _display_name(g),
             str(g["call_count"]),
             Text(f"{rate * 100:.0f}%", style=f"bold {ACCENT}" if rate >= 0.7 else ""),
         )
@@ -288,7 +276,7 @@ def specs(
     total = len(ranked)
     for rank, g in gaps:
         rate = g["transfer_rate"]
-        _title(f"gap {rank} of {total}")
+        _title(f"Gap {rank} of {total}")
         line = Text.assemble(_display_name(g), ("   ", ""), (f"{g['call_count']} calls", "dim"))
         if rate >= 0.7:
             line.append("  ·  ", style="dim")
