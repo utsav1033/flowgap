@@ -91,6 +91,19 @@ def _is_keyword_label(g: dict) -> bool:
     return g.get("description", "").startswith("Keyword-derived")
 
 
+def _display_name(g: dict) -> Text:
+    """Keyword labels read as words ("surgery · worried · wound"), LLM labels as-is."""
+    if not _is_keyword_label(g):
+        return Text(g["intent_name"].replace("_", " "), style="bold")
+    words = g["intent_name"].split("_")
+    out = Text()
+    for j, w in enumerate(words):
+        if j:
+            out.append(" · ", style="dim")
+        out.append(w, style="bold")
+    return out
+
+
 def _truncate(text: str, width: int) -> str:
     return text if len(text) <= width else text[:width - 1].rstrip() + "…"
 
@@ -145,29 +158,32 @@ def _print_report(analysis: dict, top: Optional[int] = None):
     ))
     console.print()
 
-    bar_width = max(max(1, round(g["call_count"] / per_char)) for g in gaps)
-    grid = Table.grid(padding=(0, 2), expand=True)
-    grid.add_column(justify="right", style="dim")
-    grid.add_column(ratio=1, no_wrap=True, overflow="ellipsis")
-    grid.add_column(width=bar_width, no_wrap=True)
+    # Fixed-width quote column keeps bars and rates right next to the name, not pushed to the edge
+    bar_width = max(round(g["call_count"] / per_char) for g in gaps) + 4
+    text_width = max(24, min(console.width - bar_width - 26, 52))
+    grid = Table.grid(padding=(0, 2))
+    grid.add_column(justify="right")
+    grid.add_column(width=text_width, no_wrap=True, overflow="ellipsis")
+    grid.add_column(no_wrap=True)
     grid.add_column(justify="right", no_wrap=True)
+    grid.add_row(*(Text(h, style="dim") for h in ("#", "What callers asked for", "Calls", "Transferred")))
+    grid.add_row()
     for i, g in enumerate(gaps, 1):
         rate = g["transfer_rate"]
         quote = (g.get("sample_turns") or [""])[0]
         grid.add_row(
-            str(i),
-            Text.assemble((g["intent_name"], "bold"), "\n", (f"“{quote}”", "italic dim")),
-            Text("█" * max(1, round(g["call_count"] / per_char)), style=ACCENT),
-            Text.assemble(
-                (f"{g['call_count']} calls", "bold"), "\n",
-                (f"{rate * 100:.0f}% sent to a human", f"{ACCENT}" if rate >= 0.7 else "dim"),
-            ),
+            Text(str(i), style="dim"),
+            Text.assemble(_display_name(g), "\n", (f"“{quote}”", "italic dim")),
+            Text.assemble(("█" * max(1, round(g["call_count"] / per_char)), ACCENT),
+                          (f" {g['call_count']}", "bold")),
+            Text(f"{rate * 100:.0f}%", style=f"bold {ACCENT}" if rate >= 0.7 else "dim"),
         )
         grid.add_row()
     console.print(grid)
 
     if any(_is_keyword_label(g) for g in gaps):
-        console.print("[dim]Names are keywords from the calls. Set GEMINI_API_KEY for readable ones.[/dim]\n")
+        console.print("[dim]Names are the words that set each group apart. "
+                      "Set GEMINI_API_KEY for written names.[/dim]\n")
 
     console.print(Text.assemble(
         ("Fix it", "bold"),
@@ -311,7 +327,7 @@ def specs(
     for rank, g in gaps:
         rate = g["transfer_rate"]
         _title(f"fix for gap {rank} of {total}")
-        console.print(Text(g["intent_name"], style="bold"))
+        console.print(_display_name(g))
         console.print(Text.assemble(
             (f"{g['call_count']} calls your agent couldn't handle", "dim"), ("  ·  ", "dim"),
             (f"{rate * 100:.0f}% sent to a human", ACCENT if rate >= 0.7 else "dim"),
