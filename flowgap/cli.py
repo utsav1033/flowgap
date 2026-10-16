@@ -123,41 +123,39 @@ def _title(subtitle: str):
 
 def _print_report(analysis: dict, top: Optional[int] = None):
     m = analysis["metric"]
-    total, missed, n = m["total_calls"], m["gap_calls"], m["n_gaps"]
-    _title(f"{total} calls analyzed")
+    console.print()
+    console.print(Text("flowgap", style=f"bold {ACCENT}"))
+    console.print()
 
     if not analysis["gaps"]:
-        console.print("[bold]Your agent handled every kind of request in these calls.[/bold]\n")
+        console.print(f"[bold]Your agent handles every intent in these {m['total_calls']} calls.[/bold]\n")
         return
 
     console.print(Text.assemble(
-        (f"{missed} of {total} calls", f"bold {ACCENT}"), (f" ({m['gap_rate'] * 100:.0f}%)", "dim"),
-        (" asked for something your agent can't handle yet.", "bold"),
+        ("Your agent can't handle ", "bold"), (f"{m['gap_rate'] * 100:.0f}% of calls", f"bold {ACCENT}"),
     ))
-    console.print("\nHere's what those callers wanted, most common first:\n")
+    console.print(f"[dim]{m['gap_calls']} of {m['total_calls']} calls[/dim]\n")
 
     gaps = analysis["gaps"][:top] if top else analysis["gaps"]
-    quote_width = max(30, min(console.width - 8, 80))
+    table = Table(title="Missing intents", title_justify="left", title_style="bold",
+                  box=box.ROUNDED, border_style="dim", header_style="dim")
+    table.add_column("#", justify="right", style="dim")
+    table.add_column("Intent", style="bold")
+    table.add_column("Calls", justify="right")
+    table.add_column("Sent to human", justify="right")
     for i, g in enumerate(gaps, 1):
-        calls = g["call_count"]
-        line = Text.assemble((f"{i:>2}. ", "dim"), _display_name(g),
-                             ("   ", ""), (f"{calls} call{'s' if calls != 1 else ''}", "dim"))
-        if g["transfer_rate"] >= 0.7:
-            line.append("  ·  ", style="dim")
-            line.append("usually sent to a human", style=ACCENT)
-        console.print(line)
-        quote = (g.get("sample_turns") or [""])[0]
-        console.print(Text(f"    “{_truncate(quote, quote_width)}”", style="italic dim"), no_wrap=True)
-        console.print()
-
-    if any(_is_keyword_label(g) for g in gaps):
-        console.print("[dim]Names are key words from the calls. Add GEMINI_API_KEY to .env for proper names.[/dim]\n")
-
-    console.print(f"Your flow has no step for these. [bold]flowgap drafted one for each.[/bold]\n")
-    _next_steps(
-        ("flowgap specs --gap 1", "see the drafted step for #1"),
-        ("flowgap specs -o specs/", "save all of them as files"),
-    )
+        rate = g["transfer_rate"]
+        table.add_row(
+            str(i),
+            g["intent_name"].replace("_", " "),
+            str(g["call_count"]),
+            Text(f"{rate * 100:.0f}%", style=f"bold {ACCENT}" if rate >= 0.7 else ""),
+        )
+    console.print(table)
+    console.print()
+    console.print(Text.assemble(("Next  ", "dim"), ("flowgap specs --gap 1", "bold"),
+                                ("   see the fix flowgap drafted for #1", "dim")))
+    console.print()
 
 
 @app.command()

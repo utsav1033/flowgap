@@ -19,7 +19,7 @@ Then pick a gap to see what callers said and the node drafted to handle it:
 ![flowgap specs for one gap](images/specs.svg)
 
 *Real output on the 298 demo calls, run without an API key. Gaps are named by the words that
-set them apart (`surgery · worried · wound` is post-op care questions) and the node is a
+set them apart (`surgery worried wound` is post-op care questions) and the node is a
 template. With `GEMINI_API_KEY` set, gaps get written names and fully drafted nodes.*
 
 It runs offline on logs you already have. Nothing sits in your live call path, and it never
@@ -72,7 +72,7 @@ nodes:
 ```
 
 **API key (optional).** Add `GEMINI_API_KEY` to `.env` for readable gap names (`lab_reports`
-instead of `ready · test · days`) and full drafted nodes. Without it, everything still runs.
+instead of `ready test days`) and full drafted nodes. Without it, everything still runs.
 
 ## Commands
 
