@@ -60,8 +60,7 @@ def _template_node_spec(gap: dict) -> str:
     spec = {"node": {
         "id": node_id,
         "intent": gap.get("description") or f"Callers asking about {node_id.replace('_', ' ')}",
-        "instructions": "TODO: describe what the agent should ask and do. "
-                        "Fall back to transfer_to_human if the request cannot be resolved.",
+        "instructions": "TODO: what should the agent ask and do? Transfer to a human if unresolved.",
         "tools": [],
         "output_variables": [],
         "edges": [
@@ -69,7 +68,7 @@ def _template_node_spec(gap: dict) -> str:
             {"to": "anything_else", "condition": f"{node_id}_resolved == true"},
         ],
     }}
-    return "# template spec (no LLM) — fill in the TODOs\n" + yaml.safe_dump(spec, sort_keys=False, allow_unicode=True)
+    return "# template spec (no LLM) — fill in the TODOs\n" + yaml.safe_dump(spec, sort_keys=False, allow_unicode=True, width=1000)
 
 
 def generate_node_spec(

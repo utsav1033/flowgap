@@ -20,9 +20,12 @@ from typing import Optional
 
 import typer
 from dotenv import find_dotenv, load_dotenv
+from rich import box
 from rich.console import Console
+from rich.panel import Panel
 from rich.syntax import Syntax
 from rich.table import Table
+from rich.text import Text
 
 app = typer.Typer(
     help="Find the caller intents your voice agent's flow doesn't handle, and draft nodes to close them.",
@@ -57,34 +60,45 @@ def _slug(name: str) -> str:
     return re.sub(r"[^a-z0-9_]+", "_", name.lower()).strip("_") or "gap"
 
 
+def _rate_style(rate: float) -> str:
+    return "bold red" if rate >= 0.7 else "yellow" if rate >= 0.3 else "green"
+
+
 def _print_report(analysis: dict, top: Optional[int] = None):
     m = analysis["metric"]
-    console.print(
-        f"\n[bold]{m['gap_rate'] * 100:.1f}%[/bold] of calls "
-        f"([bold]{m['gap_calls']}[/bold] of {m['total_calls']}) hit an intent your flow doesn't handle "
-        f"— {m['n_gaps']} gap{'s' if m['n_gaps'] != 1 else ''} found.\n"
+    n = m["n_gaps"]
+    headline = Text.assemble(
+        (f"{m['gap_rate'] * 100:.1f}%", "bold red"),
+        " of calls hit an intent your flow doesn't handle\n",
+        (f"{m['gap_calls']} of {m['total_calls']} calls · {n} gap{'s' if n != 1 else ''} found", "dim"),
     )
+    console.print()
+    console.print(Panel(headline, border_style="red", box=box.ROUNDED, padding=(1, 3), expand=False))
     gaps = analysis["gaps"][:top] if top else analysis["gaps"]
     if not gaps:
         return
-    table = Table(show_edge=False, header_style="bold")
+
+    max_calls = max(g["call_count"] for g in gaps)
+    table = Table(box=box.SIMPLE_HEAD, header_style="bold dim", pad_edge=False)
     table.add_column("#", justify="right", style="dim")
-    table.add_column("Gap intent")
+    table.add_column("Gap intent", style="bold cyan")
     table.add_column("Calls", justify="right")
-    table.add_column("Transfer", justify="right")
+    table.add_column("", no_wrap=True)
+    table.add_column("→ human", justify="right")
     table.add_column("Closest node", style="dim")
-    table.add_column("Sim", justify="right", style="dim")
     for i, g in enumerate(gaps, 1):
+        rate = g["transfer_rate"]
+        bar = "█" * max(1, round(12 * g["call_count"] / max_calls))
         table.add_row(
             str(i),
             g["intent_name"],
             str(g["call_count"]),
-            f"{g['transfer_rate'] * 100:.0f}%",
-            g.get("best_flow_match", ""),
-            f"{g.get('max_flow_similarity', 0):.2f}",
+            Text(bar, style="cyan"),
+            Text(f"{rate * 100:.0f}%", style=_rate_style(rate)),
+            f"{g.get('best_flow_match', '')} ({g.get('max_flow_similarity', 0):.2f})",
         )
     console.print(table)
-    console.print("\n[dim]See a drafted node:[/dim] flowgap specs --gap 1\n")
+    console.print("[dim]Next:[/dim] [bold]flowgap specs --gap 1[/bold] [dim]to see the drafted node[/dim]\n")
 
 
 @app.command()
@@ -213,14 +227,22 @@ def specs(
         return
 
     for g in gaps:
-        console.rule(f"[bold]{g['intent_name']}[/bold]  {g['call_count']} calls, "
-                     f"{g['transfer_rate'] * 100:.0f}% transferred")
-        quote_width = max(console.width - 6, 40)
+        rate = g["transfer_rate"]
+        console.print()
+        console.print(Text.assemble(
+            (g["intent_name"], "bold cyan"), "  ",
+            (f"{g['call_count']} calls", "bold"), (" · ", "dim"),
+            (f"{rate * 100:.0f}% sent to a human", _rate_style(rate)),
+        ))
+        quote_width = max(console.width - 8, 40)
         for t in g.get("sample_turns", [])[:3]:
             t = t if len(t) <= quote_width else t[:quote_width - 1].rstrip() + "…"
-            console.print(f"[dim]  “{t}”[/dim]", no_wrap=True)
+            console.print(Text(f"  “{t}”", style="italic dim"), no_wrap=True)
         console.print()
-        console.print(Syntax(g["node_spec"], "yaml", theme="ansi_dark", background_color="default", word_wrap=True))
+        spec = Syntax(g["node_spec"].rstrip(), "yaml", theme="ansi_dark",
+                      background_color="default", word_wrap=True)
+        console.print(Panel(spec, title="[bold]drafted node[/bold]", title_align="left",
+                            border_style="green", box=box.ROUNDED, padding=(0, 1)))
 
 
 @app.command("eval")
