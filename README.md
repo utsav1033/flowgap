@@ -1,200 +1,189 @@
 # FlowGap
 
-Turn call logs into flow improvements. FlowGap reads a voice agent's call transcripts,
-discovers the recurring intents callers actually have that the flow doesn't handle — the
-ones quietly ending in a human transfer. For each gap, it drafts a drop-in flow node to close it.
+**Find out what your voice agent can't handle, straight from your call logs.**
 
-> Point it at your call logs and it tells you the % of calls your agent is silently handing to
-> a human — and hands back the exact nodes that would recover them.
+Every voice agent has requests its designers never planned for. When a caller asks for one,
+the agent gives up and transfers them to a human. Nobody sees it happen, because the evidence
+is spread across thousands of transcripts that nobody reads.
+
+FlowGap reads those transcripts and tells you:
+
+- **what share of calls** hit something your flow has no node for,
+- **which requests they were**, ranked by how many calls they cost you, and
+- **a drafted node for each one**, so you can close the gap.
+
+```console
+$ flowgap analyze
+...
+39.3% of calls (117 of 298) hit an intent your flow doesn't handle — 6 gaps found.
+
+ # ┃ Gap intent          ┃ Calls ┃ Transfer ┃ Closest node     ┃  Sim
+━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━
+ 1 │ post_op_care        │    13 │     100% │ clinic_info      │ 0.28
+ 2 │ lab_reports         │    13 │      90% │ clinic_info      │ 0.42
+ ...
+
+$ flowgap specs --gap 1
+──────────── post_op_care  13 calls, 100% transferred ────────────
+  “Hi, I had surgery here last week — appendix removal. I wanted to ask about the wound dressing…”
+node:
+  id: post_op_care
+  intent: Patient has a question about recovery after a procedure
+  instructions: Ask which procedure and when. Share standard aftercare guidance from the
+    knowledge base; for symptoms like fever or bleeding, transfer to the duty nurse.
+  tools: [lookup_procedure, get_aftercare_guide]
+  ...
+```
+
+*(The output above is illustrative. Gap names and drafted nodes come from Gemini when you set
+an API key; without one, gaps get keyword names and the nodes are templates for you to fill in.)*
+
+It runs offline on logs you already have. Nothing sits in your live call path, and it never
+edits your flow: you review every drafted node yourself.
 
 ## Quick start
 
 ```bash
 pipx install git+https://github.com/utsav1033/flowgap
 flowgap init my-agent && cd my-agent
-# describe your nodes in flow.yaml, drop call transcripts into transcripts/
-flowgap analyze
-flowgap report
-flowgap specs --gap 1
 ```
 
-No API key needed to start. Full details in [Run it](#run-it).
+Then give it two things:
 
-## Flow analysis dashboard
+1. **Your calls**: put transcripts in `transcripts/`, one file per call.
+2. **Your flow**: list the nodes your agent already handles in `flow.yaml`.
 
-Three views — toggle between them to see where the gaps are and what a fix looks like.
-(The Next.js frontend isn't published in this repo yet; `flowgap serve` exposes the API it reads.)
+```bash
+flowgap analyze            # takes a minute or two → analysis.json
+flowgap report             # the headline % and ranked gaps
+flowgap specs --gap 1      # caller quotes + drafted node for the biggest gap
+flowgap specs -o specs/    # one YAML file per gap
+```
 
-**INTENDED** — the flow as the designer declared it:
+Requires Python 3.10+. The first run downloads a ~80 MB embedding model. You'll want at least
+100 calls for meaningful clusters (it refuses to run on fewer than 10).
 
-![Intended flow](images/flo1.PNG)
+## Your inputs
 
-**ACTUAL** — what really happens. Red nodes are unhandled intents the pipeline discovered;
-they drain to Transfer to Human instead of being resolved:
+**Transcripts.** Either a `.txt` file per call:
 
-![Actual flow with gaps](images/flo2.PNG)
+```text
+CALLER: Hi, I had surgery here last week and the wound looks a bit red.
+AGENT: I'm sorry to hear that. Let me connect you to our staff.
+```
 
-**PATCHED** — the same flow with gap nodes wired in, ready for review:
+or a `.json` file per call with a `"transcript"` field in that same format. Only the
+`CALLER:` lines are used to work out what people wanted. The `AGENT:` lines are used to
+spot transfers.
 
-![Patched flow](images/flo3.PNG)
+**Flow.** A YAML list of what your agent already handles. `flowgap init` writes a commented
+template. The most important field is `description`: write it the way callers phrase the
+request, since that's what calls are matched against.
 
----
+```yaml
+nodes:
+  - id: book_appointment
+    description: "book an appointment, see a doctor, schedule a visit"
+    tools: ["check_doctor_availability", "book_appointment"]
+```
 
-## Why this matters for a voice-agent platform
+**API key (optional).** Add `GEMINI_API_KEY` to `.env` for readable gap names (`lab_reports`
+instead of `test_days_haven`) and full drafted nodes. Without it, everything still runs.
 
-Agent flows are authored by anticipating intents. That works for the demand you foresaw — but
-every real deployment has demand nobody designed for. When a caller asks for something the flow
-has no node for, the agent falls through to a human. Each of those is:
+## Commands
 
-- **direct cost** — a call you're paying an agent to automate, handled by a person instead, and
-- **invisible** — the proof is scattered across thousands of transcripts no one reads.
+| Command | What it does |
+|---|---|
+| `flowgap init [dir]` | Creates `flow.yaml`, `transcripts/` and `.env` |
+| `flowgap analyze [transcripts]` | Runs the pipeline and writes `analysis.json` |
+| `flowgap report` | Shows the headline number and the ranked gaps (`--json` for scripts) |
+| `flowgap specs` | Prints drafted nodes (`--gap N`), or writes them to a folder (`-o`) |
+| `flowgap serve` | Serves the analysis as a JSON API on `:8000` |
+| `flowgap eval` | Scores results against planted labels (synthetic data only) |
 
-So flows get optimized for what was designed, while unhandled demand quietly leaks to humans and
-never shows up in a dashboard. The lever everyone wants — *fewer human handoffs* — is sitting
-unused inside the call logs.
-
-FlowGap is the feedback loop that closes it: logs in, ranked coverage gaps out, each with a
-node spec in the flow's own format ready to review and ship. It scales the way a platform needs
-it to — the same pipeline runs across every client's flow, so coverage analysis becomes a
-product surface, not a manual audit. Built deliberately around a graph-based flow model
-(global layer, scoped nodes, intent-routed edges), so its output drops into that structure
-rather than sitting beside it as yet another analytics chart.
-
-## What it produces
-
-For a given set of call logs:
-
-- **A headline number** — what share of calls hit an unhandled intent and transferred out.
-- **A ranked gap list** — each unhandled intent, its call volume, and its transfer rate, so the
-  most expensive gaps surface first.
-- **A drafted node per gap** — scoped instructions, tools, output variables, and the routing
-  edge that wires it into the existing flow. A human reviews and accepts; nothing auto-edits a
-  live flow.
-
-The output is an action ("here's the node that recovers these calls"), not a report.
+Useful `analyze` options: `--threshold 0.5` makes matching to your nodes looser, so fewer
+gaps; `--org "Acme Dental"` sets the business name used in drafted nodes; `--no-llm` skips
+Gemini. Run `flowgap <command> --help` for everything else.
 
 ## How it works
 
-A six-stage offline pipeline. No model sits in the live call path — analysis runs on logs after
-the fact, so nothing here adds call latency.
+1. **Parse** the caller's side of each call: what they wanted, not what the bot said.
+2. **Embed** each call locally with MiniLM, so calls that mean the same thing sit close
+   together.
+3. **Cluster** with UMAP → HDBSCAN. This *discovers* intents rather than sorting calls into
+   a fixed list, which matters because the intent you're missing is the one you didn't
+   think to list.
+4. **Label** each cluster (Gemini, or a keyword fallback).
+5. **Match** each cluster to your flow by meaning. Clusters that match no node are gaps.
+6. **Draft** a node for each gap.
 
-1. **Parse** the caller's side of each call (what they wanted, not what the bot said).
-2. **Embed** each call so semantically similar calls sit near each other (local, no API).
-3. **Reduce + cluster** with UMAP → HDBSCAN to *discover* intent clusters unsupervised — the
-   point being to find intents nobody pre-defined. A fixed classifier can only recognize labels
-   it was given; clustering finds the intent you didn't know you were missing.
-4. **Label** each cluster.
-5. **Detect gaps** by matching each cluster to the declared flow on *semantic content* (not on a
-   label string), then flagging clusters that match no node and end in transfer.
-   `discovered − intended = gaps`.
-6. **Draft** a flow node per gap.
+## Does it work?
 
-## Results
+Tested on **298 synthetic clinic calls**: 6 intents the flow handles, plus 3 gaps planted on
+purpose so detection could be scored. Synthetic data is what makes scoring possible, but it
+also means **this hasn't been proven on real production calls yet.**
 
-Evaluated on **298 synthetic clinic calls** spanning 6 handled intents plus 3 deliberately
-planted gap intents — planted so detection can be scored against ground truth.
+| Planted gap | Calls | Found? |
+|---|---|---|
+| post_op_care | 13 | ✅ 100% cluster purity |
+| lab_reports | 13 | ✅ 90% cluster purity |
+| doctor_availability_specific | 12 | ❌ merged into normal booking |
 
-**49% of calls** hit an unhandled intent and transferred to a human. Coarse unhandled intents
-were recovered as clean clusters, by meaning alone:
+It finds 2 of 3 real gaps (recall 0.67), but it also flags handled intents as gaps
+(precision 0.25–0.33 across runs). Those runs used keyword labels only, because of API rate
+limits. Those false gaps sit just below the matching threshold, so better labels or a lower
+`--threshold` should cut them. The 49% headline in an earlier run vs 39% in a later rerun
+shows that clustering shifts somewhat between library versions.
 
-| Gap intent                   | Calls | Cluster purity | Transfer rate | Detected |
-|------------------------------|-------|----------------|---------------|----------|
-| lab_reports                  | 13    | 90%            | 90%           | YES (TP) |
-| post_op_care                 | 13    | 100%           | 100%          | YES (TP) |
-| doctor_availability_specific | 12    | —              | —             | NO (FN, see below) |
+### Known limits
 
-Adding UMAP cut clustering noise from **54.7%** to **3.7%** — the change that made small,
-real intent clusters viable rather than discarded as noise.
+- **Narrower versions of a handled request get missed.** "An appointment with Dr. Mehta
+  *specifically*" looks like ordinary booking, so it merges in. Splitting clusters a second
+  time is the obvious next step.
+- **Keyword labels are rough.** They work, but they're harder to read and slightly blur matching.
+- **Real-world transcripts are untested.** Heavy Hindi-English code-switching is partly
+  covered by the test set; other languages and messy ASR output aren't.
 
-Scored against planted ground truth (majority-vote per cluster):
+## Roadmap
 
-| Metric    | Value |
-|-----------|-------|
-| TP        | 2     |
-| FP        | 6     |
-| FN        | 1     |
-| Precision | 0.25  |
-| Recall    | 0.67  |
-| F1        | 0.36  |
+- Importers for common voice platforms' transcript exports
+- Rolling analysis: "your flow started missing X this week: N calls, all transferred"
+- Splitting fine-grained sub-intents
+- Publishing the dashboard frontend
 
-The precision ceiling here is a *labeling* artifact, not a detection-method limit. The API
-was rate-limited during this run, so all 21 cluster labels fell back to keyword extraction
-(e.g. `nahi_mujhe_appointment`, `bill_think_invoice`). Those labels have poor lexical overlap
-with flow node names, which slightly depresses centroid similarity for handled-intent clusters
-near the 0.60 threshold. The 6 FPs sit in the 0.42–0.56 band — just below threshold. With
-proper LLM labels they sharpen into the in-flow zone. The discovery method itself isolates the
-coarse gaps cleanly (post_op_care sim=0.285, lab_reports sim=0.420 — both far below threshold,
-both at 90–100% purity).
+If you run a voice agent and want to try it on real logs, open an issue. That's the most
+useful feedback this project can get right now.
 
-## Honest edges (and the roadmap they imply)
+## Dashboard (preview)
 
-- **Sub-intents of a handled flow are the hard case.** "Appointment with Dr. Mehta
-  *specifically*" looks near-identical to ordinary booking in embedding space, so it merges in.
-  Coarse novel intents separate cleanly; fine-grained sub-intents need a second-pass split —
-  the natural v2.
-- **Label quality scales with budget, not with the approach.** Keyword fallbacks slightly blur
-  matching; real labels sharpen it.
-- **Results are on synthetic data** (which is what makes ground-truth scoring possible). The
-  pipeline is data-agnostic; the main hardening on production transcripts is intent labeling
-  under heavy Hindi-English code-switching — already partially present in the test set.
+The analysis was built to drive a three-view flow dashboard. The Next.js frontend isn't in
+this repo yet; `flowgap serve` exposes the API it reads (`/api/analysis`, `/api/gaps`,
+`/api/graph`, `/api/intended_flow`).
 
-## Where it goes
+**Intended**: the flow as designed. **Actual**: red nodes are discovered gaps draining to a
+human. **Patched**: gap nodes wired in for review.
 
-The single-shot tool is the seed of a continuous loop: run it on a rolling window of production
-calls, watch coverage gaps emerge as caller behavior shifts, and surface "your flow is now
-missing a node for X — N calls/week, all transferring" before anyone notices the leak manually.
-The same content-matching layer extends naturally to flagging where declared guardrails go
-unenforced in practice.
+![Intended flow](images/flo1.PNG)
+![Actual flow with gaps](images/flo2.PNG)
+![Patched flow](images/flo3.PNG)
 
-## Run it
+## Running the demo / development
 
-### Install the CLI
+From a clone:
 
 ```bash
-pipx install git+https://github.com/utsav1033/flowgap
-```
-
-(or `pip install .` from a clone). Python 3.10+. The first run downloads the ~80 MB
-MiniLM embedding model.
-
-### Use it on your own calls
-
-```bash
-flowgap init my-agent      # creates flow.yaml, transcripts/, .env
-cd my-agent
-# 1. describe your agent's nodes in flow.yaml
-# 2. drop transcripts into transcripts/ — .txt with CALLER:/AGENT: lines,
-#    or .json with a "transcript" field
-flowgap analyze            # -> analysis.json
-flowgap report             # headline % + ranked gaps
-flowgap specs --gap 1      # drafted node for the biggest gap
-flowgap specs -o specs/    # one YAML node spec per gap
-```
-
-A `GEMINI_API_KEY` in `.env` is optional: with it, clusters get LLM labels and gaps get
-drafted node specs; without it (or with `--no-llm`), FlowGap uses keyword labels and
-template specs to fill in. `flowgap analyze --threshold 0.5` makes matching to existing
-nodes looser (fewer gaps). Run `flowgap <command> --help` for every option.
-
-### Try the demo data
-
-From a clone of this repo:
-
-```bash
+pip install -e .
 flowgap analyze data/transcripts -f gen/intended_flow.yaml
-flowgap eval -g data/ground_truth.json    # score vs planted ground truth
-flowgap serve -f gen/intended_flow.yaml   # API on :8000 for the dashboard
+flowgap eval -g data/ground_truth.json
+flowgap serve -f gen/intended_flow.yaml
 ```
 
-The original scripts (`python analyzer/run.py`, `python eval/evaluate.py`,
-`uvicorn api.main:app`) still work with the repo's default paths.
+`gen/` contains the synthetic call generator (`distribution.yaml` controls the intent mix and
+the planted gaps). The original scripts (`python analyzer/run.py`, `python eval/evaluate.py`,
+`uvicorn api.main:app`) still work with the repo's default paths. `BUILD.md` has the original
+design notes.
 
-## Stack
+**Stack:** Python · Typer · sentence-transformers (MiniLM) · UMAP · HDBSCAN · FastAPI.
+LLMs are used offline only, for generating test calls, labeling and drafting nodes.
 
-Python · Typer CLI · sentence-transformers (MiniLM) · UMAP · HDBSCAN · FastAPI · Next.js + React Flow.
-LLM (swappable provider) used offline only — transcript generation, labeling, node drafting.
-
----
-
-*Built around a graph-based agent-flow model, as a focused demo of automated flow-coverage
-analysis for voice agents.*
+MIT licensed.
