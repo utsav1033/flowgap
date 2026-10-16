@@ -44,7 +44,7 @@ def _load_env():
 
 
 def _fail(msg: str):
-    console.print(f"[red]error:[/red] {msg}")
+    console.print(f"[bold #ff8a3d]error:[/] {msg}")
     raise typer.Exit(1)
 
 
@@ -87,58 +87,89 @@ def _yaml_text(spec: str) -> Text:
     return out
 
 
-_BANNER = r"""
-        _
-    /) //
-   // // __ , , , _,  __.  _
-  //_</_(_)(_(_/_(_)_(_/|_/_)_
- />               /|     /
-</               |/     '
+_BANNER = """\
+███████╗██╗      ██████╗ ██╗    ██╗ ██████╗  █████╗ ██████╗
+██╔════╝██║     ██╔═══██╗██║    ██║██╔════╝ ██╔══██╗██╔══██╗
+█████╗  ██║     ██║   ██║██║ █╗ ██║██║  ███╗███████║██████╔╝
+██╔══╝  ██║     ██║   ██║██║███╗██║██║   ██║██╔══██║██╔═══╝
+██║     ███████╗╚██████╔╝╚███╔███╔╝╚██████╔╝██║  ██║██║
+╚═╝     ╚══════╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝
 """
 
 
 def _print_banner():
-    for line in _BANNER.strip("\n").splitlines():
-        console.print(Text(line, style=f"bold {ACCENT}"), no_wrap=True)
+    """FLOWGAP in ANSI Shadow: solid blocks in the accent, the shadow dim."""
+    for line in _BANNER.rstrip("\n").splitlines():
+        text = Text()
+        for ch in line:
+            text.append(ch, style=ACCENT if ch == "█" else "dim")
+        console.print(text, no_wrap=True)
+
+
+def _is_keyword_label(g: dict) -> bool:
+    return g.get("description", "").startswith("Keyword-derived")
+
+
+def _truncate(text: str, width: int) -> str:
+    return text if len(text) <= width else text[:width - 1].rstrip() + "…"
+
+
+def _next_steps(*steps: tuple[str, str]):
+    console.print("[bold]Next[/bold]")
+    width = max(len(cmd) for cmd, _ in steps)
+    for cmd, what in steps:
+        console.print(f"  [bold]{cmd.ljust(width)}[/bold]   [dim]{what}[/dim]")
+    console.print()
 
 
 def _print_report(analysis: dict, top: Optional[int] = None):
     m = analysis["metric"]
     n = m["n_gaps"]
-    headline = Text.assemble(
-        (f"{m['gap_rate'] * 100:.1f}%", f"bold {ACCENT}"),
-        (" of calls hit an intent your flow doesn't handle", "bold"), "\n",
-        (f"{m['gap_calls']} of {m['total_calls']} calls · {n} gap{'s' if n != 1 else ''} found", "dim"),
-    )
     console.print()
     _print_banner()
     console.print()
-    console.print(Panel(headline, border_style="dim", box=box.ROUNDED, padding=(0, 2), expand=False))
-    gaps = analysis["gaps"][:top] if top else analysis["gaps"]
-    if not gaps:
+
+    if not analysis["gaps"]:
+        console.print(f"[bold]No gaps found[/bold] in {m['total_calls']} calls — "
+                      "every recurring request matched a node in your flow.\n")
         return
 
+    console.print(Text.assemble(
+        (f"{m['gap_rate'] * 100:.0f}%", f"bold {ACCENT}"),
+        (" of calls asked for something your flow has no node for.", "bold"),
+    ))
+    console.print(f"[dim]{m['gap_calls']} of {m['total_calls']} calls, grouped into {n} "
+                  f"gap{'s' if n != 1 else ''}, biggest first.[/dim]\n")
+
+    gaps = analysis["gaps"][:top] if top else analysis["gaps"]
     max_calls = max(g["call_count"] for g in gaps)
-    table = Table(box=box.SIMPLE_HEAD, header_style="bold dim", pad_edge=False)
+    table = Table(box=box.SIMPLE_HEAD, header_style="bold dim", pad_edge=False, expand=True)
     table.add_column("#", justify="right", style="dim")
-    table.add_column("Gap intent", style="bold")
-    table.add_column("Calls", justify="right")
-    table.add_column("", no_wrap=True)
-    table.add_column("→ human", justify="right")
-    table.add_column("Closest node", style="dim")
+    table.add_column("What callers wanted", no_wrap=True, overflow="ellipsis", ratio=1)
+    table.add_column("Calls", no_wrap=True)
+    table.add_column("Sent to human", justify="right")
     for i, g in enumerate(gaps, 1):
         rate = g["transfer_rate"]
-        bar = "█" * max(1, round(12 * g["call_count"] / max_calls))
+        bar = "█" * max(1, round(10 * g["call_count"] / max_calls))
+        quote = (g.get("sample_turns") or [""])[0]
         table.add_row(
             str(i),
-            g["intent_name"],
-            str(g["call_count"]),
-            Text(bar, style=ACCENT),
+            Text.assemble((g["intent_name"], "bold"), "\n",
+                          (f"“{quote}”", "italic dim")),
+            Text.assemble((f"{g['call_count']:>3} ", ""), (bar, ACCENT)),
             Text(f"{rate * 100:.0f}%", style=_rate_style(rate)),
-            f"{g.get('best_flow_match', '')} ({g.get('max_flow_similarity', 0):.2f})",
         )
+        if i < len(gaps):
+            table.add_row()
     console.print(table)
-    console.print("[dim]Next:[/dim] [bold]flowgap specs --gap 1[/bold] [dim]to see the drafted node[/dim]\n")
+
+    if any(_is_keyword_label(g) for g in gaps):
+        console.print("[dim]Gap names are keywords pulled from the calls. "
+                      "Add GEMINI_API_KEY to .env for readable names and fully drafted nodes.[/dim]\n")
+    _next_steps(
+        ("flowgap specs --gap 1", "see the biggest gap and its drafted node"),
+        ("flowgap specs -o specs/", "save every drafted node as a YAML file"),
+    )
 
 
 @app.command()
@@ -152,21 +183,21 @@ def init(
 
     flow = directory / "flow.yaml"
     if flow.exists() and not force:
-        console.print(f"[yellow]skip[/yellow]  {flow} (exists)")
+        console.print(f"[dim]skip[/dim]   {flow} (exists)")
     else:
         flow.write_text(resources.files("flowgap").joinpath("templates/flow.yaml").read_text())
-        console.print(f"[green]wrote[/green] {flow}")
+        console.print(f"[dim]wrote[/dim] {flow}")
 
     env = directory / ".env"
     if env.exists() and not force:
-        console.print(f"[yellow]skip[/yellow]  {env} (exists)")
+        console.print(f"[dim]skip[/dim]   {env} (exists)")
     else:
         env.write_text(
             "# Optional: enables LLM cluster labels and drafted node specs.\n"
             "# Without it FlowGap uses keyword labels and template specs.\n"
             "GEMINI_API_KEY=\n"
         )
-        console.print(f"[green]wrote[/green] {env}")
+        console.print(f"[dim]wrote[/dim] {env}")
 
     console.print(
         "\nNext:\n"
@@ -247,41 +278,52 @@ def specs(
         console.print("No gaps — nothing to draft.")
         return
 
+    ranked = list(enumerate(gaps, 1))
+    gaps = ranked
     if gap is not None:
         if gap.isdigit():
             idx = int(gap) - 1
-            if not 0 <= idx < len(gaps):
-                _fail(f"gap #{gap} doesn't exist — there are {len(gaps)}.")
-            gaps = [gaps[idx]]
+            if not 0 <= idx < len(ranked):
+                _fail(f"gap #{gap} doesn't exist — there are {len(ranked)}.")
+            gaps = [ranked[idx]]
         else:
-            gaps = [g for g in gaps if g["intent_name"] == gap]
+            gaps = [(r, g) for r, g in ranked if g["intent_name"] == gap]
             if not gaps:
                 _fail(f"no gap named {gap!r} — see `flowgap report`.")
 
     if out:
         out.mkdir(parents=True, exist_ok=True)
-        for g in gaps:
+        for _, g in gaps:
             path = out / f"{_slug(g['intent_name'])}.yaml"
             path.write_text(g["node_spec"].rstrip() + "\n", encoding="utf-8")
-            console.print(f"[green]wrote[/green] {path}")
+            console.print(f"[dim]wrote[/dim] {path}")
         return
 
-    for g in gaps:
+    total = len(ranked)
+    for rank, g in gaps:
         rate = g["transfer_rate"]
         console.print()
         console.print(Text.assemble(
-            (g["intent_name"], "bold"), "  ",
-            (f"{g['call_count']} calls", "bold"), (" · ", "dim"),
-            (f"{rate * 100:.0f}% sent to a human", _rate_style(rate)),
+            (f"Gap {rank} of {total}  ", "dim"), (g["intent_name"], f"bold {ACCENT}"),
         ))
+        console.print(Text.assemble(
+            (f"{g['call_count']} calls", "bold"), (" · ", "dim"),
+            (f"{rate * 100:.0f}% were sent to a human", _rate_style(rate) or "bold"),
+        ))
+        console.print("\n[bold]What callers said[/bold]")
         quote_width = max(console.width - 8, 40)
         for t in g.get("sample_turns", [])[:3]:
-            t = t if len(t) <= quote_width else t[:quote_width - 1].rstrip() + "…"
-            console.print(Text(f"  “{t}”", style="italic dim"), no_wrap=True)
+            console.print(Text(f"  “{_truncate(t, quote_width)}”", style="italic dim"), no_wrap=True)
         console.print()
         spec = _yaml_text(g["node_spec"].rstrip())
-        console.print(Panel(spec, title="[bold]drafted node[/bold]", title_align="left",
-                            border_style="dim", box=box.ROUNDED, padding=(0, 1)))
+        console.print(Panel(spec, title="[bold]Drafted node[/bold] [dim]· review, then add to your flow[/dim]",
+                            title_align="left", border_style="dim", box=box.ROUNDED, padding=(0, 1)))
+        console.print()
+
+    steps = [(f"flowgap specs --gap {rank} -o specs/", "save this node as YAML")]
+    if rank < total:
+        steps.insert(0, (f"flowgap specs --gap {rank + 1}", "next gap"))
+    _next_steps(*steps)
 
 
 @app.command("eval")
@@ -298,7 +340,7 @@ def eval_cmd(
     print_eval(result)
     if out:
         out.write_text(json.dumps(result, indent=2))
-        console.print(f"\n[green]wrote[/green] {out}")
+        console.print(f"\n[dim]wrote[/dim] {out}")
 
 
 @app.command()
