@@ -1,23 +1,16 @@
 """
 Label each cluster with a human intent name.
 Uses Google Gemini (gemini-2.0-flash) with retry-backoff on rate limits.
-Falls back to top-keyword extraction if all retries fail.
+Falls back to top-keyword extraction if all retries fail or no API key is set.
 """
 
 import json
-import os
 import re
 import time
 from collections import Counter, defaultdict
 from pathlib import Path
 
-import google.generativeai as genai
-from dotenv import load_dotenv
-
-load_dotenv()
-
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-MODEL = "gemini-2.0-flash"
+from analyzer import llm
 
 LABEL_PROMPT = """Label this cluster of caller utterances from an Indian clinic phone line.
 Output ONLY a JSON object with exactly two keys:
@@ -58,12 +51,11 @@ def _keyword_label(turns: list[str]) -> dict:
 
 def _call_llm(prompt: str, max_retries: int = 3) -> str | None:
     """Call Gemini with exponential backoff on rate-limit errors. Returns raw text or None."""
-    model = genai.GenerativeModel(model_name=MODEL)
-    generation_config = {"temperature": 0.2, "max_output_tokens": 120}
+    if not llm.available():
+        return None
     for attempt in range(max_retries):
         try:
-            resp = model.generate_content(prompt, generation_config=generation_config)
-            return resp.text.strip()
+            return llm.generate(prompt, temperature=0.2, max_output_tokens=120)
         except Exception as e:
             msg = str(e).lower()
             if "429" in msg or "rate" in msg or "quota" in msg or "limit" in msg:

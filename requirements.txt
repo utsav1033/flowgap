@@ -8,3 +8,5 @@ numpy>=1.26.0
 scikit-learn>=1.4.0
 fastapi>=0.111.0
 uvicorn[standard]>=0.30.0
+typer>=0.12
+rich>=13.0

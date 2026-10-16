@@ -31,14 +31,14 @@ SIM_THRESHOLD = 0.60  # configurable; print scores so caller can tune
 _UTILITY_NODES = {"greeting", "intent_classification", "anything_else", "transfer_to_human"}
 
 
-def load_intended_nodes() -> list[dict]:
+def load_intended_nodes(flow_path: Path = INTENDED_FLOW_PATH) -> list[dict]:
     """
     Return non-utility flow nodes as {id, text} dicts.
     'text' uses the node's description field when present (rich natural-language +
     Hinglish phrases that reflect how callers actually express that intent), falling
     back to the node id when absent. Tools are appended as extra signal either way.
     """
-    with open(INTENDED_FLOW_PATH) as f:
+    with open(flow_path) as f:
         flow = yaml.safe_load(f)
     nodes = []
     for n in flow.get("nodes", []):
@@ -58,6 +58,7 @@ def detect_gaps(
     cluster_labels: dict[int, dict],
     cluster_centroids: dict[int, np.ndarray],
     sim_threshold: float = SIM_THRESHOLD,
+    flow_path: Path = INTENDED_FLOW_PATH,
 ) -> list[dict]:
     """
     Parameters
@@ -66,12 +67,13 @@ def detect_gaps(
     cluster_labels    : {cluster_id: {intent_name, description, size}}
     cluster_centroids : {cluster_id: mean_embedding_vector (384-dim)}
     sim_threshold     : centroid cosine sim to best flow node required to be "in flow"
+    flow_path         : intended flow YAML to match clusters against
 
     Returns list of gap dicts sorted by call_count desc.
     """
     from analyzer.embed import embed_texts
 
-    flow_nodes = load_intended_nodes()
+    flow_nodes = load_intended_nodes(flow_path)
     if not flow_nodes:
         return []
 
