@@ -87,23 +87,19 @@ def _yaml_text(spec: str) -> Text:
     return out
 
 
-_BANNER = """\
-███████╗██╗      ██████╗ ██╗    ██╗ ██████╗  █████╗ ██████╗
-██╔════╝██║     ██╔═══██╗██║    ██║██╔════╝ ██╔══██╗██╔══██╗
-█████╗  ██║     ██║   ██║██║ █╗ ██║██║  ███╗███████║██████╔╝
-██╔══╝  ██║     ██║   ██║██║███╗██║██║   ██║██╔══██║██╔═══╝
-██║     ███████╗╚██████╔╝╚███╔███╔╝╚██████╔╝██║  ██║██║
-╚═╝     ╚══════╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝
+_BANNER = r"""
+        _
+    /) //
+   // // __ , , , _,  __.  _
+  //_</_(_)(_(_/_(_)_(_/|_/_)_
+ />               /|     /
+</               |/     '
 """
 
 
 def _print_banner():
-    """FLOWGAP in ANSI Shadow: solid blocks in the accent, the shadow dim."""
-    for line in _BANNER.rstrip("\n").splitlines():
-        text = Text()
-        for ch in line:
-            text.append(ch, style=ACCENT if ch == "█" else "dim")
-        console.print(text, no_wrap=True)
+    for line in _BANNER.strip("\n").splitlines():
+        console.print(Text(line, style=f"bold {ACCENT}"), no_wrap=True)
 
 
 def _print_report(analysis: dict, top: Optional[int] = None):
