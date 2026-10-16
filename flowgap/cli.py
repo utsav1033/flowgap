@@ -23,7 +23,6 @@ from dotenv import find_dotenv, load_dotenv
 from rich import box
 from rich.console import Console
 from rich.panel import Panel
-from rich.syntax import Syntax
 from rich.table import Table
 from rich.text import Text
 
@@ -32,7 +31,7 @@ app = typer.Typer(
     no_args_is_help=True,
     add_completion=False,
 )
-console = Console()
+console = Console(highlight=False)
 
 DEFAULT_ANALYSIS = Path("analysis.json")
 
@@ -60,20 +59,69 @@ def _slug(name: str) -> str:
     return re.sub(r"[^a-z0-9_]+", "_", name.lower()).strip("_") or "gap"
 
 
+# One accent color; everything else is plain or dim
+ACCENT = "#ff8a3d"
+
+
 def _rate_style(rate: float) -> str:
-    return "bold red" if rate >= 0.7 else "yellow" if rate >= 0.3 else "green"
+    """Only high transfer rates get the accent, so the expensive gaps stand out."""
+    return f"bold {ACCENT}" if rate >= 0.7 else "" if rate >= 0.3 else "dim"
+
+
+def _yaml_text(spec: str) -> Text:
+    """Comments dim, keys dim, values plain — a calmer read than full syntax colors."""
+    out = Text()
+    for line in spec.splitlines():
+        stripped = line.lstrip()
+        if stripped.startswith("#"):
+            out.append(line + "\n", style="dim")
+            continue
+        m = re.match(r"^(\s*(?:- )?)([\w-]+:)(.*)$", line)
+        if m:
+            out.append(m.group(1))
+            out.append(m.group(2), style="dim")
+            out.append(m.group(3) + "\n")
+        else:
+            out.append(line + "\n")
+    out.rstrip()
+    return out
+
+
+# 3x5 pixel glyphs for the headline number, drawn with half-blocks (3 lines tall)
+_GLYPHS = {
+    "0": ["###", "#.#", "#.#", "#.#", "###"], "1": [".#.", "##.", ".#.", ".#.", "###"],
+    "2": ["###", "..#", "###", "#..", "###"], "3": ["###", "..#", "###", "..#", "###"],
+    "4": ["#.#", "#.#", "###", "..#", "..#"], "5": ["###", "#..", "###", "..#", "###"],
+    "6": ["###", "#..", "###", "#.#", "###"], "7": ["###", "..#", "..#", "..#", "..#"],
+    "8": ["###", "#.#", "###", "#.#", "###"], "9": ["###", "#.#", "###", "..#", "###"],
+    ".": [".", ".", ".", ".", "#"], "%": ["#.#", "..#", ".#.", "#..", "#.#"],
+}
+
+
+def _big(text: str) -> list[str]:
+    rows = [""] * 5
+    for ch in text:
+        for i, line in enumerate(_GLYPHS[ch]):
+            rows[i] += line + "."
+    rows.append("." * len(rows[0]))
+    half = {(True, True): "██", (True, False): "▀▀", (False, True): "▄▄", (False, False): "  "}
+    return [
+        "".join(half[(a == "#", b == "#")] for a, b in zip(rows[r], rows[r + 1])).rstrip()
+        for r in (0, 2, 4)
+    ]
 
 
 def _print_report(analysis: dict, top: Optional[int] = None):
     m = analysis["metric"]
     n = m["n_gaps"]
-    headline = Text.assemble(
-        (f"{m['gap_rate'] * 100:.1f}%", "bold red"),
-        " of calls hit an intent your flow doesn't handle\n",
+    headline = Text()
+    headline.append("\n".join(_big(f"{m['gap_rate'] * 100:.1f}%")), style=f"bold {ACCENT}")
+    headline.append_text(Text.assemble(
+        "\n\n", ("of calls hit an intent your flow doesn't handle", "bold"), "\n",
         (f"{m['gap_calls']} of {m['total_calls']} calls · {n} gap{'s' if n != 1 else ''} found", "dim"),
-    )
+    ))
     console.print()
-    console.print(Panel(headline, border_style="red", box=box.ROUNDED, padding=(1, 3), expand=False))
+    console.print(Panel(headline, border_style="dim", box=box.ROUNDED, padding=(1, 3), expand=False))
     gaps = analysis["gaps"][:top] if top else analysis["gaps"]
     if not gaps:
         return
@@ -81,7 +129,7 @@ def _print_report(analysis: dict, top: Optional[int] = None):
     max_calls = max(g["call_count"] for g in gaps)
     table = Table(box=box.SIMPLE_HEAD, header_style="bold dim", pad_edge=False)
     table.add_column("#", justify="right", style="dim")
-    table.add_column("Gap intent", style="bold cyan")
+    table.add_column("Gap intent", style="bold")
     table.add_column("Calls", justify="right")
     table.add_column("", no_wrap=True)
     table.add_column("→ human", justify="right")
@@ -93,7 +141,7 @@ def _print_report(analysis: dict, top: Optional[int] = None):
             str(i),
             g["intent_name"],
             str(g["call_count"]),
-            Text(bar, style="cyan"),
+            Text(bar, style=ACCENT),
             Text(f"{rate * 100:.0f}%", style=_rate_style(rate)),
             f"{g.get('best_flow_match', '')} ({g.get('max_flow_similarity', 0):.2f})",
         )
@@ -230,7 +278,7 @@ def specs(
         rate = g["transfer_rate"]
         console.print()
         console.print(Text.assemble(
-            (g["intent_name"], "bold cyan"), "  ",
+            (g["intent_name"], "bold"), "  ",
             (f"{g['call_count']} calls", "bold"), (" · ", "dim"),
             (f"{rate * 100:.0f}% sent to a human", _rate_style(rate)),
         ))
@@ -239,10 +287,9 @@ def specs(
             t = t if len(t) <= quote_width else t[:quote_width - 1].rstrip() + "…"
             console.print(Text(f"  “{t}”", style="italic dim"), no_wrap=True)
         console.print()
-        spec = Syntax(g["node_spec"].rstrip(), "yaml", theme="ansi_dark",
-                      background_color="default", word_wrap=True)
+        spec = _yaml_text(g["node_spec"].rstrip())
         console.print(Panel(spec, title="[bold]drafted node[/bold]", title_align="left",
-                            border_style="green", box=box.ROUNDED, padding=(0, 1)))
+                            border_style="dim", box=box.ROUNDED, padding=(0, 1)))
 
 
 @app.command("eval")
