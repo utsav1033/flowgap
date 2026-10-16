@@ -16,12 +16,12 @@ from pathlib import Path
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 
-from analyzer.parse import load_calls
+from analyzer.parse import load_calls, TRANSCRIPTS_DIR, GROUND_TRUTH_PATH
 from analyzer.embed import embed_texts
 from analyzer.cluster import cluster_embeddings, cluster_summary
 from analyzer.label import label_clusters
 from analyzer.graph import build_graph
-from analyzer.gaps import detect_gaps, compute_headline_metric
+from analyzer.gaps import detect_gaps, compute_headline_metric, INTENDED_FLOW_PATH, SIM_THRESHOLD
 from analyzer.nodegen import generate_all_node_specs
 
 
@@ -31,12 +31,24 @@ def _call_text(call: dict) -> str:
     return " ".join(real) if real else "[generation failed]"
 
 
-def run_pipeline() -> dict:
+def run_pipeline(
+    transcripts_dir: Path = TRANSCRIPTS_DIR,
+    flow_path: Path = INTENDED_FLOW_PATH,
+    out_path: Path = ROOT / "data" / "analysis.json",
+    ground_truth_path: Path | None = GROUND_TRUTH_PATH,
+    sim_threshold: float = SIM_THRESHOLD,
+    org_name: str | None = None,
+) -> dict:
     print("=== FlowGap Analysis Pipeline ===\n")
 
     print("[1/6] Loading and parsing transcripts...")
-    calls = load_calls()
+    calls = load_calls(transcripts_dir, ground_truth_path)
     print(f"      Loaded {len(calls)} calls")
+    if len(calls) < 10:
+        raise ValueError(
+            f"Only {len(calls)} transcripts found in {transcripts_dir} — "
+            "clustering needs at least 10 (ideally 100+)."
+        )
 
     # One text per call — captures full caller intent rather than individual turns
     call_texts = [_call_text(c) for c in calls]
@@ -79,7 +91,7 @@ def run_pipeline() -> dict:
     print(f"      Graph: {len(graph['nodes'])} nodes, {len(graph['edges'])} edges")
 
     print("[5/6] Detecting gaps...")
-    gaps = detect_gaps(graph, cluster_labels, cluster_centroids)
+    gaps = detect_gaps(graph, cluster_labels, cluster_centroids, sim_threshold, flow_path)
     metric = compute_headline_metric(graph, gaps)
     print(f"      Headline: {metric['gap_calls']}/{metric['total_calls']} calls "
           f"({metric['gap_rate']*100:.1f}%) hit a gap")
@@ -88,7 +100,7 @@ def run_pipeline() -> dict:
               f"{g['transfer_rate']*100:.0f}% transfer, sim={g.get('max_flow_similarity', '?')}")
 
     print("[6/6] Generating node specs for gaps...")
-    gaps_with_specs = generate_all_node_specs(gaps, labels.tolist(), call_texts)
+    gaps_with_specs = generate_all_node_specs(gaps, labels.tolist(), call_texts, org_name)
 
     analysis = {
         "metric": metric,
@@ -98,7 +110,8 @@ def run_pipeline() -> dict:
         "call_cluster_map": call_cluster_map,
     }
 
-    out_path = ROOT / "data" / "analysis.json"
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(analysis, f, ensure_ascii=False, indent=2)
     print(f"\n[OK] analysis.json written to {out_path}")

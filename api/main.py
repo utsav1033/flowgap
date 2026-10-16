@@ -4,15 +4,17 @@ Run with: uvicorn api.main:app --reload
 """
 
 import json
+import os
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 ROOT = Path(__file__).parent.parent
-ANALYSIS_PATH = ROOT / "data" / "analysis.json"
-EVAL_PATH = ROOT / "data" / "eval_results.json"
-INTENDED_FLOW_PATH = ROOT / "gen" / "intended_flow.yaml"
+# Overridable so `flowgap serve` can point the API at any analysis run
+ANALYSIS_PATH = Path(os.getenv("FLOWGAP_ANALYSIS", ROOT / "data" / "analysis.json"))
+EVAL_PATH = Path(os.getenv("FLOWGAP_EVAL", ROOT / "data" / "eval_results.json"))
+INTENDED_FLOW_PATH = Path(os.getenv("FLOWGAP_FLOW", ROOT / "gen" / "intended_flow.yaml"))
 
 app = FastAPI(title="FlowGap API")
 

@@ -7,9 +7,23 @@ ones quietly ending in a human transfer. For each gap, it drafts a drop-in flow 
 > Point it at your call logs and it tells you the % of calls your agent is silently handing to
 > a human — and hands back the exact nodes that would recover them.
 
+## Quick start
+
+```bash
+pipx install git+https://github.com/utsav1033/flowgap
+flowgap init my-agent && cd my-agent
+# describe your nodes in flow.yaml, drop call transcripts into transcripts/
+flowgap analyze
+flowgap report
+flowgap specs --gap 1
+```
+
+No API key needed to start. Full details in [Run it](#run-it).
+
 ## Flow analysis dashboard
 
 Three views — toggle between them to see where the gaps are and what a fix looks like.
+(The Next.js frontend isn't published in this repo yet; `flowgap serve` exposes the API it reads.)
 
 **INTENDED** — the flow as the designer declared it:
 
@@ -134,19 +148,50 @@ unenforced in practice.
 
 ## Run it
 
+### Install the CLI
+
 ```bash
-cp .env.example .env        # add your GEMINI_API_KEY
-pip install -r requirements.txt
-python gen/import_batches.py     # load transcripts
-python analyzer/run.py           # analysis -> data/analysis.json
-python eval/evaluate.py          # score vs planted ground truth
-uvicorn api.main:app --reload    # API on :8000
-cd web && npm run dev            # frontend on :3000
+pipx install git+https://github.com/utsav1033/flowgap
 ```
+
+(or `pip install .` from a clone). Python 3.10+. The first run downloads the ~80 MB
+MiniLM embedding model.
+
+### Use it on your own calls
+
+```bash
+flowgap init my-agent      # creates flow.yaml, transcripts/, .env
+cd my-agent
+# 1. describe your agent's nodes in flow.yaml
+# 2. drop transcripts into transcripts/ — .txt with CALLER:/AGENT: lines,
+#    or .json with a "transcript" field
+flowgap analyze            # -> analysis.json
+flowgap report             # headline % + ranked gaps
+flowgap specs --gap 1      # drafted node for the biggest gap
+flowgap specs -o specs/    # one YAML node spec per gap
+```
+
+A `GEMINI_API_KEY` in `.env` is optional: with it, clusters get LLM labels and gaps get
+drafted node specs; without it (or with `--no-llm`), FlowGap uses keyword labels and
+template specs to fill in. `flowgap analyze --threshold 0.5` makes matching to existing
+nodes looser (fewer gaps). Run `flowgap <command> --help` for every option.
+
+### Try the demo data
+
+From a clone of this repo:
+
+```bash
+flowgap analyze data/transcripts -f gen/intended_flow.yaml
+flowgap eval -g data/ground_truth.json    # score vs planted ground truth
+flowgap serve -f gen/intended_flow.yaml   # API on :8000 for the dashboard
+```
+
+The original scripts (`python analyzer/run.py`, `python eval/evaluate.py`,
+`uvicorn api.main:app`) still work with the repo's default paths.
 
 ## Stack
 
-Python · sentence-transformers (MiniLM) · UMAP · HDBSCAN · FastAPI · Next.js + React Flow.
+Python · Typer CLI · sentence-transformers (MiniLM) · UMAP · HDBSCAN · FastAPI · Next.js + React Flow.
 LLM (swappable provider) used offline only — transcript generation, labeling, node drafting.
 
 ---

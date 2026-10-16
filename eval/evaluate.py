@@ -19,8 +19,8 @@ GROUND_TRUTH_PATH = ROOT / "data" / "ground_truth.json"
 ANALYSIS_PATH = ROOT / "data" / "analysis.json"
 
 
-def evaluate(analysis: dict | None = None) -> dict:
-    with open(GROUND_TRUTH_PATH, encoding="utf-8") as f:
+def evaluate(analysis: dict | None = None, ground_truth_path: Path = GROUND_TRUTH_PATH) -> dict:
+    with open(ground_truth_path, encoding="utf-8") as f:
         gt = json.load(f)
 
     if analysis is None:
@@ -99,7 +99,7 @@ def print_eval(result: dict):
     for row in result["cluster_breakdown"]:
         marker = "[TP]" if row["is_true_positive"] else "[FP]"
         print(
-            f"  [{marker}] cluster_{row['cluster_id']:2d}  "
+            f"  {marker} cluster_{row['cluster_id']:2d}  "
             f"label: {row['detected_label']!r:35s}  "
             f"size: {row['size']:4d}  "
             f"dominant intent: {row['dominant_planted_intent']} ({row['dominant_fraction']*100:.0f}%)"

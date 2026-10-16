@@ -1,0 +1,33 @@
+# Your agent's intended flow — what the designer built. FlowGap reports the
+# caller intents in your transcripts that match none of these nodes.
+#
+# Each node is matched on meaning, using `description` if present (write it the
+# way callers phrase the request), otherwise the node id + tool names.
+global:
+  objective: "Front desk agent for Example Clinic"
+  universal_tools: ["end_call", "transfer_to_human"]
+
+nodes:
+  # Routing/utility nodes — these ids are ignored when matching intents
+  - id: greeting
+  - id: intent_classification
+  - id: anything_else
+  - id: transfer_to_human
+
+  # Intents your agent handles
+  - id: book_appointment
+    description: "book an appointment, see a doctor, schedule a visit"
+    tools: ["check_doctor_availability", "book_appointment"]
+  - id: reschedule_cancel
+    description: "move, reschedule or cancel an existing appointment"
+    tools: ["find_appointment", "modify_appointment"]
+  - id: clinic_info
+    description: "opening hours, address, directions, parking, fees"
+    tools: ["get_clinic_info"]
+
+edges:
+  - {from: greeting, to: intent_classification}
+  - {from: intent_classification, to: book_appointment,  condition: "intent == book_appointment"}
+  - {from: intent_classification, to: reschedule_cancel, condition: "intent == reschedule_cancel"}
+  - {from: intent_classification, to: clinic_info,       condition: "intent == clinic_info"}
+  - {from: intent_classification, to: transfer_to_human, condition: "intent == unknown"}

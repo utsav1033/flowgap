@@ -12,8 +12,11 @@ TRANSCRIPTS_DIR = ROOT / "data" / "transcripts"
 GROUND_TRUTH_PATH = ROOT / "data" / "ground_truth.json"
 
 
-def load_ground_truth() -> dict:
-    with open(GROUND_TRUTH_PATH, encoding="utf-8") as f:
+def load_ground_truth(path: Path | None = GROUND_TRUTH_PATH) -> dict:
+    """Ground truth is optional — real call logs won't have planted labels."""
+    if path is None or not Path(path).exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
         return json.load(f)
 
 
@@ -65,13 +68,25 @@ def infer_phases(agent_turns: list[str]) -> list[str]:
     return phases
 
 
-def load_calls() -> list[dict]:
-    gt = load_ground_truth()
+def _read_record(path: Path) -> dict:
+    """A .json file with a "transcript" field, or a plain .txt of CALLER:/AGENT: lines."""
+    with open(path, encoding="utf-8") as f:
+        if path.suffix == ".txt":
+            return {"transcript": f.read()}
+        return json.load(f)
+
+
+def load_calls(
+    transcripts_dir: Path = TRANSCRIPTS_DIR,
+    ground_truth_path: Path | None = GROUND_TRUTH_PATH,
+) -> list[dict]:
+    gt = load_ground_truth(ground_truth_path)
+    transcripts_dir = Path(transcripts_dir)
+    paths = sorted(p for p in transcripts_dir.iterdir() if p.suffix in (".json", ".txt"))
     calls = []
-    for path in sorted(TRANSCRIPTS_DIR.glob("*.json")):
+    for path in paths:
         call_id = path.stem
-        with open(path, encoding="utf-8") as f:
-            record = json.load(f)
+        record = _read_record(path)
         caller_turns, agent_turns = extract_turns(record["transcript"])
         phases = infer_phases(agent_turns)
         ended_in_transfer = (

@@ -1,20 +1,16 @@
 """
 Generate Agent Flow node specs for each detected gap cluster.
 Uses Google Gemini (gemini-2.0-flash) with the node schema from BUILD.md.
+Without an API key, a template spec is filled in from the gap itself.
 """
 
-import os
+import re
 from collections import defaultdict
 from pathlib import Path
 
 import yaml
-import google.generativeai as genai
-from dotenv import load_dotenv
 
-load_dotenv()
-
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-MODEL = "gemini-2.0-flash"
+from analyzer import llm
 
 _DIST_PATH = Path(__file__).parent.parent / "gen" / "distribution.yaml"
 
@@ -58,23 +54,41 @@ Rules:
 - Output ONLY the yaml block, no explanation."""
 
 
+def _template_node_spec(gap: dict) -> str:
+    """Skeleton spec for review when no LLM is available — same schema as the prompt."""
+    node_id = re.sub(r"[^a-z0-9_]", "_", gap["intent_name"].lower()).strip("_") or f"gap_{gap['cluster_id']}"
+    spec = {"node": {
+        "id": node_id,
+        "intent": gap.get("description") or f"Callers asking about {node_id.replace('_', ' ')}",
+        "instructions": "TODO: describe what the agent should ask and do. "
+                        "Fall back to transfer_to_human if the request can't be resolved.",
+        "tools": [],
+        "output_variables": [],
+        "edges": [
+            {"from": "intent_classification", "condition": f"intent == {node_id}"},
+            {"to": "anything_else", "condition": f"{node_id}_resolved == true"},
+        ],
+    }}
+    return "# template spec (no LLM) — fill in the TODOs\n" + yaml.safe_dump(spec, sort_keys=False, allow_unicode=True)
+
+
 def generate_node_spec(
     gap: dict,
     sample_turns: list[str],
     n_samples: int = 6,
+    org_name: str | None = None,
 ) -> str:
+    if not llm.available():
+        return _template_node_spec(gap)
     utterances = "\n".join(f"- {t}" for t in sample_turns[:n_samples])
     prompt = NODE_SPEC_PROMPT.format(
-        clinic_name=_load_clinic_name(),
+        clinic_name=org_name or _load_clinic_name(),
         intent_name=gap["intent_name"],
         description=gap["description"],
         utterances=utterances,
     )
-    model = genai.GenerativeModel(model_name=MODEL)
-    generation_config = {"temperature": 0.3, "max_output_tokens": 600}
     try:
-        resp = model.generate_content(prompt, generation_config=generation_config)
-        raw = resp.text.strip()
+        raw = llm.generate(prompt, temperature=0.3, max_output_tokens=600)
         # strip markdown fences
         if raw.startswith("```"):
             lines = raw.split("\n")
@@ -88,6 +102,7 @@ def generate_all_node_specs(
     gaps: list[dict],
     turn_labels: list[int],
     all_turns: list[str],
+    org_name: str | None = None,
 ) -> list[dict]:
     """
     For each gap, gather representative turns and generate a node spec.
@@ -102,7 +117,7 @@ def generate_all_node_specs(
         cid = gap["cluster_id"]
         sample_turns = label_to_turns.get(cid, [])
         print(f"  Generating node spec for: {gap['intent_name']} ({len(sample_turns)} turns)")
-        spec = generate_node_spec(gap, sample_turns)
+        spec = generate_node_spec(gap, sample_turns, org_name=org_name)
         enriched.append({**gap, "node_spec": spec, "sample_turns": sample_turns[:6]})
 
     return enriched
