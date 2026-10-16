@@ -7,8 +7,10 @@ Falls back to top-keyword extraction if all retries fail or no API key is set.
 import json
 import re
 import time
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
+
+import numpy as np
 
 from analyzer import llm
 
@@ -20,31 +22,65 @@ Output ONLY a JSON object with exactly two keys:
 Utterances:
 {utterances}"""
 
+# Filler that carries no intent: conversational English plus common Hinglish
 _STOPWORDS = {
-    'i','me','my','we','our','you','the','a','an','is','are','was','were',
-    'want','like','to','of','in','for','and','or','it','this','that','can',
-    'do','did','have','had','need','please','would','could','get','know',
-    'just','also','hi','hello','okay','ok','yes','no','so','but','not','be',
-    'has','with','from','um','uh','actually','hmm','haan','ji','thoda','ek',
-    'acha','theek','bhaiya','sir','call','calling','clinic','help','speak',
-    'tell','check','ask','about','some','little','very','really','sorry',
-    'generation','failed',
+    'want','wanted','like','need','please','would','could','know','just','also','hello',
+    'okay','actually','hmm','haan','thoda','acha','accha','theek','bhaiya','call','calling',
+    'clinic','help','speak','tell','check','ask','about','some','little','really','sorry',
+    'generation','failed','thank','thanks','yeah','umm','that','this','there','what','your',
+    'have','with','from','will','when','which','been','were','they','them','then','than',
+    'into','only','should','think','said','says','right','sure','fine','good','maam','madam',
+    'nahi','mujhe','mera','meri','mere','karna','karni','karne','chahiye','liye','kar','hoga',
+    'raha','rahi','rahe','tha','thi','bhi','toh','kuch','abhi','woh','yeh','kaise','kitna',
+    'wala','wali','koi','sakte','sakta','sakti','batana','bata','dijiye','humko','naam',
+    'number','aapka','aapke','aapki','matlab','hain','haina','mein','kyunki','lekin','phir',
+    'agar','kaun','kahan','yahan','wahan','dekh','dekhiye','boliye','achha','arre','bas',
+    'great','regarding','haven','maybe','main','hoon','shukriya','dhanyavaad','dhanyawad',
+    'bahut','theek','karenge','karunga','karungi','chahta','chahti','pata','sakenge',
 }
 
 
-def _keyword_label(turns: list[str]) -> dict:
-    """Extract top keywords as label when LLM is unavailable."""
-    words = []
-    for t in turns:
-        words.extend(re.findall(r'\b[a-z]{4,}\b', t.lower()))
-    top = [w for w, _ in Counter(
-        w for w in words if w not in _STOPWORDS
-    ).most_common(4)]
+def _distinctive_keywords(buckets: dict[int, list[str]], k: int = 3) -> dict[int, list[str]]:
+    """
+    Class-based TF-IDF: words frequent in this cluster but rare in the others.
+    Raw counts pick filler ("should", "your"); this picks what sets a cluster apart
+    ("surgery", "wound", "fever").
+    """
+    from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS, CountVectorizer
+
+    cids = [c for c in sorted(buckets) if c != -1]
+    if not cids:
+        return {}
+    vec = CountVectorizer(
+        token_pattern=r"\b[a-z]{4,}\b",
+        stop_words=list(ENGLISH_STOP_WORDS | _STOPWORDS),
+    )
+    vec.fit(t.lower() for c in cids for t in buckets[c])
+    vocab = vec.get_feature_names_out()
+    counts = np.zeros((len(cids), len(vocab)))
+    spread = np.zeros_like(counts)   # share of the cluster's calls that use each word
+    for i, c in enumerate(cids):
+        per_call = vec.transform(t.lower() for t in buckets[c]).toarray()
+        counts[i] = per_call.sum(axis=0)
+        spread[i] = (per_call > 0).mean(axis=0)
+
+    tf = counts / (counts.sum(axis=1, keepdims=True) + 1e-9)
+    avg_words = counts.sum() / len(cids)
+    idf = np.log(1 + avg_words / (counts.sum(axis=0) + 1e-9))
+    # Words used by only a call or two (caller names, one-off details) don't describe the intent
+    scores = tf * idf * (spread >= 0.2)
+    return {
+        cid: [vocab[j] for j in np.argsort(-scores[i])[:k] if scores[i, j] > 0]
+        for i, cid in enumerate(cids)
+    }
+
+
+def _keyword_label(top: list[str]) -> dict:
+    """Label from distinctive keywords when the LLM is unavailable."""
     if not top:
         return {"intent_name": "unknown_intent", "description": "Cluster content unclear."}
-    name = "_".join(top[:3])
     return {
-        "intent_name": name,
+        "intent_name": "_".join(top),
         "description": f"Keyword-derived label: {', '.join(top)}",
     }
 
@@ -82,6 +118,7 @@ def label_clusters(
     for label, text in zip(labels, texts):
         buckets[label].append(text)
 
+    keywords = _distinctive_keywords(buckets)
     cluster_labels = {}
     for cid, turns in sorted(buckets.items()):
         if cid == -1:
@@ -123,7 +160,7 @@ def label_clusters(
                 "size": len(turns),
             }
         else:
-            fb = _keyword_label(representatives)
+            fb = _keyword_label(keywords.get(cid, []))
             print(f"    cluster_{cid}: keyword fallback -> {fb['intent_name']!r}")
             cluster_labels[cid] = {**fb, "size": len(turns)}
 

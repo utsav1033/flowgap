@@ -12,31 +12,15 @@ FlowGap reads those transcripts and tells you:
 - **which requests they were**, ranked by how many calls they cost you, and
 - **a drafted node for each one**, so you can close the gap.
 
-```console
-$ flowgap analyze
-...
-39.3% of calls (117 of 298) hit an intent your flow doesn't handle — 6 gaps found.
+![flowgap report on the demo calls](images/report.svg)
 
- # ┃ Gap intent          ┃ Calls ┃ Transfer ┃ Closest node     ┃  Sim
-━━━╇━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━╇━━━━━━
- 1 │ post_op_care        │    13 │     100% │ clinic_info      │ 0.28
- 2 │ lab_reports         │    13 │      90% │ clinic_info      │ 0.42
- ...
+Then pick a gap to see what callers said and the node drafted to handle it:
 
-$ flowgap specs --gap 1
-──────────── post_op_care  13 calls, 100% transferred ────────────
-  “Hi, I had surgery here last week — appendix removal. I wanted to ask about the wound dressing…”
-node:
-  id: post_op_care
-  intent: Patient has a question about recovery after a procedure
-  instructions: Ask which procedure and when. Share standard aftercare guidance from the
-    knowledge base; for symptoms like fever or bleeding, transfer to the duty nurse.
-  tools: [lookup_procedure, get_aftercare_guide]
-  ...
-```
+![flowgap specs for one gap](images/specs.svg)
 
-*(The output above is illustrative. Gap names and drafted nodes come from Gemini when you set
-an API key; without one, gaps get keyword names and the nodes are templates for you to fill in.)*
+*Real output on the 298 demo calls, run without an API key. Gaps are named by the words that
+set them apart (`surgery worried wound` is post-op care questions) and the node is a
+template. With `GEMINI_API_KEY` set, gaps get written names and fully drafted nodes.*
 
 It runs offline on logs you already have. Nothing sits in your live call path, and it never
 edits your flow: you review every drafted node yourself.
@@ -88,7 +72,7 @@ nodes:
 ```
 
 **API key (optional).** Add `GEMINI_API_KEY` to `.env` for readable gap names (`lab_reports`
-instead of `test_days_haven`) and full drafted nodes. Without it, everything still runs.
+instead of `ready test days`) and full drafted nodes. Without it, everything still runs.
 
 ## Commands
 

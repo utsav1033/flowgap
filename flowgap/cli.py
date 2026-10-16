@@ -20,16 +20,18 @@ from typing import Optional
 
 import typer
 from dotenv import find_dotenv, load_dotenv
+from rich import box
 from rich.console import Console
-from rich.syntax import Syntax
+from rich.panel import Panel
 from rich.table import Table
+from rich.text import Text
 
 app = typer.Typer(
     help="Find the caller intents your voice agent's flow doesn't handle, and draft nodes to close them.",
     no_args_is_help=True,
     add_completion=False,
 )
-console = Console()
+console = Console(highlight=False)
 
 DEFAULT_ANALYSIS = Path("analysis.json")
 
@@ -42,7 +44,7 @@ def _load_env():
 
 
 def _fail(msg: str):
-    console.print(f"[red]error:[/red] {msg}")
+    console.print(f"[bold #a78bfa]error:[/] {msg}")
     raise typer.Exit(1)
 
 
@@ -57,34 +59,91 @@ def _slug(name: str) -> str:
     return re.sub(r"[^a-z0-9_]+", "_", name.lower()).strip("_") or "gap"
 
 
+# One accent color; everything else is plain or dim
+ACCENT = "#a78bfa"
+
+
+def _rate_style(rate: float) -> str:
+    """Only high transfer rates get the accent, so the expensive gaps stand out."""
+    return f"bold {ACCENT}" if rate >= 0.7 else "" if rate >= 0.3 else "dim"
+
+
+def _yaml_text(spec: str) -> Text:
+    """Comments dim, keys dim, values plain — a calmer read than full syntax colors."""
+    out = Text()
+    for line in spec.splitlines():
+        stripped = line.lstrip()
+        if stripped.startswith("#"):
+            out.append(line + "\n", style="dim")
+            continue
+        m = re.match(r"^(\s*(?:- )?)([\w-]+:)(.*)$", line)
+        if m:
+            out.append(m.group(1))
+            out.append(m.group(2), style="dim")
+            out.append(m.group(3) + "\n")
+        else:
+            out.append(line + "\n")
+    out.rstrip()
+    return out
+
+
+def _is_keyword_label(g: dict) -> bool:
+    return g.get("description", "").startswith("Keyword-derived")
+
+
+def _display_name(g: dict) -> Text:
+    return Text(g["intent_name"].replace("_", " "), style="bold")
+
+
+def _truncate(text: str, width: int) -> str:
+    return text if len(text) <= width else text[:width - 1].rstrip() + "…"
+
+
+def _next_steps(*steps: tuple[str, str]):
+    width = max(len(cmd) for cmd, _ in steps)
+    for cmd, what in steps:
+        console.print(f"  [bold]{cmd.ljust(width)}[/bold]   [dim]{what}[/dim]")
+    console.print()
+
+
+def _title(subtitle: str):
+    console.print()
+    console.print(Text(subtitle, style="dim"))
+    console.print()
+
+
 def _print_report(analysis: dict, top: Optional[int] = None):
     m = analysis["metric"]
-    console.print(
-        f"\n[bold]{m['gap_rate'] * 100:.1f}%[/bold] of calls "
-        f"([bold]{m['gap_calls']}[/bold] of {m['total_calls']}) hit an intent your flow doesn't handle "
-        f"— {m['n_gaps']} gap{'s' if m['n_gaps'] != 1 else ''} found.\n"
-    )
-    gaps = analysis["gaps"][:top] if top else analysis["gaps"]
-    if not gaps:
+    console.print()
+    if not analysis["gaps"]:
+        console.print(f"[bold]Your agent handles every intent in these {m['total_calls']} calls.[/bold]\n")
         return
-    table = Table(show_edge=False, header_style="bold")
+
+    console.print(Text.assemble(
+        ("Your agent can't handle ", "bold"), (f"{m['gap_rate'] * 100:.0f}% of calls", f"bold {ACCENT}"),
+    ))
+    console.print(f"[dim]{m['gap_calls']} of {m['total_calls']} calls[/dim]\n")
+
+    gaps = analysis["gaps"][:top] if top else analysis["gaps"]
+    table = Table(title="Missing intents", title_justify="left", title_style="bold",
+                  box=box.ROUNDED, border_style="dim", header_style="dim")
     table.add_column("#", justify="right", style="dim")
-    table.add_column("Gap intent")
+    table.add_column("Intent", style="bold")
     table.add_column("Calls", justify="right")
-    table.add_column("Transfer", justify="right")
-    table.add_column("Closest node", style="dim")
-    table.add_column("Sim", justify="right", style="dim")
+    table.add_column("Sent to human", justify="right")
     for i, g in enumerate(gaps, 1):
+        rate = g["transfer_rate"]
         table.add_row(
             str(i),
-            g["intent_name"],
+            _display_name(g),
             str(g["call_count"]),
-            f"{g['transfer_rate'] * 100:.0f}%",
-            g.get("best_flow_match", ""),
-            f"{g.get('max_flow_similarity', 0):.2f}",
+            Text(f"{rate * 100:.0f}%", style=f"bold {ACCENT}" if rate >= 0.7 else ""),
         )
     console.print(table)
-    console.print("\n[dim]See a drafted node:[/dim] flowgap specs --gap 1\n")
+    console.print()
+    console.print(Text.assemble(("Next  ", "dim"), ("flowgap specs --gap 1", "bold"),
+                                ("   see the fix flowgap drafted for #1", "dim")))
+    console.print()
 
 
 @app.command()
@@ -98,21 +157,21 @@ def init(
 
     flow = directory / "flow.yaml"
     if flow.exists() and not force:
-        console.print(f"[yellow]skip[/yellow]  {flow} (exists)")
+        console.print(f"[dim]skip[/dim]   {flow} (exists)")
     else:
         flow.write_text(resources.files("flowgap").joinpath("templates/flow.yaml").read_text())
-        console.print(f"[green]wrote[/green] {flow}")
+        console.print(f"[dim]wrote[/dim] {flow}")
 
     env = directory / ".env"
     if env.exists() and not force:
-        console.print(f"[yellow]skip[/yellow]  {env} (exists)")
+        console.print(f"[dim]skip[/dim]   {env} (exists)")
     else:
         env.write_text(
             "# Optional: enables LLM cluster labels and drafted node specs.\n"
             "# Without it FlowGap uses keyword labels and template specs.\n"
             "GEMINI_API_KEY=\n"
         )
-        console.print(f"[green]wrote[/green] {env}")
+        console.print(f"[dim]wrote[/dim] {env}")
 
     console.print(
         "\nNext:\n"
@@ -193,31 +252,50 @@ def specs(
         console.print("No gaps — nothing to draft.")
         return
 
+    ranked = list(enumerate(gaps, 1))
+    gaps = ranked
     if gap is not None:
         if gap.isdigit():
             idx = int(gap) - 1
-            if not 0 <= idx < len(gaps):
-                _fail(f"gap #{gap} doesn't exist — there are {len(gaps)}.")
-            gaps = [gaps[idx]]
+            if not 0 <= idx < len(ranked):
+                _fail(f"gap #{gap} doesn't exist — there are {len(ranked)}.")
+            gaps = [ranked[idx]]
         else:
-            gaps = [g for g in gaps if g["intent_name"] == gap]
+            gaps = [(r, g) for r, g in ranked if g["intent_name"] == gap]
             if not gaps:
                 _fail(f"no gap named {gap!r} — see `flowgap report`.")
 
     if out:
         out.mkdir(parents=True, exist_ok=True)
-        for g in gaps:
+        for _, g in gaps:
             path = out / f"{_slug(g['intent_name'])}.yaml"
             path.write_text(g["node_spec"].rstrip() + "\n", encoding="utf-8")
-            console.print(f"[green]wrote[/green] {path}")
+            console.print(f"[dim]wrote[/dim] {path}")
         return
 
-    for g in gaps:
-        console.rule(f"[bold]{g['intent_name']}[/bold]  {g['call_count']} calls, "
-                     f"{g['transfer_rate'] * 100:.0f}% transferred")
+    total = len(ranked)
+    for rank, g in gaps:
+        rate = g["transfer_rate"]
+        _title(f"Gap {rank} of {total}")
+        line = Text.assemble(_display_name(g), ("   ", ""), (f"{g['call_count']} calls", "dim"))
+        if rate >= 0.7:
+            line.append("  ·  ", style="dim")
+            line.append("usually sent to a human", style=ACCENT)
+        console.print(line)
+        console.print("\n[bold]What callers said[/bold]")
+        quote_width = max(console.width - 8, 40)
         for t in g.get("sample_turns", [])[:3]:
-            console.print(f"[dim]  “{t[:140]}{'…' if len(t) > 140 else ''}”[/dim]")
-        console.print(Syntax(g["node_spec"], "yaml", theme="ansi_dark", background_color="default", word_wrap=True))
+            console.print(Text(f"  “{_truncate(t, quote_width)}”", style="italic dim"), no_wrap=True)
+        console.print()
+        spec = _yaml_text(g["node_spec"].rstrip())
+        console.print(Panel(spec, title="[bold]Drafted step[/bold] [dim]· review it, then add it to your flow[/dim]",
+                            title_align="left", border_style="dim", box=box.ROUNDED, padding=(0, 1)))
+
+    console.print("\n[bold]Next[/bold]\n")
+    steps = [(f"flowgap specs --gap {rank} -o specs/", "save this step as a file")]
+    if rank < total:
+        steps.insert(0, (f"flowgap specs --gap {rank + 1}", "next gap"))
+    _next_steps(*steps)
 
 
 @app.command("eval")
@@ -234,7 +312,7 @@ def eval_cmd(
     print_eval(result)
     if out:
         out.write_text(json.dumps(result, indent=2))
-        console.print(f"\n[green]wrote[/green] {out}")
+        console.print(f"\n[dim]wrote[/dim] {out}")
 
 
 @app.command()
