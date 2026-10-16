@@ -215,8 +215,11 @@ def specs(
     for g in gaps:
         console.rule(f"[bold]{g['intent_name']}[/bold]  {g['call_count']} calls, "
                      f"{g['transfer_rate'] * 100:.0f}% transferred")
+        quote_width = max(console.width - 6, 40)
         for t in g.get("sample_turns", [])[:3]:
-            console.print(f"[dim]  “{t[:140]}{'…' if len(t) > 140 else ''}”[/dim]")
+            t = t if len(t) <= quote_width else t[:quote_width - 1].rstrip() + "…"
+            console.print(f"[dim]  “{t}”[/dim]", no_wrap=True)
+        console.print()
         console.print(Syntax(g["node_spec"], "yaml", theme="ansi_dark", background_color="default", word_wrap=True))
 
 

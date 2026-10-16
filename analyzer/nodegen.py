@@ -61,7 +61,7 @@ def _template_node_spec(gap: dict) -> str:
         "id": node_id,
         "intent": gap.get("description") or f"Callers asking about {node_id.replace('_', ' ')}",
         "instructions": "TODO: describe what the agent should ask and do. "
-                        "Fall back to transfer_to_human if the request can't be resolved.",
+                        "Fall back to transfer_to_human if the request cannot be resolved.",
         "tools": [],
         "output_variables": [],
         "edges": [
