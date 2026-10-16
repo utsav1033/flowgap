@@ -12,9 +12,13 @@ FlowGap reads those transcripts and tells you:
 - **which requests they were**, ranked by how many calls they cost you, and
 - **a drafted node for each one**, so you can close the gap.
 
-![flowgap report and specs output on the demo calls](images/demo.svg)
+![flowgap report on the demo calls](images/report.svg)
 
-*Real output on the 298 demo calls, with no API key set. That's why the gap names are
+Then pick a gap to see what callers said and the node drafted to handle it:
+
+![flowgap specs for one gap](images/specs.svg)
+
+*Real output on the 298 demo calls, run without an API key. That's why the gap names are
 keywords (`surgery_should_your` is post-op care questions) and the node is a template. With
 `GEMINI_API_KEY` set, gaps get proper names and fully drafted nodes.*
 

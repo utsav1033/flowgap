@@ -60,7 +60,7 @@ def _template_node_spec(gap: dict) -> str:
     spec = {"node": {
         "id": node_id,
         "intent": gap.get("description") or f"Callers asking about {node_id.replace('_', ' ')}",
-        "instructions": "TODO: what should the agent ask and do? Transfer to a human if unresolved.",
+        "instructions": "TODO: what should the agent ask, do, and say?",
         "tools": [],
         "output_variables": [],
         "edges": [

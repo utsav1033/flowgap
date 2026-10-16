@@ -87,25 +87,6 @@ def _yaml_text(spec: str) -> Text:
     return out
 
 
-_BANNER = """\
-███████╗██╗      ██████╗ ██╗    ██╗ ██████╗  █████╗ ██████╗
-██╔════╝██║     ██╔═══██╗██║    ██║██╔════╝ ██╔══██╗██╔══██╗
-█████╗  ██║     ██║   ██║██║ █╗ ██║██║  ███╗███████║██████╔╝
-██╔══╝  ██║     ██║   ██║██║███╗██║██║   ██║██╔══██║██╔═══╝
-██║     ███████╗╚██████╔╝╚███╔███╔╝╚██████╔╝██║  ██║██║
-╚═╝     ╚══════╝ ╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝
-"""
-
-
-def _print_banner():
-    """FLOWGAP in ANSI Shadow: solid blocks in the accent, the shadow dim."""
-    for line in _BANNER.rstrip("\n").splitlines():
-        text = Text()
-        for ch in line:
-            text.append(ch, style=ACCENT if ch == "█" else "dim")
-        console.print(text, no_wrap=True)
-
-
 def _is_keyword_label(g: dict) -> bool:
     return g.get("description", "").startswith("Keyword-derived")
 
@@ -115,60 +96,87 @@ def _truncate(text: str, width: int) -> str:
 
 
 def _next_steps(*steps: tuple[str, str]):
-    console.print("[bold]Next[/bold]")
     width = max(len(cmd) for cmd, _ in steps)
     for cmd, what in steps:
         console.print(f"  [bold]{cmd.ljust(width)}[/bold]   [dim]{what}[/dim]")
     console.print()
 
 
-def _print_report(analysis: dict, top: Optional[int] = None):
-    m = analysis["metric"]
-    n = m["n_gaps"]
+def _title(subtitle: str):
     console.print()
-    _print_banner()
+    console.print(Text.assemble(("flowgap", f"bold {ACCENT}"), ("  ·  ", "dim"), (subtitle, "dim")))
     console.print()
 
+
+def _print_report(analysis: dict, top: Optional[int] = None):
+    """Tell the story in order: how much is missed → where it went → how to fix it."""
+    m = analysis["metric"]
+    total, missed, n = m["total_calls"], m["gap_calls"], m["n_gaps"]
+    handled = total - missed
+    _title(f"coverage report  ·  {total} calls")
+
     if not analysis["gaps"]:
-        console.print(f"[bold]No gaps found[/bold] in {m['total_calls']} calls — "
-                      "every recurring request matched a node in your flow.\n")
+        console.print(f"[bold]Your agent handled every recurring request[/bold] across {total} calls.\n")
         return
 
     console.print(Text.assemble(
-        (f"{m['gap_rate'] * 100:.0f}%", f"bold {ACCENT}"),
-        (" of calls asked for something your flow has no node for.", "bold"),
+        ("Your agent couldn't handle ", "bold"), (f"{m['gap_rate'] * 100:.0f}%", f"bold {ACCENT}"),
+        (" of calls.", "bold"),
     ))
-    console.print(f"[dim]{m['gap_calls']} of {m['total_calls']} calls, grouped into {n} "
-                  f"gap{'s' if n != 1 else ''}, biggest first.[/dim]\n")
+    console.print()
+
+    # One bar = every call. Gap bars below use the same scale, so they add up to the orange part.
+    width = min(console.width - 4, 64)
+    per_char = total / width
+    miss_chars = max(1, round(missed / per_char))
+    console.print(Text.assemble(
+        "  ", ("█" * (width - miss_chars), "grey35"), ("█" * miss_chars, ACCENT),
+    ))
+    left, right = f"{handled} handled", f"{missed} missed"
+    console.print(Text.assemble(
+        "  ", (left, "dim"), " " * max(1, width - len(left) - len(right)), (right, ACCENT),
+    ))
+    console.print()
 
     gaps = analysis["gaps"][:top] if top else analysis["gaps"]
-    max_calls = max(g["call_count"] for g in gaps)
-    table = Table(box=box.SIMPLE_HEAD, header_style="bold dim", pad_edge=False, expand=True)
-    table.add_column("#", justify="right", style="dim")
-    table.add_column("What callers wanted", no_wrap=True, overflow="ellipsis", ratio=1)
-    table.add_column("Calls", no_wrap=True)
-    table.add_column("Sent to human", justify="right")
+    console.print(Text.assemble(
+        (f"Where the {missed} missed calls went", "bold"),
+        (f"  ·  {n} requests with no node in your flow", "dim"),
+    ))
+    console.print()
+
+    bar_width = max(max(1, round(g["call_count"] / per_char)) for g in gaps)
+    grid = Table.grid(padding=(0, 2), expand=True)
+    grid.add_column(justify="right", style="dim")
+    grid.add_column(ratio=1, no_wrap=True, overflow="ellipsis")
+    grid.add_column(width=bar_width, no_wrap=True)
+    grid.add_column(justify="right", no_wrap=True)
     for i, g in enumerate(gaps, 1):
         rate = g["transfer_rate"]
-        bar = "█" * max(1, round(10 * g["call_count"] / max_calls))
         quote = (g.get("sample_turns") or [""])[0]
-        table.add_row(
+        grid.add_row(
             str(i),
-            Text.assemble((g["intent_name"], "bold"), "\n",
-                          (f"“{quote}”", "italic dim")),
-            Text.assemble((f"{g['call_count']:>3} ", ""), (bar, ACCENT)),
-            Text(f"{rate * 100:.0f}%", style=_rate_style(rate)),
+            Text.assemble((g["intent_name"], "bold"), "\n", (f"“{quote}”", "italic dim")),
+            Text("█" * max(1, round(g["call_count"] / per_char)), style=ACCENT),
+            Text.assemble(
+                (f"{g['call_count']} calls", "bold"), "\n",
+                (f"{rate * 100:.0f}% sent to a human", f"{ACCENT}" if rate >= 0.7 else "dim"),
+            ),
         )
-        if i < len(gaps):
-            table.add_row()
-    console.print(table)
+        grid.add_row()
+    console.print(grid)
 
     if any(_is_keyword_label(g) for g in gaps):
-        console.print("[dim]Gap names are keywords pulled from the calls. "
-                      "Add GEMINI_API_KEY to .env for readable names and fully drafted nodes.[/dim]\n")
+        console.print("[dim]Names are keywords from the calls. Set GEMINI_API_KEY for readable ones.[/dim]\n")
+
+    console.print(Text.assemble(
+        ("Fix it", "bold"),
+        (f"  ·  {n} node{'s' if n != 1 else ''} drafted, worth up to {missed} calls", "dim"),
+    ))
+    console.print()
     _next_steps(
-        ("flowgap specs --gap 1", "see the biggest gap and its drafted node"),
-        ("flowgap specs -o specs/", "save every drafted node as a YAML file"),
+        ("flowgap specs --gap 1", "review the fix for the biggest gap"),
+        ("flowgap specs -o specs/", "save every drafted node as YAML"),
     )
 
 
@@ -302,13 +310,11 @@ def specs(
     total = len(ranked)
     for rank, g in gaps:
         rate = g["transfer_rate"]
-        console.print()
+        _title(f"fix for gap {rank} of {total}")
+        console.print(Text(g["intent_name"], style="bold"))
         console.print(Text.assemble(
-            (f"Gap {rank} of {total}  ", "dim"), (g["intent_name"], f"bold {ACCENT}"),
-        ))
-        console.print(Text.assemble(
-            (f"{g['call_count']} calls", "bold"), (" · ", "dim"),
-            (f"{rate * 100:.0f}% were sent to a human", _rate_style(rate) or "bold"),
+            (f"{g['call_count']} calls your agent couldn't handle", "dim"), ("  ·  ", "dim"),
+            (f"{rate * 100:.0f}% sent to a human", ACCENT if rate >= 0.7 else "dim"),
         ))
         console.print("\n[bold]What callers said[/bold]")
         quote_width = max(console.width - 8, 40)
@@ -318,8 +324,8 @@ def specs(
         spec = _yaml_text(g["node_spec"].rstrip())
         console.print(Panel(spec, title="[bold]Drafted node[/bold] [dim]· review, then add to your flow[/dim]",
                             title_align="left", border_style="dim", box=box.ROUNDED, padding=(0, 1)))
-        console.print()
 
+    console.print("\n[bold]Next[/bold]\n")
     steps = [(f"flowgap specs --gap {rank} -o specs/", "save this node as YAML")]
     if rank < total:
         steps.insert(0, (f"flowgap specs --gap {rank + 1}", "next gap"))
